@@ -1,0 +1,70 @@
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "NewsMediaOrganization",    
+"name": "Kathimerini",
+"ethicsPolicy": "http://www.ekathimerini.com/aboutus/#EthicsPolicy",
+"masthead": "http://www.ekathimerini.com/aboutus/#Masthead",
+"missionCoveragePrioritiesPolicy": "http://www.ekathimerini.com/aboutus/#MissionStatement",
+"foundingDate": "1919-09-15", 
+"diversityPolicy": "http://www.ekathimerini.com/aboutus/#DiversityPolicy",
+"correctionsPolicy": "http://www.ekathimerini.com/aboutus/#CorrectionsPolicy",
+"verificationFactCheckingPolicy": "http://www.ekathimerini.com/aboutus/#VerificationStandards",
+"unnamedSourcesPolicy": "http://www.ekathimerini.com/aboutus/#UnnamedSourcesPolicy", 
+"actionableFeedbackPolicy": "http://www.ekathimerini.com/aboutus/#NewsroomContactInfo",
+"ownershipFundingInfo": "http://www.ekathimerini.com/aboutus/#OwnershipStructure",
+"contactPoint" : [{
+        "@type" : "ContactPoint",
+        "contactType" : "Digital Newsroom Contact",
+        "email" : "info@kathimerini.gr",
+        "telephone":"+302104808000"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Print Newsroom Contact",
+        "email" : "kathimerini@kathimerini.gr",
+        "telephone":"+302104808050"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Magazine Newsroom Contact",
+        "email" : "kmagazine@kathimerini.gr",
+        "telephone":"+302104808156"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Advertising",
+        "email" : "emporiko@kathimerini.gr",
+        "telephone":"+302104808227"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Financial Services",
+        "email" : "logistirio@kathimerini.gr",
+        "telephone":"+302104808201"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Classified Advertisements",
+        "email" : "mikres-aggelies@kathimerini.gr",
+        "telephone":"+302104808518"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Subscriptions",
+        "email" : "subs@kathimerini.gr",
+        "telephone":"+302104808232"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Newspaper Archives",
+        "email" : "books@kathimerini.gr",
+        "telephone":"+302104808290"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Printing Press",
+        "telephone":"+302106683725"
+  }]
+}
+</script>

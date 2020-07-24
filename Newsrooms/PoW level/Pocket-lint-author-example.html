@@ -1,0 +1,3455 @@
+< !DOCTYPE html>< html lang="en-gb"prefix="og: http://ogp.me/ns#"style="overflow-x: hidden;">< head>< meta http - equiv="Content-Security-Policy"content="upgrade-insecure-requests">< meta http - equiv="X-UA-Compatible"content="IE=edge">< script>var userCountry="PT";
+var websiteLocaleValue="en-gb";
+var showAllText="SHOW ALL";
+var showLessText="SHOW LESS";
+
+< /script><script>var _sf_startpt=(new Date()).getTime();
+
+window.addSiteSkin=function(config) {
+    window.siteSkin=config;
+}
+
+;
+
+window.onPlLoad=function(cb) {
+    window._pl_cb=window._pl_cb || [];
+    window._pl_cb.push(cb)
+}
+
+;
+</script>< meta charset="utf-8">< meta name="viewport"content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>< title>Britta O & #039;
+
+Boyle - Pocket-lint</title><script src="https://cdn.pocket-lint.com/media/pf304.js"async>< /script><script>var _pl_settings= {
+    "super_tag": null, "targeting":[["inskin_yes", ["true"]], ["Gallery", [0]], ["Supertag", ["nottargeted"]]]
+}
+
+,
+_pl_files= {
+    "low": ["https:\/\/apis.google.com\/js\/platform.js", "https:\/\/connect.facebook.net\/en_GB\/all.js#xfbml=1&appId=373440233087", "https:\/\/platform.twitter.com\/widgets.js"], "high":["https:\/\/static.chartbeat.com\/js\/chartbeat.js"]
+}
+
+,
+___gcfg= {
+    "lang": "en-GB"
+}
+
+,
+___pl_lang= {
+    "lang": "en-gb", "lang_name":"English"
+}
+
+,
+_sf_async_config= {
+    "uid": 12986, "domain":"pocket-lint.com", "useCanonical":"true"
+}
+
+;
+</script>< script>var _cookies;
+
+function getCookieLocal(name) {
+    if (_cookies===null) {
+        _cookies=navigator.cookieEnabled || ('cookie'in document && (document.cookie.length > 0 || (document.cookie='__t').indexOf.call(document.cookie, '__t') > -1));
+    }
+
+    if (_cookies===false) {
+        return false;
+    }
+
+    // bug in regexp so space and \s is used to make sure we match
+    var matches=document.cookie.match(new RegExp('(^|;[\s ]+)'+ name.replace(/[-[\] {}
+
+                ()*+?., \\^$|#\s]/g, "\\$&") + '=([^;]+)'));
+
+    return matches && matches.length>=3 ? matches[2] : null;
+}
+
+
+function setCookieLocal(name, value, days) {
+    var expires=new Date();
+    expires.setDate(expires.getDate() + days);
+    document.cookie=encodeURIComponent(name)+'='+encodeURIComponent(value)+'; expires='+expires.toUTCString()+'; Secure; SameSite=none'+";path=/";
+}
+
+< /script><script>_adtypes= {
+    'mpu-billboard': ['SA-Unit1', 'SA-Unit2', 'SA-Unit3', 'SA-Unit4', 'SA-Unit5', 'SA-Unit6', 'SA-Unit7', 'SA-Unit8', 'SA-Unit9', 'SA-Unit10'],
+        'interscroller': ['SA-1x1-interscroller'],
+        'mpu': ['SA-Unit11', 'SA-Unit12', 'SA-Unit13', 'SA-Unit14', 'SA-Unit15', 'SA-Unit16', 'SA-Unit17'],
+        'homepage_ad': ['SA-Unit22-HomePage', 'SA-Unit23-HomePage', 'SA-Unit24-HomePage', 'SA-Unit25-HomePage', 'SA-Unit26-HomePage'],
+        'mpu-tall': ['SA-Unit17'],
+        'skin': ['SA-Unit18'],
+        /*'sharethrough': [ 'SA-Unit19' ],*/
+        'leaderboard': ['SA-Unit20'],
+        'mobile-top-bar': ['SA-Unit21'],
+        'sticky-mobile': ['SA-StickyBanner'],
+        'tablet': ['SA-Tablet'],
+        'out-of-page': ['SA-OutOfPage'],
+        'homepage-top-billboard': ['SA-HomepageBillboard']
+}
+
+;
+var used=[],
+type,
+index,
+length;
+var _existing_ads=[];
+
+_existing_ads.push('skin');
+_existing_ads.push('leaderboard');
+
+for (type in _adtypes) {
+    if (_existing_ads.indexOf(type) > -1) {
+        if (type==='mpu-billboard') {
+            for (index=0, length=_existing_ads.length; index < length; ++index) {
+                if (_existing_ads[index]==='mpu-billboard') {
+                    used.push(_adtypes['mpu-billboard'].shift());
+                }
+            }
+        }
+
+        else if (type==='mpu') {
+            for (index=0, length=_existing_ads.length; index < length; ++index) {
+                if (_existing_ads[index]==='mpu') {
+                    used.push(_adtypes['mpu'].shift());
+                }
+            }
+        }
+
+        else if (type==='homepage') {
+            for (index=0, length=_existing_ads.length; index < length; ++index) {
+                if (_existing_ads[index]==='mpu') {
+                    used.push(_adtypes['mpu'].shift());
+                }
+            }
+        }
+
+        else {
+            for (index=0, length=_adtypes[type].length; index < length; ++index) {
+                used.push(_adtypes[type][index]);
+            }
+        }
+    }
+}
+
+window.AD_UNITS_TOGGLE_ON=used;
+
+function initAds() {
+
+    if (typeof makeAdsMove !="undefined") {
+        if (typeof jQuery !="undefined") {
+            makeAdsMove(jQuery);
+        }
+    }
+
+    var adsArray=window.AD_UNITS_TOGGLE_ON;
+
+    adsArray.forEach(function(ad) {
+            googletag.cmd.push(function() {
+                    googletag.display(ad);
+                }
+
+            );
+        }
+
+    );
+}
+
+function sendTagsToLeya() {
+    var leyaTags=["language",
+    "en-gb",
+    "page-title",
+    "Britta O&#039;Boyle - Pocket-lint"];
+    Leya.addTags(leyaTags);
+}
+
+< /script>< !--<script type="text/javascript
+" src=" //static.amp.services/clients/Pocket-lint/pocket-lint-section.js">
+
+</script>-->< !--<script type="text/javascript"src="//static.amp.services/clients/Pocket-lint/pocket-lint-section.js"></script>--><script onload="sendTagsToLeya()"type="text/javascript"src="https://cdn.jsdelivr.net/gh/leya/leyajs/dist/main.js"defer="true"defer></script><script onload='initAds()'type="text/javascript"src="https://static.amp.services/clients/Pocket-lint/pocket-lint-2.js"defer="true"defer></script><script src="https://cdn.pocket-lint.com/media/main_166.js"async></script>< !--<script>window.ga=window.ga||function() {
+    (ga.q=ga.q||[]).push(arguments)
+}
+
+;
+ga.l=+new Date;
+ga('create', 'UA-113501-2', 'auto');
+ga('require', 'linkid');
+ga('set', 'anonymizeIp', true);
+ga('set', 'contentGroup1', "_NONE_");
+ga('send', 'pageview');
+
+</script>--><script>window.ga=window.ga || function() {
+    (ga.q=ga.q || []).push(arguments)
+}
+
+;
+ga.l=+new Date;
+ga('create', 'UA-113501-2', 'auto');
+ga('create', 'UA-113501-8', 'auto', 'unifiedTracker');
+ga('require', 'linkid');
+ga('set', 'anonymizeIp', true);
+ga('set', 'contentGroup1', "_NONE_");
+ga('send', 'pageview');
+ga('unifiedTracker.send', 'pageview');
+
+</script><script async src='https://www.google-analytics.com/analytics.js'></script><script>(function(w, d, s, l, i) {
+        w[l]=w[l] || [];
+
+        w[l].push( {
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            }
+
+        );
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l !='dataLayer'? '&l='+ l : '';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+ i + dl;
+        f.parentNode.insertBefore(j, f);
+    }
+
+)(window, document, 'script', 'dataLayer', 'GTM-N4GKKG');
+
+</script><meta name="application-name"content="Pocket-lint"><link rel="shortcut icon"href="/favicon.ico"><link rel="alternate"type="application/rss+xml"title="Pocket-lint Latest"href="https://www.pocket-lint.com/rss/all.xml"><link rel="canonical"href="https://www.pocket-lint.com/info/authors/britta-o-boyle"><link rel="alternate"hreflang="de-de"href="https://www.pocket-lint.com/de-de/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="de"href="https://www.pocket-lint.com/de-de/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="en-gb"href="https://www.pocket-lint.com/info/authors/britta-o-boyle"/><link rel="alternate"hreflang="x-default"href="https://www.pocket-lint.com/info/authors/britta-o-boyle"/><link rel="alternate"hreflang="en"href="https://www.pocket-lint.com/info/authors/britta-o-boyle"/><link rel="alternate"hreflang="es-es"href="https://www.pocket-lint.com/es-es/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="es"href="https://www.pocket-lint.com/es-es/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="fr-fr"href="https://www.pocket-lint.com/fr-fr/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="fr"href="https://www.pocket-lint.com/fr-fr/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="pt-br"href="https://www.pocket-lint.com/pt-br/info/autores/britta-o-boyle"/><link rel="alternate"hreflang="pt"href="https://www.pocket-lint.com/pt-br/info/autores/britta-o-boyle"/><link rel="me"href="britta-o-boyle-51129076"><meta property="robots"content="index, nofollow"><meta name="description"content="Latest news, reviews, and features written by Britta O&#039;Boyle"><meta property="og:url"content="https://www.pocket-lint.com/info/authors/britta-o-boyle"><meta property="og:title"content="Britta O&#039;Boyle - Pocket-lint"><meta property="og:description"content="Latest news, reviews, and features written by Britta O&#039;Boyle"><meta property="og:site_name"content="Pocket-lint"><meta property="og:locale"content="en_GB"><meta property="og:locale:alternate"content="pt_BR"><meta property="og:type"content="website"><meta property="fb:app_id"content="235355289847092"><script type="application/ld+json"> {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Pocket-lint",
+    "url": "https:\/\/www.pocket-lint.com\/",
+    "logo": "https:\/\/cdn.pocket-lint.com\/bundles\/pocketlintapp\/images\/pllogosingle-white.jpg",
+    "sameAs": ["https:\/\/www.facebook.com\/pocketlintcom\/",
+    "https:\/\/twitter.com\/Pocketlint",
+    "https:\/\/plus.google.com\/+Pocket-lint",
+    "https:\/\/www.linkedin.com\/company\/pocket-lint",
+    "https:\/\/www.youtube.com\/c\/pocketlintcom",
+    "https:\/\/www.instagram.com\/pocketlintcom\/"],
+
+    "foundingDate": "2003-02-19T00:00:00+00:00",
+    "masthead": "https://www.pocket-lint.com/info/authors",
+    "publishingPrinciples": "https://www.pocket-lint.com/info/editorial-standards",
+    "missionCoveragePrioritiesPolicy": "https://www.pocket-lint.com/info/editorial-standards#missionCoveragePrioritiesPolicy",
+    "verificationFactCheckingPolicy": "https://www.pocket-lint.com/info/editorial-standards#verificationFactCheckingPolicy",
+    "ethicsPolicy": "https://www.pocket-lint.com/info/editorial-standards#ethicsPolicy",
+    "diversityPolicy": "https://www.pocket-lint.com/info/editorial-standards#diversityPolicy",
+    "diversityStaffingReport": "https://www.pocket-lint.com/info/editorial-standards#diversityPolicy",
+    "correctionsPolicy": "https://www.pocket-lint.com/info/editorial-standards#correctionsPolicy",
+    "ownershipFundingInfo": "https://www.pocket-lint.com/info/editorial-standards#ownershipFundingInfo",
+    "unnamedSourcesPolicy": "https://www.pocket-lint.com/info/editorial-standards#sources",
+    "actionableFeedbackPolicy": "https://www.pocket-lint.com/info/editorial-standards#actionablefeedback",
+    "address": {
+
+        "@type": "PostalAddress",
+        "streetAddress": "PO Box 4770",
+        "addressLocality": "Ascot",
+        "addressRegion": "Berkshire",
+        "postalCode": "SL5 5DP",
+        "addressCountry": {
+            "@type": "Country",
+                "name": "GB"
+        }
+    }
+
+    ,
+    "contactPoint": {
+        "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "contact@pocket-lint.com",
+            "url": "https://www.pocket-lint.com/info/contact-us",
+            "areaServed": "GB",
+            "availableLanguage": "English"
+    }
+}
+
+< /script><script> //console.log("SCRIPT?");
+
+function loadScript(src) {
+
+    //console.log("LOAD SCRIPT?");
+    return new Promise(function(resolve, reject) {
+            var s;
+            s=document.createElement('script');
+            s.src=src;
+            s.onload=resolve;
+            s.onerror=reject;
+            document.head.appendChild(s);
+        }
+
+    );
+}
+
+
+< /script><script>
+/*function startSlick(){
+                                                	var script = document.createElement('script');
+                                                	script.type = 'text/javascript';
+                                                	script.id = 'slick_script';
+                                                	script.onload = function(){
+                                                		loadSlick();
+                                                	};
+                                                	script.src = "";
+                                                	if(!$("#slick_script").length)
+                                                	{
+                                                		document.getElementsByTagName('head')[0].appendChild(script);
+                                                		console.log("slick script loaded");
+                                                	}
+                                                }*/
+
+
+function loadSlick() {
+    //console.log("Second slick loaded");
+    $('.trending-slide').show();
+
+    $('.topics-slides').slick( {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: true
+        }
+
+    );
+
+}
+
+
+
+
+< /script><script type="application/ld + json "> {
+    "
+@context ": "
+    https: //schema.org", "@type": "WebSite", "url": "https://www.pocket-lint.com/", "potentialAction": { "@type": "SearchAction", "target": "https://www.pocket-lint.com/search?q={query}", "query-input": "required name=query"} }
+
+    </script>< !--<script src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/js/jquery/jquery-1.9.0.min.js"async="true"async></script>--><link rel="stylesheet"type="text/css"href="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/css/msdropdown/dd.css"/>< !--<script src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/js/msdropdown/jquery.dd.min.js"></script>--><link rel="stylesheet"type="text/css"href="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/css/msdropdown/flags.css"/><style>.sprite-badges,
+    .sprite-badges-hide-text {
+        background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges.png?5b04ce858b53f678278cd25557a517cea5779f69")
+    }
+
+    .sprite-badges-hide-text {
+        text-indent: 100%;
+        white-space: nowrap;
+        color: transparent
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.25),
+    (min-resolution:1.25dppx),
+    (min-resolution:120dpi) {
+
+        .sprite-badges,
+        .sprite-badges-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges@1.25x.png?864951a1e11b14ae147be8cdf204848480949b32");
+            background-size: 1192px 73px
+        }
+
+        .sprite-badges-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.5),
+    (min-resolution:1.5dppx),
+    (min-resolution:144dpi) {
+
+        .sprite-badges,
+        .sprite-badges-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges@1.5x.png?f292a69ed141d10b9bf086646a1d90243a029973");
+            background-size: 1192px 73px
+        }
+
+        .sprite-badges-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    @media (-webkit-min-device-pixel-ratio:2),
+    (min-resolution:2dppx),
+    (min-resolution:192dpi) {
+
+        .sprite-badges,
+        .sprite-badges-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges@2x.png?da7ab762e672351e7d44c73cb658b9fa1c2004ff");
+            background-size: 1192px 74px
+        }
+
+        .sprite-badges-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    #header .cross_menu,
+    #header .hamburger_menu,
+    #header .home,
+    #header .search button,
+    #header .social a,
+    .sprite-main,
+    .sprite-main-hide-text {
+        background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main.png?8ca6b67e06dcf995c8ce9ae167a0957bdbe52d0a")
+    }
+
+    #header .cross_menu,
+    #header .hamburger_menu,
+    #header .home,
+    #header .search button,
+    #header .social a,
+    .sprite-main-hide-text {
+        text-indent: 100%;
+        white-space: nowrap;
+        color: transparent
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.25),
+    (min-resolution:1.25dppx),
+    (min-resolution:120dpi) {
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main,
+        .sprite-main-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.25x.png?d91ad547aac5091288cb5f61e2dbbb1148725771");
+            background-size: 1104px 52px
+        }
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.5),
+    (min-resolution:1.5dppx),
+    (min-resolution:144dpi) {
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main,
+        .sprite-main-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.5x.png?dd0e4879e0866cc69ce17dcbfd97ac16c30174e8");
+            background-size: 1104px 52px
+        }
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    @media (-webkit-min-device-pixel-ratio:2),
+    (min-resolution:2dppx),
+    (min-resolution:192dpi) {
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main,
+        .sprite-main-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@2x.png?1424b48c3286246eed2e62b77f791550acd8e1af");
+            background-size: 1104px 52px
+        }
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    body {
+        padding: 0;
+        margin: 0
+    }
+
+    #container,
+    body {
+        background-color: #fff
+    }
+
+    #content {
+        margin: 20px 0
+    }
+
+    body.fullscreen #article,
+    body.fullscreen #footer {
+        display: none;
+        visibility: hidden
+    }
+
+    a:hover {
+        text-decoration: underline
+    }
+
+    .invert-links a {
+        color: inherit
+    }
+
+    .invert-links a:hover {
+        color: #1a9def;
+        text-decoration: none
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .pl_no_h1 {
+        font-size: 32px;
+        margin: 0 0 22px
+    }
+
+    .target-480,
+    .target-768,
+    .target-978 {
+        display: none;
+        visibility: hidden
+    }
+
+    @media only screen and (min-width:480px) {
+        .target-480 {
+            visibility: visible;
+            display: inherit
+        }
+
+        .target-320 {
+            visibility: hidden;
+            display: none
+        }
+    }
+
+    @media only screen and (min-width:768px) {
+        .target-768 {
+            visibility: visible;
+            display: inherit
+        }
+
+        .target-480 {
+            visibility: hidden;
+            display: none
+        }
+    }
+
+    @media only screen and (min-width:978px) {
+        .target-978 {
+            visibility: visible;
+            display: inherit
+        }
+
+        .target-768 {
+            visibility: hidden;
+            display: none
+        }
+    }
+
+    #container,
+    body {
+        background-color: #fff
+    }
+
+    .block {
+        position: relative
+    }
+
+    button,
+    img {
+        border: 0
+    }
+
+    #container {
+        max-width: 970px;
+        min-width: 300px
+    }
+
+    .block-leader>div,
+    .block-mpu,
+    .block-mpu>div {
+        text-align: center
+    }
+
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+
+    article,
+    footer,
+    header,
+    nav {
+        display: block
+    }
+
+    a {
+        background-color: transparent;
+        color: #1a9def;
+        text-decoration: none
+    }
+
+    b {
+        font-weight: 700
+    }
+
+    button,
+    input {
+        color: inherit;
+        font: inherit;
+        margin: 0
+    }
+
+    button {
+        overflow: visible;
+        padding: 0;
+        text-transform: none;
+        -webkit-appearance: button
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+
+    input {
+        line-height: normal
+    }
+
+    body {
+        font: 16px/1.4 Georgia, sans-serif;
+        color: #000
+    }
+
+    body,
+    html {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden !important
+    }
+
+    #container {
+        margin: 0 auto;
+        padding: 0 10px
+    }
+
+    #article .popular a,
+    #article .social a,
+    #sidebar .social a {
+        color: inherit
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0 0 22px
+    }
+
+    #article .social .share a:not(.comment),
+    #cross_menu,
+    #header .hamburger_menu,
+    #header .home,
+    #header .search button,
+    #sidebar .social .share a:not(.comment),
+    .social a {
+        background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main.png?8ca6b67e06dcf995c8ce9ae167a0957bdbe52d0a);
+        text-indent: 100%;
+        white-space: nowrap;
+        color: transparent
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.25),
+    (min-resolution:1.25dppx),
+    (min-resolution:120dpi) {
+
+        #article .social .share a:not(.comment),
+        #cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #sidebar .social .share a:not(.comment),
+        .social a {
+            background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.25x.png?d91ad547aac5091288cb5f61e2dbbb1148725771);
+            background-size: 1104px 52px;
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.5),
+    (min-resolution:1.5dppx),
+    (min-resolution:144dpi) {
+
+        #article .social .share a:not(.comment),
+        #cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #sidebar .social .share a:not(.comment),
+        .social a {
+            background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.5x.png?dd0e4879e0866cc69ce17dcbfd97ac16c30174e8);
+            background-size: 1104px 52px;
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    @media (-webkit-min-device-pixel-ratio:2),
+    (min-resolution:2dppx),
+    (min-resolution:192dpi) {
+
+        #article .social .share a:not(.comment),
+        #cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #sidebar .social .share a:not(.comment),
+        .social a {
+            background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@2x.png?1424b48c3286246eed2e62b77f791550acd8e1af);
+            background-size: 1104px 52px;
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+    }
+
+    .block {
+        z-index: 100
+    }
+
+    .block>div {
+        margin: 0 auto
+    }
+
+    .block-mpu {
+        width: 300px;
+        min-height: 250px
+    }
+
+    .block-leader-mobile {
+        width: 100%;
+        z-index: 10
+    }
+
+    #container>.block-leader,
+    #container>.block-leader-mobile {
+        display: none;
+        visibility: hidden
+    }
+
+    @media screen and (min-width:340px) {
+        #container>.block-leader-mobile {
+            display: block;
+            visibility: visible;
+            margin: 10px auto
+        }
+    }
+
+    @media screen and (min-width:500px) {
+        #container>.block-leader-mobile {
+            display: none;
+            visibility: hidden
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        #container>.block-leader {
+            display: block;
+            visibility: visible;
+            margin: 10px 0
+        }
+    }
+
+    #sidebar a,
+    #sidebar li {
+        color: #c5c5c5;
+        text-decoration: none
+    }
+
+    #sidebar {
+        font-weight: 700;
+        width: 100%;
+        height: 100vh;
+        background: rgba(30, 30, 49, .988);
+        position: absolute;
+        text-align: left;
+        font-size: 16px;
+        overflow-y: scroll
+    }
+
+    #article .comment.comment-count,
+    .switcher {
+        font-family: Helvetica, sans-serif
+    }
+
+    #sidebar ul {
+        margin-left: 15px;
+        margin-top: 50px;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none
+    }
+
+    #sidebar li {
+        display: block;
+        padding: 15px 0
+    }
+
+    #sidebar .newsletter-signup {
+        padding: 0;
+        font-size: .9em;
+        text-align: right;
+        margin: 12px 25px 0 2px
+    }
+
+    #sidebar .mobile-search-menu {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        margin-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 32.4px
+    }
+
+    #sidebar .mobile-search-menu input {
+        font-size: 15px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 5px;
+        border: 1px solid #999;
+        border-radius: 0;
+        color: #000;
+        font-weight: 400
+    }
+
+    #sidebar .mobile-search-menu button {
+        font-size: 15px;
+        color: #fff;
+        flex-grow: 0;
+        background: #1e1e31;
+        padding: 5px;
+        font-weight: 400;
+        border: none
+    }
+
+    #sidebar .social {
+        line-height: 0;
+        border-left: 0;
+        border-right: 0;
+        position: relative;
+        padding: 5px 0;
+        width: 95%;
+        text-align: right
+    }
+
+    #sidebar .social .share a.youtube,
+    #sidebar .social .share a:not(.comment) {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        overflow: hidden
+    }
+
+    #sidebar .social .share {
+        display: inline-block;
+        position: relative
+    }
+
+    #sidebar .social .share:last-child {
+        margin-right: 8px
+    }
+
+    #sidebar .social .share a {
+        margin-left: 15px
+    }
+
+    #sidebar .social .share a:not(.comment) {
+        background-position: -38px 0
+    }
+
+    #sidebar .social .share a.twitter {
+        background-position: -98px 0
+    }
+
+    #sidebar .social .share a.gplus {
+        background-position: -58px 0
+    }
+
+    #sidebar .social .share a.youtube {
+        background-position: -18px 0
+    }
+
+    #sidebar .social .share a.instagram {
+        background-position: -78px 0
+    }
+
+    #cross_menu {
+        background-color: unset;
+        outline: 0;
+        border: 0;
+        background-position: -214px 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 10px;
+        z-index: 10000000000000
+    }
+
+    .switcher {
+        padding: 10px 0;
+        font-size: 20px;
+        border: 1px solid #999;
+        border-left: 0;
+        border-right: 0;
+        margin: 0 0 20px
+    }
+
+    .switcher span {
+        color: #e75041
+    }
+
+    .switcher a {
+        color: #999
+    }
+
+    .switcher a:last-child:after {
+        display: none;
+        visibility: hidden
+    }
+
+    .switcher a.active {
+        color: #1a9def !important;
+        font-weight: 700
+    }
+
+    #article .nativebox {
+        margin-bottom: 15px
+    }
+
+    #article .nativebox-content {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #999;
+        border-top: 1px solid #999;
+        width: 300px;
+        float: right;
+        margin: 10px 0
+    }
+
+    @media screen and (min-width:950px) {
+        #article .nativebox-content {
+            display: block
+        }
+    }
+
+    @media screen and (max-width:950px) {
+        #article .nativebox-content {
+            display: none
+        }
+    }
+
+    #article .nativebox .article_image {
+        float: left;
+        width: 125px
+    }
+
+    #article .nativebox .article_info {
+        float: right;
+        width: 175px
+    }
+
+    #article .nativebox img {
+        float: left;
+        margin-right: 10px
+    }
+
+    #article .nativebox .article_info a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 16px
+    }
+
+    @media screen and (min-width:950px) {
+        #article .nativebox {
+            display: block
+        }
+    }
+
+    @media screen and (max-width:950px) {
+        #article .nativebox {
+            display: none
+        }
+    }
+
+    #article .social {
+        line-height: 0
+    }
+
+    #article .social .share a:not(.comment) {
+        background-position: -424px 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: inline-block;
+        width: 34px;
+        height: 34px
+    }
+
+    #article .social .share a.twitter {
+        background-position: -390px 0
+    }
+
+    #article .social .share a.pintrest {
+        background-position: -356px 0
+    }
+
+    #article .social .share a.linkedin {
+        background-position: -288px 0
+    }
+
+    #article .social .share a.gplus {
+        background-position: -458px 0
+    }
+
+    #article .social .share a.mail {
+        background-position: -322px 0
+    }
+
+    @media screen and (min-width:650px) {
+        #article header .attribution {
+            margin: 0 0 3px !important
+        }
+    }
+
+    #article header .attribution {
+        display: block;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: right;
+        margin: 10px 0 3px
+    }
+
+    #article header h1 {
+        font-size: 30px;
+        font-weight: 400;
+        margin: 10px 0
+    }
+
+    #article header .details {
+        line-height: 1em;
+        font-size: 15px;
+        color: #999;
+        font-family: Helvetica, sans-serif
+    }
+
+    #article header .details time:after,
+    #article header .details time:before {
+        line-height: 1em;
+        margin: 0 4px;
+        display: inline-block;
+        vertical-align: top
+    }
+
+    #article header .summary {
+        margin: 10px 0 0;
+        font-size: 15px;
+        color: #595959
+    }
+
+    #article header .summary .mobile-pice-when-reviewed {
+        display: flex
+    }
+
+    #article header .summary .sccore-flex {
+        flex: 35%
+    }
+
+    #article header .summary .figures {
+        padding: 0 0 10px
+    }
+
+    #article header .summary .container_verdict {
+        border-top: 1px solid #999
+    }
+
+    #article header .social {
+        border: 1px solid #999;
+        border-left: 0;
+        border-right: 0;
+        position: relative;
+        padding: 5px 0
+    }
+
+    #article header .social>a {
+        display: none;
+        visibility: hidden
+    }
+
+    #article header .social .share {
+        display: inline-block;
+        position: relative
+    }
+
+    @media screen and (min-width:500px) {
+        #article header .social>a {
+            display: inline-block;
+            visibility: visible;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: -.5em 0 0;
+            line-height: 1em
+        }
+    }
+
+    @media screen and (min-width:550px) {
+        #article header h1 {
+            font-size: 35px
+        }
+
+        #article header .container {
+            padding: 10px 0 0
+        }
+
+        #article header .summary {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0
+        }
+
+        #article header .summary .mobile-pice-when-reviewed {
+            display: block
+        }
+
+        #article header .summary .figures {
+            min-width: 145px;
+            padding: 0
+        }
+
+        #article header .summary .container_verdict {
+            border-top: 0 solid #999
+        }
+    }
+
+    @media screen and (min-width:650px) {
+        #article header h1 {
+            font-size: 40px
+        }
+    }
+
+    @media screen and (min-width:850px) {
+
+        #article header .social,
+        #article header .summary {
+            margin-right: 320px
+        }
+    }
+
+    #article .content {
+        position: relative
+    }
+
+    #article .content p {
+        font-size: 18px;
+        color: #464645;
+        padding: 0 10px 0 0;
+        margin: 15px 0;
+        line-height: 1.6875em
+    }
+
+    #article .content .block-mpu:before {
+        display: block;
+        color: #6d7984;
+        content: "ADVERTISEMENT";
+        font-size: 10px;
+        font-family: sans-serif
+    }
+
+    #article .content .sticky_parent {
+        margin-bottom: 10px
+    }
+
+    @media screen and (max-width:849px) {
+        #article .content .block-mpu:before {
+            display: block;
+            color: #6d7984;
+            content: "ARTICLE CONTINUES AFTER ADVERTISEMENT";
+            font-size: 10px;
+            font-family: sans-serif
+        }
+    }
+
+    @media screen and (min-width:550px) {
+        #article .content p {
+            margin: 15px 50px 15px 0
+        }
+    }
+
+    @media screen and (min-width:850px) {
+        #article .content p {
+            margin-right: 310px
+        }
+    }
+
+    #article footer {
+        margin: 25px 0 0
+    }
+
+    #article footer .tags {
+        font-family: Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 10px 0;
+        line-height: 1em;
+        font-weight: 300;
+        font-size: 13px
+    }
+
+    #article footer .tags a,
+    #article footer .tags span {
+        display: inline-block;
+        padding: 4px 6px;
+        margin: 0 0 4px
+    }
+
+    #article footer .tags span {
+        text-transform: uppercase;
+        background: #1e1e31
+    }
+
+    #article footer .tags a {
+        color: #fff;
+        background: #999
+    }
+
+    @media screen and (min-width:850px) {
+        #article footer .tags {
+            margin-right: 370px
+        }
+    }
+
+    #article .popular .switcher {
+        border: 0 solid #999;
+        border-left: 0;
+        border-right: 0;
+        font-size: 18px;
+        padding: 0;
+        margin: 0 0 5px;
+        font-family: Georgia
+    }
+
+    #article .popular .switcher span {
+        font-weight: 700;
+        color: #000 !important
+    }
+
+    #article .popular .switcher a {
+        margin: 0 0 0 5px;
+        font-weight: 300;
+        color: #999
+    }
+
+    #article .popular .switcher a.active {
+        color: #000 !important;
+        font-weight: 700
+    }
+
+    #article .popular .articles-top {
+        width: 100%;
+        display: grid;
+        margin-right: 310px
+    }
+
+    #article .popular .articles-top .single-article {
+        width: 100%
+    }
+
+    #article .popular .articles-top .single-article .image-link {
+        float: left;
+        width: 100%;
+        max-width: 31%;
+        padding: 5px 0
+    }
+
+    @media screen and (min-width:850px) {
+
+        #article .text-content *,
+        #article .text-content>* {
+            margin-right: 0 !important
+        }
+
+        #article .ads-content {
+            display: block
+        }
+
+        #rcjsload_950a9d,
+        .popular {
+            margin-right: 310px
+        }
+    }
+
+    @media screen and (max-width:849px) {
+        #article .text-content {
+            width: 100% !important
+        }
+
+        #article .ads-content {
+            display: none
+        }
+    }
+
+    .streamamp-block {
+        text-align: center
+    }
+
+    .breadcrumb {
+        font-family: Helvetica, sans-serif;
+        font-size: 10pt
+    }
+
+    @media screen and (min-width:550px) {
+        .breadcrumb {
+            font-size: 16px
+        }
+    }
+
+    .breadcrumb ol {
+        padding-left: 0
+    }
+
+    .breadcrumb ol,
+    .breadcrumb ol li {
+        display: inline;
+        list-style-type: none
+    }
+
+    #article #admin_link {
+        display: inline-block;
+        width: 14px;
+        margin: 0 5px;
+        position: relative;
+        top: 1px
+    }
+
+    #article #admin_link img {
+        width: 100%
+    }
+
+    #article .content iframe,
+    #article .content img {
+        max-width: 100%
+    }
+
+    span.recently-updated-article {
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 11px;
+        background: #567582;
+        color: #fff;
+        border-radius: 2px;
+        padding: 1px 3px 0;
+        box-shadow: 0 0 3px -1px #000;
+        bottom: 1px;
+        position: relative
+    }
+
+    #article .content p.blurb-advertisement-alert:before {
+        display: block;
+        color: #6d7984;
+        content: "ADVERTISEMENT";
+        text-align: center;
+        font-size: 10px;
+        font-family: sans-serif
+    }
+
+    #article .content p.blurb-advertisement-alert {
+        margin-bottom: 0
+    }
+
+    #article .content p.parenting.ad-warning {
+        margin-top: 0
+    }
+
+    #header {
+        font-family: sans-serif;
+        background: #1e1e31;
+        color: #fff;
+        position: relative
+    }
+
+    #header>div {
+        max-width: 970px;
+        min-width: 300px;
+        position: relative;
+        padding: 10px 10px 0;
+        line-height: 1em;
+        margin: 0 auto
+    }
+
+    #header a {
+        color: inherit
+    }
+
+    #header ul {
+        padding: 0;
+        margin: 0;
+        list-style: none
+    }
+
+    #header .home,
+    #header li {
+        display: inline-block
+    }
+
+    #header .home {
+        background-position: -877px 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        width: 227px;
+        height: 44px
+    }
+
+    #header .menu {
+        display: block;
+        visibility: hidden
+    }
+
+    #header .menu a:hover {
+        text-decoration: none
+    }
+
+    #header .menu-mobile-icons {
+        display: none;
+        margin-top: 0
+    }
+
+    #header .hamburger_menu {
+        display: none !important
+    }
+
+    @media screen and (max-width:980px) {
+        #header .home {
+            background-image: url("https://cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn.png");
+            background-position: 50%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent;
+            margin: 4px 0 -3px;
+            background-size: 150px
+        }
+
+        #header .header-container {
+            padding: 10px 0 0
+        }
+
+        #header .menu-mobile-icons {
+            display: block;
+            margin-top: 10px
+        }
+
+        #header .menu-mobile-icons ul {
+            text-align: center;
+            width: 100%
+        }
+
+        #header .menu-mobile-icons img {
+            width: 35px
+        }
+
+        #header .menu-mobile-icons li {
+            display: inline-grid;
+            width: 19%;
+            font-size: 10px
+        }
+
+        #header .menu {
+            display: none !important
+        }
+    }
+
+    @media screen and (max-width:980px) and (-webkit-min-device-pixel-ratio:2),
+    screen and (max-width:980px) and (min-resolution:2dppx),
+    screen and (max-width:980px) and (min-resolution:192dpi) {
+        #header .home {
+            background-image: url("https://cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn@2x.png") !important
+        }
+    }
+
+    @media screen and (max-width:980px) and (-webkit-min-device-pixel-ratio:3) {
+        #header .home {
+            background-image: url("https://cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn@3x.png") !important
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        #header .menu-mobile-icons li {
+            width: 18%;
+            font-size: 8px
+        }
+    }
+
+    @media screen and (min-width:600px) {
+        #header .menu {
+            position: absolute;
+            display: inline-block;
+            visibility: visible;
+            top: 20px;
+            left: 240px;
+            font-weight: 700;
+            z-index: 1000
+        }
+
+        #header .menu a {
+            padding: 6px 20px;
+            display: block
+        }
+
+        #header .menu>ul {
+            height: 28px;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+        #header .menu>ul ul {
+            display: none;
+            visibility: hidden
+        }
+
+        #header .menu li.active ul {
+            display: block;
+            visibility: visible;
+            position: absolute;
+            background: #4c627e;
+            min-width: 160px
+        }
+
+        #header .menu li.active ul li {
+            display: block
+        }
+
+        #header .menu li.active ul li a {
+            padding: 8px 20px
+        }
+
+        #header .menu li.active ul li:hover {
+            color: #1e1e31
+        }
+    }
+
+    #header .search,
+    #header .social {
+        display: none;
+        visibility: hidden
+    }
+
+    #header .hamburger_menu {
+        cursor: pointer;
+        background-position: -190px 0;
+        display: inline-block;
+        height: 30px;
+        margin-top: 18px;
+        z-index: 1
+    }
+
+    #header .cross_menu,
+    #header .hamburger_menu {
+        background-color: unset;
+        outline: none;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        width: 24px;
+        position: absolute;
+        border: 0;
+        top: 0;
+        right: 0;
+        margin-right: 10px
+    }
+
+    #header .cross_menu {
+        background-position: -214px 0;
+        display: inline-block;
+        height: 24px;
+        display: none;
+        margin-top: 10px;
+        z-index: 10000000000000
+    }
+
+    #header .mobile-pocket-menu {
+        z-index: 1000000;
+        font-weight: 700;
+        font-size: 1em;
+        width: 100%;
+        height: 100vh;
+        background: rgba(30, 30, 49, .988);
+        left: 0;
+        position: absolute;
+        text-align: left;
+        font-size: 16px;
+        overflow-y: scroll
+    }
+
+    #header .mobile-pocket-menu ul {
+        margin-top: 60px;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none
+    }
+
+    #header .mobile-pocket-menu li,
+    #header .mobile-pocket-menu li:hover {
+        display: block;
+        padding: 15px 0
+    }
+
+    #header .mobile-pocket-menu ul li a {
+        text-decoration: none;
+        margin: 0;
+        color: #666
+    }
+
+    #header .mobile-pocket-menu ul li a:hover {
+        color: #666;
+        text-decoration: none
+    }
+
+    #header .mobile-pocket-menu a {
+        text-decoration: none;
+        color: #c5c5c5
+    }
+
+    #header .mobile-pocket-menu a:hover {
+        text-decoration: none;
+        color: #fdf2f2
+    }
+
+    #header .mobile-header-active {
+        background: #1e1e31;
+        position: absolute;
+        width: 100%
+    }
+
+    #header .mobile-space-li {
+        display: inline-block;
+        width: 10px
+    }
+
+    #header .mobile-pocket-menu .home {
+        float: left;
+        margin-left: 10px
+    }
+
+    #header .mobile-pocket-menu .mobile-topics {
+        font-size: 1.5em
+    }
+
+    #header .topics {
+        display: block;
+        visibility: visible;
+        background: #ccc;
+        color: #000;
+        margin: 10px 0 0;
+        font-size: 15px;
+        min-height: 40px;
+    }
+
+    #header .topics>div {
+        display: inline-block;
+        justify-content: space-between;
+        align-items: stretch;
+        max-width: 970px;
+        min-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%
+    }
+
+    #header .topics .sqweb-button {
+        line-height: 0;
+        flex-shrink: 0
+    }
+
+    #header .topics .multipass-slim>.sqw-btn-mp {
+        border-radius: 0;
+        float: right
+    }
+
+    #header .topics ul {
+        display: inline-table;
+        width: 100%;
+        max-height: 1em;
+        padding-top: 4px
+    }
+
+    #header .topics li {
+        background-color: #42464b;
+        color: #fff;
+        border-radius: 3px;
+        margin-left: 6px;
+        padding: 3px;
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 7px;
+        font-family: sans-serif
+    }
+
+    #header .topics li.active,
+    #header .topics li:hover {
+        background: #4c627e;
+        text-decoration: none
+    }
+
+    #header .topics li>a {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none
+    }
+
+    #header .topics li .sqweb-button {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px
+    }
+
+    #header .topics li:first-child:before {
+        display: none;
+        content: ""
+    }
+
+    #header .mobile-search {
+        padding: 10px 10px 0;
+        background: #fff;
+        display: flex;
+        justify-content: space-between
+    }
+
+    #header .mobile-search input {
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 5px;
+        border: 1px solid #999;
+        border-radius: 0;
+        color: #000
+    }
+
+    #header .mobile-search button {
+        color: #fff;
+        flex-grow: 0;
+        background: #1e1e31;
+        padding: 5px
+    }
+
+    #header .mobile-search-menu {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        padding: 37px 10px 19px;
+        height: 32.4px
+    }
+
+    #header .mobile-search-menu input {
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 5px;
+        border: 1px solid #999;
+        border-radius: 0;
+        color: #000;
+        font-weight: 400
+    }
+
+    #header .mobile-search-menu button {
+        color: #fff;
+        flex-grow: 0;
+        background: #1e1e31;
+        padding: 5px;
+        font-weight: 400
+    }
+
+    @media screen and (min-width:980px) {
+
+        #header .cross_menu,
+        #header .hamburger_menu {
+            display: none;
+            visibility: hidden
+        }
+
+        #header .search,
+        #header .social {
+            display: block;
+            visibility: visible
+        }
+
+        #header .search {
+            position: absolute;
+            top: 28px;
+            right: 11px;
+            background: #fff
+        }
+
+        #header .search input {
+            border: 0;
+            font-size: 12px;
+            padding: 2px 6px;
+            width: 170px;
+            height: 20px;
+            color: #000
+        }
+
+        #header .search button {
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: inline-block;
+            width: 18px;
+            height: 20px;
+            background-color: transparent;
+            position: relative;
+            top: 0;
+            right: 4px
+        }
+
+        #header .social {
+            position: absolute;
+            top: 5px;
+            right: 8px
+        }
+
+        #header .social a {
+            background-position: -18px 0;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 4px;
+            background-repeat: no-repeat;
+            overflow: hidden
+        }
+
+        #header .social a.instagram {
+            background-position: -78px 0
+        }
+
+        #header .social a.facebook {
+            background-position: -38px 0
+        }
+
+        #header .social a.twitter {
+            background-position: -98px 0
+        }
+
+        #header .social a.gplus {
+            background-position: -58px 0
+        }
+
+        #header .mobile-search,
+        #header .mobile-search-menu {
+            display: none;
+            visibility: hidden
+        }
+
+        #header .topics {
+            display: block;
+            visibility: visible;
+            background: #ccc;
+            color: #000;
+            margin: 10px 0 0;
+            font-size: 15px
+        }
+
+        #header .topics>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            max-width: 970px;
+            min-width: 300px;
+            margin: 0 auto;
+            height: 39px;
+            text-align: left
+        }
+
+        #header .topics .sqweb-button {
+            line-height: 0;
+            flex-shrink: 0
+        }
+
+        #header .topics .multipass-slim>.sqw-btn-mp {
+            border-radius: 0
+        }
+
+        #header .topics ul {
+            display: block;
+            visibility: visible;
+            overflow: inherit;
+            padding: 4px 0 4px 10px;
+            width: 100%;
+            margin-right: 10px;
+            max-height: 1em;
+            padding-left: 0;
+            padding-bottom: 10px
+        }
+
+        #header .topics li {
+            background-color: #42464b;
+            color: #fff;
+            border-radius: 3px;
+            margin-left: 6px;
+            padding: 3px;
+            margin-bottom: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 7px;
+            font-family: sans-serif
+        }
+
+        #header .topics li:first-child {
+            margin-left: 0
+        }
+
+        #header .topics li.active,
+        #header .topics li:hover {
+            background: #4c627e;
+            text-decoration: none
+        }
+
+        #header .topics li>a {
+            display: inline-block;
+            vertical-align: middle;
+            text-decoration: none
+        }
+
+        #header .topics li .sqweb-button {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px
+        }
+
+        #header .topics li:first-child:before {
+            display: none;
+            content: ""
+        }
+    }
+
+    #footer {
+        font-family: sans-serif;
+        background: #1e1e31;
+        color: #fff;
+        font-size: 12px;
+        padding: 25px;
+        margin: 20px 0 0;
+        clear: both
+    }
+
+    #footer a {
+        color: inherit
+    }
+
+    #footer ul {
+        padding: 0;
+        margin: 0;
+        list-style: none
+    }
+
+    #footer .links {
+        border-top: 1px solid #fff;
+        padding: 20px 0 0
+    }
+
+    #footer .links nav {
+        margin: 0 0 20px
+    }
+
+    #footer .links .col {
+        width: 25%;
+        min-width: 75px;
+        display: inline-block;
+        vertical-align: top
+    }
+
+    #footer .links li {
+        margin: 5px 0
+    }
+
+    #footer .pl_no_h6,
+    #footer h6 {
+        font-size: 12px;
+        margin: 0 0 8px;
+        text-transform: uppercase
+    }
+
+    #footer form {
+        margin: 0 0 20px;
+        text-align: right
+    }
+
+    #footer form div {
+        display: inline-block;
+        padding: 4px;
+        text-align: left;
+        background: #4c627e
+    }
+
+    #footer form button,
+    #footer form input {
+        vertical-align: middle;
+    }
+
+    #footer form input {
+        color: #000;
+        width: 145px
+    }
+
+    @media screen and (min-width:375px) {
+        #footer form input {
+            width: 200px;
+        }
+    }
+
+    #footer form button {
+        background: #1e1e31;
+        padding: 2px 10px;
+        font-size: 12px;
+        width: 25%;
+    }
+
+    #footer .internal a {
+        display: inline-block
+    }
+
+    #footer .internal ul {
+        margin: 8px 0 0
+    }
+
+    #footer .internal ul li.heading {
+        margin-right: 4px
+    }
+
+    #footer .internal ul li.heading span {
+        font-weight: 800
+    }
+
+    #footer .internal ul li.heading:after {
+        content: none !important
+    }
+
+    #footer .internal li {
+        display: inline-block
+    }
+
+    #footer .internal li:after {
+        content: "|";
+        margin: 0 4px 0 8px;
+        display: inline-block;
+        vertical-align: top
+    }
+
+    #footer .internal li:last-child:after {
+        display: none;
+        content: ""
+    }
+
+    @media screen and (min-width:600px) {
+        #footer {
+            padding: 25px 40px
+        }
+    }
+
+    #footer .social a {
+        background-position: -18px 0;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 4px;
+        background-repeat: no-repeat;
+        overflow: hidden
+    }
+
+    #footer .social a.instagram {
+        background-position: -78px 0
+    }
+
+    #footer .social a.facebook {
+        background-position: -38px 0
+    }
+
+    #footer .social a.twitter {
+        background-position: -98px 0
+    }
+
+    #footer .social a.gplus {
+        background-position: -58px 0
+    }
+
+    #footer .social.mobile {
+        display: block;
+        visibility: visible;
+        margin: 30px auto 0;
+        width: max-content;
+        width: -moz-max-content
+    }
+
+    .powerbox {
+        margin: 10px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+
+    .powerbox img {
+        width: 100%;
+        height: auto;
+        display: block
+    }
+
+    .powerbox .pl_no_h1,
+    .powerbox .pl_no_h2,
+    .powerbox .pl_no_h3,
+    .powerbox .pl_no_h4,
+    .powerbox a,
+    .powerbox h1,
+    .powerbox h2,
+    .powerbox h3,
+    .powerbox h4,
+    .powerbox span {
+        display: inline-block
+    }
+
+    .powerbox span {
+        padding: 6px 4px
+    }
+
+    .powerbox .promotion span:before {
+        font-size: .8em;
+        content: "Promotion";
+        text-transform: uppercase;
+        padding: 0 3px;
+        margin: 0 4px 0 0;
+        color: #fff;
+        background-color: #fcca00
+    }
+
+    .powerbox .pl_no_h1,
+    .powerbox .pl_no_h2,
+    .powerbox .pl_no_h3,
+    .powerbox .pl_no_h4,
+    .powerbox h1,
+    .powerbox h2,
+    .powerbox h3,
+    .powerbox h4 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        width: 100%;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        max-height: 100%
+    }
+
+    .powerbox .pl_no_h4,
+    .powerbox h4 {
+        font-size: 15px
+    }
+
+    .powerbox a {
+        position: relative;
+        display: block;
+        width: 48.96907216%
+    }
+
+    .powerbox a:first-child {
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .powerbox a:first-child .pl_no_h1,
+    .powerbox a:first-child .pl_no_h3,
+    .powerbox a:first-child h1,
+    .powerbox a:first-child h3 {
+        font-size: 20px
+    }
+
+    .powerbox a:first-child span {
+        padding: 10px 8px
+    }
+
+    .powerbox a:nth-child(4) {
+        display: none;
+        visibility: hidden
+    }
+
+    .powerbox a:hover .pl_no_h1,
+    .powerbox a:hover .pl_no_h2,
+    .powerbox a:hover .pl_no_h3,
+    .powerbox a:hover .pl_no_h4,
+    .powerbox a:hover h1,
+    .powerbox a:hover h2,
+    .powerbox a:hover h3,
+    .powerbox a:hover h4 {
+        height: 100%
+    }
+
+    .powerbox a:hover .pl_no_h1 span,
+    .powerbox a:hover .pl_no_h2 span,
+    .powerbox a:hover .pl_no_h3 span,
+    .powerbox a:hover .pl_no_h4 span,
+    .powerbox a:hover h1 span,
+    .powerbox a:hover h2 span,
+    .powerbox a:hover h3 span,
+    .powerbox a:hover h4 span {
+        position: absolute;
+        bottom: 0
+    }
+
+    @media screen and (min-width:650px) {
+        .powerbox {
+            position: relative;
+            display: block
+        }
+
+        .powerbox .pl_no_h1,
+        .powerbox .pl_no_h2,
+        .powerbox .pl_no_h3,
+        .powerbox .pl_no_h4,
+        .powerbox h1,
+        .powerbox h2,
+        .powerbox h3,
+        .powerbox h4 {
+            font-size: 14px
+        }
+
+        .powerbox a {
+            width: 22.37113402%
+        }
+
+        .powerbox a:first-child {
+            width: 76.49484536%;
+            margin-bottom: auto
+        }
+
+        .powerbox a:first-child .pl_no_h1,
+        .powerbox a:first-child .pl_no_h3,
+        .powerbox a:first-child h1,
+        .powerbox a:first-child h3 {
+            font-size: 34px
+        }
+
+        .powerbox a:nth-child(2),
+        .powerbox a:nth-child(3),
+        .powerbox a:nth-child(4) {
+            position: absolute;
+            right: 0
+        }
+
+        .powerbox a:nth-child(2) {
+            top: 0
+        }
+
+        .powerbox a:nth-child(3) {
+            top: 34%
+        }
+
+        .powerbox a:nth-child(4) {
+            display: block;
+            visibility: visible;
+            bottom: 0
+        }
+    }
+
+    @media screen and (min-width:890px) {
+
+        .powerbox .pl_no_h1,
+        .powerbox .pl_no_h2,
+        .powerbox .pl_no_h3,
+        .powerbox .pl_no_h4,
+        .powerbox h1,
+        .powerbox h2,
+        .powerbox h3,
+        .powerbox h4 {
+            font-size: 16px
+        }
+
+        .powerbox a:first-child .pl_no_h1,
+        .powerbox a:first-child .pl_no_h3,
+        .powerbox a:first-child h1,
+        .powerbox a:first-child h3 {
+            font-size: 34px
+        }
+    }
+
+
+    .footer - banner {
+
+        background: white;
+        border: 1 px solid #cccccc;
+        border - radius: 0 px 0 px 10 px 10 px;
+        display: inline - block;
+        width: 100 %;
+        height: 75 px;
+        box - shadow: rgba(0, 0, 0, 0.8) 3 px 3 px 10 px 1 px;
+        - moz - box - shadow: 10 px - 10 px 5 px rgba(0, 0, 0, 0.6);
+        - webkit - box - shadow: rgba(0, 0, 0, 0.8) 3 px 3 px 10 px 1 px;
+        - o - box - shadow: 10 px - 10 px 5 px rgba(0, 0, 0, 0.6);
+        border - radius: 0 px 0 px 10 px 10 px;
+    }
+
+    .footer - banner - div {
+        text - align: center;
+        width: 970 px;
+        position: fixed;
+        z - index: 999999;
+        height: 65 px;
+        top: 0 px;
+
+    }
+
+    .close - button - footer {
+        position: absolute;
+        top: 2 px;
+        right: 5 px;
+        font - size: 20 px;
+        background: none;
+    }
+
+    .logoDiv {
+        display: none;
+    }
+
+    .nonMobileLogo {
+        display: block;
+    }
+
+
+    #header.logoDiv {
+        height: 45 px;
+        text - align: center;
+    }
+
+    .mobileLogo {
+        background - image: url(https: //cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn.png);
+        background - position: 50 %;
+        background - repeat: no - repeat;
+        overflow: hidden;
+        display: inline - block;
+        height: 30 px;
+        text - indent: 100 %;
+        white - space: nowrap;
+        color: transparent;
+        background - size: 150 px;
+        width: 153 px;
+        float: left;
+        margin: 8 px 0 px - 3 px 0 px;
+        padding - left: 10 px;
+
+    }
+
+    .logoDiv.ddTitleText {
+        line - height: 30 px;
+        text - align: right;
+        float: right;
+        margin: 0 px 0 px - 3 px 0 px;
+    }
+
+    .logoDiv.flag {
+        float: none;
+    }
+
+    #countries - mob_title>img {
+        padding - right: 0 px !important;
+    }
+
+    .logoDiv.dd.ddTitle.ddTitleText {
+        padding: 10 px 25 px 0 px 0 px;
+    }
+
+    .logoDiv.dd.ddArrow {
+        margin - top: 1 px;
+    }
+
+    .logoDiv.dd {
+        float: right;
+        margin - right: 10 px;
+        width: 40 % !important;
+    }
+
+    .logoDiv.dd.ddChild {
+        right: 0 px;
+        text - align: left;
+        padding: 0;
+        width: 90 %;
+        overflow: hidden;
+    }
+
+    .logoDiv.dd.ddChild li img {
+        padding: 0 0 px 0 0;
+    }
+
+    .logoDiv.dd.ddChild li {
+        padding: 5 px 19 px 6 px 18 px;
+    }
+
+    .logoDiv.borderRadiusTp.border,
+    .borderRadius.border {
+        -moz - border - radius: 0;
+        border - radius: 0;
+    }
+
+
+    .logoDiv.borderRadiusTp ul li: last - child {
+        -moz - border - radius: 0;
+        border - radius: 0;
+    }
+
+    .logoDiv.dd.ddChild li.selected {
+        padding - bottom: 10 px !important;
+    }
+
+    .flag {
+        padding: 0 !important;
+    }
+
+    @media only screen and(max - width: 980 px) {
+
+        .logoDiv {
+            display: block;
+        }
+
+        .nonMobileLogo {
+            display: none !important;
+        }
+    }
+
+    @media only screen and(max - width: 970 px) {
+        .footer - banner {
+            width: 90 %;
+        }
+
+        .footer - banner - div {
+            width: 100 %;
+            text - align: center;
+            margin - left: -10 px;
+        }
+
+        .close - button - footer {
+            right: 6 %;
+        }
+    }
+
+
+    @media screen and(min - width: 980 px) {
+        #header.search {
+            position: absolute;
+            top: 22 px;
+            right: 81 px;
+            background: #fff;
+        }
+    }
+
+    < /style><style>@media screen and(min - width: 600 px) {
+        #header.menu a {
+            padding: 6 px 12 px;
+            display: block;
+        }
+    }
+
+    .languageChooser {
+        z - index: 9999;
+        visibility: visible;
+        height: 145 px;
+        display: block;
+        background: #f2f2f2;
+        position: absolute;
+        bottom: 100 %;
+        /* left: 76%; */
+        margin - left: -5 px;
+        border - width: 1 px;
+        border - style: solid;
+        border - color: #303840;
+        color: # 000000;
+        top: 55 px;
+        right: 19 px;
+        width: 130 px;
+        padding: 10 px;
+        text - align: left;
+        font: 15 px / 1.2 em sans - serif;
+    }
+
+    .languageChooser.enabled {
+        margin: 10 px;
+    }
+
+    body.dark - mode #countries_child>div>a {
+        color: #00adb5;
+    }
+
+    .languageChooser .selected>a {
+        font-weight: bold;
+    }
+
+    /*.languageChooser .selected{
+        margin-top: 10px;
+        background-color: # 5 aaf0b;
+                padding: 7 px;
+            }*/
+    .flag {
+        margin: 0;
+    }
+
+    #countries_child>ul>li {
+        display: flex;
+        vertical - align: middle;
+    }
+
+    @media screen and(max - width: 980 px) {
+        .slick - prev {
+            left: 5 px !important;
+            z - index: 999 !important;
+            top: 20 px !important;
+        }
+
+        .slick - next {
+            right: 5 px !important;
+            z - index: 999 !important;
+            top: 20 px !important;
+        }
+    }
+
+    < /style><style>@media screen and(min - width: 600 px) {
+        #header.menu a {
+            padding: 6 px 13 px;
+            display: block;
+        }
+    }
+
+    < /style><link href="https:/ / cdn.pocket - lint.com / media / complement_9.css "rel="
+stylesheet "><link href="
+    https: //cdn.pocket-lint.com/media/dark_mode_10.css" rel="stylesheet"><!--<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>--><!--<script type="text/javascript">if(typeof window.dojoRequire !== "undefined") { window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"dca0be4c218697c80d899962b","lid":"9d5e0811b7","uniqueMethods":true}) }) }</script>--><script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dca0be4c218697c80d899962b/809e316d6fb5f4eeb64312564.js");</script>			<script async src="https://cdn.ampproject.org/v0.js?w=2222"></script>
+
+
+    < script async custom - element="amp-sidebar"
+    src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js">< /script>< script async custom - element="amp-form"
+    src="https://cdn.ampproject.org/v0/amp-form-0.1.js">< /script>< script async custom - element="amp-accordion"
+    src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js">< /script>< script async custom - element="amp-carousel"
+    src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js">< /script>< script defer src="https://cdn.pocket-lint.com/init-firebase_3.js?v3">< /script>< /head>< body style="overflow-x: hidden; ">< script>var color_mode=window.getCookieLocal("color_mode");
+
+    //window.onPlLoad(function ($) {
+    getCurrentColorMode();
+
+    //});
+    function getCurrentColorMode() {
+        var body=document.getElementsByTagName("BODY")[0];
+
+        color_mode=window.getCookieLocal("color_mode");
+
+        // COOKIE
+        if (color_mode) {
+            if (color_mode && color_mode=='dark-mode') {
+                //$('body').addClass('dark-mode');
+                body.className+=" dark-mode";
+                //$(".dark_mode_switcher_image").attr("src", "" );
+            }
+
+            else {
+                //$(".dark_mode_switcher_image").attr("src", "" );
+            }
+        }
+
+        else {
+            // OS THEME
+
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // dark mode
+                color_mode='dark-mode';
+                body.className+=" dark-mode";
+                //$('body').addClass('dark-mode');
+                //$(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg" );
+
+            }
+
+            else {
+                //TIME
+                currentTime=new Date();
+                time=currentTime.getTime();
+                hours=currentTime.getHours();
+
+                if (isBetweenHours('22', '7')) {
+                    color_mode=='dark-mode';
+                    body.className+=" dark-mode";
+                    //$('body').addClass('dark-mode');
+                    //$(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg");
+                }
+            }
+        }
+    }
+
+    function isBetweenHours(startHour, endHour) {
+        var now=new Date().getHours();
+
+        return (now >=startHour || now <=endHour);
+    }
+
+    function enableTheme(newTheme='light') {
+
+        if ($('body').hasClass('dark-mode')) {
+            $('body').removeClass('dark-mode');
+            newTheme='light';
+            $(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg");
+        }
+
+        else {
+            $(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg");
+
+            $('body').addClass('dark-mode');
+            newTheme='dark-mode';
+        }
+
+        /*
+            if(newTheme=='dark-mode'){
+            	$('body').addClass('dark-mode');
+            } else {
+            	$('body').removeClass('dark-mode');
+            }*/
+        window.setCookieLocal("color_mode", newTheme, 365);
+    }
+
+    < /script>< amp - sidebar id="sidebar"
+    layout="nodisplay"
+    side="right"
+    style="display: none; visibility: hidden;">< button class="amp-close-image"
+    id="cross_menu"
+    on="tap:sidebar.close"
+    role="button"
+    tabindex="0">< /button>< !-- < a href="/"
+    class="home">Pocket - lint < /a>-->< ul>< li>< form action="/search"
+    method="get"
+    class="mobile-search-menu"
+    target="_blank">< input type="text"
+    name="q"
+    placeholder="Search Pocket-lint">< button type="submit">search < /button>< /form>< /li>< p class="newsletter-signup">< a href="/info/newsletter">Sign - up to our Newsletter < /a></p>< li>< div class="social">< div class="share">< a href="https://www.youtube.com/pocketlintcom"
+    class="youtube">YouTube < /a>< a href="https://www.instagram.com/pocketlintcom/"
+    class="instagram">Instagram < /a>< a href="https://www.facebook.com/pocketlintcom/">Facebook < /a>< a href="https://twitter.com/Pocketlint"
+    class="twitter">Twitter < /a>< /div>< /div></li>< /ul>< /amp-sidebar>< noscript>< iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4GKKG"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden">< /iframe></noscript>< header id="header">< div class="header-container">< button on="tap:sidebar.toggle"
+    class="hamburger_menu">< /button>< div class="switchers_nav_mobile">< img id="dark_mode_switcher_image_mobile"
+    class="dark_mode_switcher_image"
+    style="float:none; margin-left: -28px;"
+    onclick="enableTheme()"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg"/>< /div>< a href="/"
+    class="home home-logo ">Pocket - lint < /a>< div class="switchers_nav_mobile_language">< img id="language_switcher_image"
+    class="language_switcher_image"
+    style="margin-right: -24px;"
+    width="25"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/language_white.svg"
+    onclick="toggleLanguageSwitcher()"/>< /div>< div class="languageChooser"
+    id="languageChooser"
+    style="display:none;">< div class="enabled _msddli_  "
+    title="Deutsch">< img alt="Deutsch"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+    class="flag de fnone">< a href="https://www.pocket-lint.com/de-de/info/autores/britta-o-boyle">< span class="ddlabel">Deutsch < /span>< /a>< /div>< div class="enabled _msddli_   selected "
+    title="English">< img alt="English"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+    class="flag gb fnone">< a href="https://www.pocket-lint.com/info/authors/britta-o-boyle">< span class="ddlabel">English < /span>< /a>< /div>< div class="enabled _msddli_  "
+    title="Español">< img alt="Español"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+    class="flag es fnone">< a href="https://www.pocket-lint.com/es-es/info/autores/britta-o-boyle">< span class="ddlabel">Español < /span>< /a>< /div>< div class="enabled _msddli_  "
+    title="Français">< img alt="Français"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+    class="flag fr fnone">< a href="https://www.pocket-lint.com/fr-fr/info/autores/britta-o-boyle">< span class="ddlabel">Français < /span>< /a>< /div>< div class="enabled _msddli_  "
+    title="Português">< img alt="Português"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+
+    class="flag br fnone">< a href="https://www.pocket-lint.com/pt-br/info/autores/britta-o-boyle">< span class="ddlabel">Português < /span>< /a>< /div>< /div>< div class="clearfix mobile-clear-fix">< /div>< div class="menu-mobile-icons">< ul>< li>< a href="/reviews">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-facebook-like-128-cdn.png">< br>Reviews < /a></li>< li>< a href="/news">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-smartphone-tablet-80-cdn.png">< br>News < /a></li>< li>< a href="/buyers-guides">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-about-100-cdn.png">< br>Buyer 's guides</a></li> <
+li>< a href="/deals">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-money-box-80-cdn.png">< br>Deals < /a></li>< li>< a href="/info/sitemap">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-more-90-cdn.png">< br>More < /a></li>< /ul>< /div>< nav class="menu">< ul>< li>< a href="/reviews">Reviews < /a></li>< li>< a href="/news">News < /a></li>< li>< a href="/buyers-guides">Buyer 's guides</a></li><li><a href="/deals">Deals</a></li><li><a href="/info/sitemap">More...</a></li></ul> <
+/nav>< nav class="social">< style>.social a.pt - br {
+        background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/brazil.png") !important;
+        background - size: cover !important;
+        background - repeat: no - repeat !important;
+        background - position: center center !important;
+    }
+
+    .social a.es {
+        background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/spain.png") !important;
+        background - size: cover !important;
+        background - repeat: no - repeat !important;
+        background - position: center center !important;
+    }
+
+    .social a.en {
+        background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/uk.png") !important;
+        background - size: cover !important;
+        background - repeat: no - repeat !important;
+        background - position: center center !important;
+    }
+
+    < /style>< /nav>< form action="/search"
+    method="get"
+    class="search">< input type="text"
+    name="q"
+    placeholder="Search Pocket-lint">< button type="submit">search < /button>< /form>< div class="switchers_nav">< img id="language_switcher_image"
+    class="language_switcher_image"
+    style="float: left;"
+    width="25"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/language_white.svg"
+    onclick="toggleLanguageSwitcher()"/>< img id="dark_mode_switcher_image"
+    class="dark_mode_switcher_image"
+    onclick="enableTheme()"
+
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg"/>< /div>< script>if (color_mode) {
+        if (color_mode && color_mode=='dark-mode') {
+            document.getElementById("dark_mode_switcher_image").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg";
+            document.getElementById("dark_mode_switcher_image_mobile").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg";
+        }
+
+        else {
+            document.getElementById("dark_mode_switcher_image").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg";
+            document.getElementById("dark_mode_switcher_image_mobile").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg";
+        }
+    }
+
+    function toggleLanguageSwitcher() {
+        if (document.getElementById("languageChooser").style.display==="block") {
+            document.getElementById("languageChooser").style.display="none";
+        }
+
+        else {
+            document.getElementById("languageChooser").style.display="block";
+        }
+
+    }
+
+    < /script>< /div>< link rel="stylesheet"
+    type="text/css"
+    href="https://cdn.pocket-lint.com/bundles/pocketlintapp/slick/slick.css"/>< link rel="stylesheet"
+    type="text/css"
+    href="/bundles/pocketlintapp/slick/slick-theme.css"/>< !-- < script type="text/javascript"
+
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/slick/slick.min.js">< /script>-->< style>div.trending - slide {
+        font: 16 px / 1.4 Georgia,
+            sans - serif;
+        background - color: #42464b;
+        color: # fff;
+        border - radius: 3 px;
+        margin: 5 px 15 px 0 px 10 px;
+        font - weight: 700;
+        font - size: 12 px;
+        padding: 7 px 0 px;
+        font - family: sans - serif;
+        text - align: center;
+        width: 94 %;
+        height: 16 px;
+    }
+
+    div.trending - slide a {
+        display: block;
+        height: 100 %;
+        width: 100 %;
+    }
+
+    < /style>< nav class="topics">< div class="topics-slides">< div class="trending-slide">< a href="/phones/news/apple/151842-iphone-se-2020-price-how-much-will-the-new-cheap-iphone-cost">New iPhone SE deals < /a></div>< div class="trending-slide">< a href="/smart-home/buyers-guides/151662-best-bbq-barbecue-gas-charcoal">Best BBQ 2020 < /a></div>< div class="trending-slide"
+    style="display:none">< a href="/gadgets/news/147975-pocket-lint-weekly-podcast-tech-news-reviews-and-interviews">Get the podcast ! < /a></div>< div class="trending-slide"
+    style="display:none">< a href="/laptops/news/microsoft/151860-what-s-new-in-the-windows-10-may-2020-update-and-how-to-get-it">Next Windows 10 update < /a></div>< /div>< /nav>< form action="/search"
+    method="get"
+    class="mobile-search">< input type="text"
+    name="q"
+    placeholder="Search Pocket-lint">< button type="submit">search < /button>< /form>< /header>< div id="container">< div class="block block-leader im-desktop">< div data - disable - refresh="true"
+    gallery="0"
+    data - slot="skin"
+    class="streamamp-block"
+
+    id="SA-Unit18">< /div>< /div>< div class="block block-leader-mobile">< /div>< div class="breadcrumb">< a href="/">Home < /a>>< a href="/info">Info < /a>>< a href="/info/authors">Authors < /a>< /div>< script type="application/ld+json"> {
+
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [ {
+
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "WebPage",
+                    "@id": "/",
+                    "name": "Home"
+            }
+        }
+
+        ,
+            {
+
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "WebPage",
+                    "@id": "/info",
+                    "name": "Info"
+            }
+        }
+
+        ,
+            {
+
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "WebPage",
+                    "@id": "/info/authors",
+                    "name": "Authors"
+            }
+        }
+
+        ]
+    }
+
+    < /script>< script type="application/ld+json"> {
+
+        "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Britta O&#039;Boyle",
+            "image": "https:\/\/www.pocket-lint.com//cdn.pocket-lint.com/r/s/200x/assets/images/phpykojgg.jpg",
+            "workLocation": {
+            "@type": "Place",
+                "name": "London, UK"
+        }
+
+        ,
+        "contactPoint": {
+            "@type": "ContactPoint",
+                "contactType": "Features editor",
+                "email": "britta@pocket-lint.com",
+                "url": "https://www.pocket-lint.com/info/authors/britta-o-boyle"
+        }
+
+        ,
+        "knowsLanguage": "English, Swedish",
+        "knowsAbout": "Smartphones, smart home, and wearables",
+        "description": "Britta has been part of the Pocket-lint team for seven years, starting as a contributing editor before working her way up into the features editor chair.
+You & rsquo;
+        ll often see her name on some of our biggest features,
+        including many of the versus articles and the rumour round ups,
+        but she is also responsible for ensuring all the other great features from other members of the team cover off everything you might want to know about. Previous to joining the tech industry,
+        Britta worked within interior magazines,
+        covering the smart home and smart appliances before many knew what they were or what they entailed.Throughout her journalist career,
+        Britta has travelled the world in search of a good story,
+        while her dedication to delivering thorough reviews has seen her climb three mountains in 24 hours to test the accuracy of the 10 fitness trackers she was wearing. Britta has a first class honours degree in Fashion Journalism from London College of Fashion,
+        during which she gained experience from both GQ and the Daily Telegraph,
+        while also learning the importance of good design whether that be clothing or a smartwatch.Her free time is mostly taken up by her demanding kids these days,
+        but she absolutely adores travelling,
+        food and great shoes. You & rsquo;
+        ll never find her without her rose gold Apple Watch on,
+        desperately seeking the completion of the three rings so she can justify the extra bar of chocolate. ",
+"email": "britta@pocket-lint.com",
+        "jobTitle": "Features editor",
+        "sameAs": [ "https://twitter.com/intent/user?screen_name=brittaoboyle",
+        "https://linkedin.com/in/britta-o-boyle-51129076"
+        ]
+    }
+
+    < /script>< div id="archive">< div class="content">< ul class="team norewrite nolinks clearfix">< li>< img class="author_img"
+    src="//cdn.pocket-lint.com/r/s/200x/assets/images/phpykojgg.jpg"
+    alt="Britta O&#039;Boyle"
+    style="max-width: 20.5%;">< !-- < img class="author_img"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/phpvuqb3k.jpg"
+    style="max-width: 20.5%;">-->< span class="pl_no_h1"
+    style="margin-top: 20px;">Britta O & #039;
+    Boyle</span><span class="pl_no_h4">Features editor < /span>< p class="info">< strong>Knowledges: < /strong>Smartphones,
+    smart home,
+    and wearables < /p>< p class="info">< strong>Location: < /strong>London,
+    UK < /p>< p class="info">< strong>Languages: < /strong>English,
+    Swedish < /p>< p>< p class="first-para">Britta has been part of the Pocket - lint team for seven years,
+    starting as a contributing editor before working her way up into the features editor chair. < /p><p>You’ll often see her name on some of our biggest features,
+    including many of the versus articles and the rumour round ups,
+    but she is also responsible for ensuring all the other great features from other members of the team cover off everything you might want to know about.</p>< p>Previous to joining the tech industry,
+    Britta worked within interior magazines,
+    covering the smart home and smart appliances before many knew what they were or what they entailed.Throughout her journalist career,
+    Britta has travelled the world in search of a good story,
+    while her dedication to delivering thorough reviews has seen her climb three mountains in 24 hours to test the accuracy of the 10 fitness trackers she was wearing. < /p><p>Britta has a first class honours degree in Fashion Journalism from London College of Fashion,
+    during which she gained experience from both GQ and the Daily Telegraph,
+    while also learning the importance of good design whether that be clothing or a smartwatch. Her free time is mostly taken up by her demanding kids these days,
+    but she absolutely adores travelling,
+    food and great shoes.</p>< p>You’ ll never find her without her rose gold Apple Watch on,
+    desperately seeking the completion of the three rings so she can justify the extra bar of chocolate. < /p>< /p>< p class="info">< strong>Twitter: < /strong><a href="https:/ / twitter.com / intent / user ? screen_name = brittaoboyle "class="
+twitter " target="
+
+    _blank ">@brittaoboyle</a> <
+/p>< script>function changeMail(obj, email) {
+        var splitString=email.split("");
+        var reverseArray=splitString.reverse();
+        var emailReversed=reverseArray.join("");
+
+        obj.href='mailto:'+emailReversed;
+    }
+
+    < /script>< p class="info">< strong>Email: < /strong>< !-- < a class="author_link"
+    href="mailto:"
+    onclick="changeMail(this,'moc.tnil-tekcop@attirb')">britta @pocket - lint.com < /a>-->< a class="author_link"
+    href="mailto:"
+    onclick="changeMail(this,'moc.tnil-tekcop@attirb')">< img class="email_img"
+    src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/envelop.png">< /a>< /p>< /li>< /ul>< h1>Latest articles from Britta < /h1>< div class="articles">< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/samsung/151434-samsung-galaxy-note-20-release-date-specs-price-features-news"
+    title="Samsung Galaxy Note 20: Release date, rumours, specs and leaks">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/151434-phones-news-feature-samsung-galaxy-note-20-release-date-rumours-specs-and-leaks-image8-n6qucmoziq.jpg"
+    alt="Samsung Galaxy Note 20: Release date, rumours, specs and leaks">< /span>< div class="article-info">< span class="article-info-title">< span>Samsung Galaxy Note 20: Release date,
+    rumours,
+    specs and leaks < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-24T13:53:04+01:00">24 July 2020 < /time>· < span class="recently-updated-article">Updated < /span>< /span>< p class="article-info-description">All the rumours and speculation surrounding the Samsung Galaxy Note 20 and Note 20+. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/oneplus/152939-oneplus-nord-vs-oneplus-8-what-s-the-rumoured-difference"
+    title="OnePlus Nord vs OnePlus 8: What&#039;s the difference?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152939-phones-news-feature-oneplus-nord-vs-oneplus-8-what-s-the-difference-image2-uqkj7tupx0.jpg"
+    alt="OnePlus Nord vs OnePlus 8: What&#039;s the difference?">< /span>< div class="article-info">< span class="article-info-title">< span>OnePlus Nord vs OnePlus 8: What & #039;
+    s the difference?</span></span><span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-21T15:29:41+01:00">21 July 2020 < /time>· < span class="recently-updated-article">Updated < /span>< /span>< p class="article-info-description">A comparison of the specifications of the OnePlus Nord and the OnePlus 8. < /p>< /div>< /div>< div class="article"
+    data - type="News - Vs">< a href="https://www.pocket-lint.com/phones/buyers-guides/oneplus/153026-oneplus-nord-vs-samsung-galaxy-a90-5g-differences-compared"
+    title="OnePlus Nord vs Samsung Galaxy A90 5G: What&#039;s the difference?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/153026-phones-news-vs-oneplus-nord-vs-samsung-galaxy-a90-5g-what-s-the-difference-image1-j8rnx2umey.jpg"
+    alt="OnePlus Nord vs Samsung Galaxy A90 5G: What&#039;s the difference?">< /span>< div class="article-info">< span class="article-info-title">< span>OnePlus Nord vs Samsung Galaxy A90 5 G: What & #039;
+    s the difference?</span></span><span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-21T15:27:53+01:00">21 July 2020 < /time>< /span>< p class="article-info-description">A comparison of the differences between the specifications of the OnePlus Nord and the 2019 Samsung Galaxy A90 5 G. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/smart-home/news/netflix/153052-how-to-watch-netflix-on-your-nest-hub-and-nest-hub-max"
+    title="How to watch Netflix on your Nest Hub and Nest Hub Max">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/153052-smart-home-news-how-to-watch-netflix-on-your-nest-hub-and-nest-hub-max-image1-tw6azcd91f.jpg"
+    alt="How to watch Netflix on your Nest Hub and Nest Hub Max">< /span>< div class="article-info">< span class="article-info-title">< span>How to watch Netflix on your Nest Hub and Nest Hub Max < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-21T15:00:00+01:00">21 July 2020 < /time>< /span>< p class="article-info-description">Netflix is now available on Nest Hub and Nest Hub Max,
+    allowing subscribed users to stream directly on their Nest smart display.Here & #039;
+    s how. </p></div></div><div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/phones/news/apple/153049-how-to-add-delete-change-swipe-options-in-mail-and-gmail-on-iphone"
+    title="How to add delete and change swipe options in Mail and Gmail on iPhone">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/153049-phones-news-how-to-add-delete-and-change-swipe-options-in-mail-and-gmail-on-iphone-image1-ryup3teka1.jpg"
+    alt="How to add delete and change swipe options in Mail and Gmail on iPhone">< /span>< div class="article-info">< span class="article-info-title">< span>How to add delete and change swipe options in Mail and Gmail on iPhone < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-21T09:06:36+01:00">21 July 2020 < /time>< /span>< p class="article-info-description">A step - by - step guide on how to change the swipe options on your iPhone to add delete to make it easier to delete emails in Mail and Gmail. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/phones/news/samsung/153035-samsung-galaxy-z-fold-2-photo-leak-hints-at-larger-external-display"
+    title="Samsung Galaxy Z Fold 2 photo leak hints at larger external display">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/153035-phones-news-samsung-galaxy-z-fold-2-photo-leak-shows-copper-finish-and-seemingly-larger-external-display-image1-iwt3p5xy68.jpg"
+    alt="Samsung Galaxy Z Fold 2 photo leak hints at larger external display">< /span>< div class="article-info">< span class="article-info-title">< span>Samsung Galaxy Z Fold 2 photo leak hints at larger external display < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-20T14:48:39+01:00">20 July 2020 < /time>< /span>< p class="article-info-description">The successor to Samsung & #039;
+    s Galaxy Fold has leaked again,
+    but this time we have a marketing image of the device,
+    albeit a pretty blurry one. Samsung it...</p></div></div><div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/phones/news/samsung/153024-samsung-galaxy-z-fold-2-will-be-revealed-on-5-august"
+    title="Samsung Galaxy Z Fold 2 will be revealed on 5 August">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/153024-phones-news-samsung-galaxy-z-fold-2-will-be-revealed-on-5-august-image1-m9aacqz8mb.jpg"
+    alt="Samsung Galaxy Z Fold 2 will be revealed on 5 August">< /span>< div class="article-info">< span class="article-info-title">< span>Samsung Galaxy Z Fold 2 will be revealed on 5 August < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-20T09:47:52+01:00">20 July 2020 < /time>< /span>< p class="article-info-description">Samsung has teased that the next generation of Galaxy Fold will be revealed on 5 August 2020 at its next Galaxy Unpacked. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/146345-best-smart-washing-machines"
+    title="Best smart washing machines 2020: The technology changing the way we clean our clothes">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/146345-smart-home-buyer-s-guide-best-smart-washing-machines-2018-image1-jgolymq7hz.jpg"
+    alt="Best smart washing machines 2020: The technology changing the way we clean our clothes">< /span>< div class="article-info">< span class="article-info-title">< span>Best smart washing machines 2020: The technology changing the way we clean our clothes < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-19T17:30:00+01:00">19 July 2020 < /time>< /span>< p class="article-info-description">A round up of some of the best smart washing machines available to buy,
+    with a brief breakdown of their clever features. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/apps/buyers-guides/132135-best-weight-loss-apps-for-counting-calories-and-dieting"
+    title="Best dieting apps 2020: 8 apps to help you lose weight at home">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/132135-apps-news-buyer-s-guide-best-dieting-apps-2020-8-apps-to-help-you-lose-weight-image1-gb8lnjy61t.jpg"
+    alt="Best dieting apps 2020: 8 apps to help you lose weight at home">< /span>< div class="article-info">< span class="article-info-title">< span>Best dieting apps 2020: 8 apps to help you lose weight at home < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-18T17:19:00+01:00">18 July 2020 < /time>< /span>< p class="article-info-description">If you & #039;
+    re on a mission to eat better this year then here are a few of the best dieting apps to help you. </p></div></div><div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/fitness-trackers/buyers-guides/132291-best-fitness-trackers-activity-trackers-and-fitness-watches-to-buy"
+    title="Best fitness trackers 2020: Top activity bands to buy today">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/132291-fitness-trackers-buyer-s-guide-best-fitness-trackers-2018-top-activity-bands-to-buy-today-image1-azh10lu6ym.jpg"
+    alt="Best fitness trackers 2020: Top activity bands to buy today">< /span>< div class="article-info">< span class="article-info-title">< span>Best fitness trackers 2020: Top activity bands to buy today < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-18T17:05:00+01:00">18 July 2020 < /time>< /span>< p class="article-info-description">Our guide to the top fitness trackers available,
+    helping you count steps,
+    track calories,
+    monitor your heart rate,
+    sleep patterns and more. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/124710-best-smart-thermostats-top-rated-wifi-remote-controlled-thermostats-for-the-home"
+    title="Best smart thermostat 2020: Nest, Hive, Tado, Honeywell and more">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/124710-smart-home-buyers-guide-best-smart-thermostat-nest-hive-tado-honeywell-and-more-image1-qjbs5ku3sm.jpg"
+    alt="Best smart thermostat 2020: Nest, Hive, Tado, Honeywell and more">< /span>< div class="article-info">< span class="article-info-title">< span>Best smart thermostat 2020: Nest,
+    Hive,
+    Tado,
+    Honeywell and more < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-17T12:01:53+01:00">17 July 2020 < /time>< /span>< p class="article-info-description">A round - up of the some of the best smart heating solutions available in the UK,
+    what features they offer and how they could help you save money. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/146457-best-smart-ovens"
+    title="Best smart ovens 2020: The tech changing the way we cook">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/146457-smart-home-buyer-s-guide-best-smart-ovens-the-technology-changing-the-way-we-cook-image1-hn2tp0fvro.jpg"
+    alt="Best smart ovens 2020: The tech changing the way we cook">< /span>< div class="article-info">< span class="article-info-title">< span>Best smart ovens 2020: The tech changing the way we cook < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-17T11:32:21+01:00">17 July 2020 < /time>< /span>< p class="article-info-description">Ovens have seen huge technological developments over the last few years.Here are some of the best smart ovens available. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/150097-best-google-assistant-and-alexa-powered-board-games"
+    title="Best Google Assistant and Alexa powered board games 2020">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/150097-smart-home-feature-best-google-assistant-and-alexa-powered-board-games-image1-5mvlzrdbk2.jpg"
+    alt="Best Google Assistant and Alexa powered board games 2020">< /span>< div class="article-info">< span class="article-info-title">< span>Best Google Assistant and Alexa powered board games 2020 < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-16T17:19:00+01:00">16 July 2020 < /time>< /span>< p class="article-info-description">There are a few board games powered by Google Assistant and Amazon Alexa for enhancing your board game antics.Here are your options. < /p>< /div>< /div>< div class="article"
+    data - type="Review">< a href="https://www.pocket-lint.com/smart-home/reviews/google/146000-google-home-hub-review-assistant-smart"
+    title="Google Nest Hub review: The new hub of your smart home?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/146000-smart-home-review-google-home-hub-review-image1-ruufosjvqz.jpg"
+    alt="Google Nest Hub review: The new hub of your smart home?">< /span>< div class="article-info">< span class="article-info-title">< span>Google Nest Hub review: The new hub of your smart home ? < /span>< /span>< span class="article-info-publish">< span class="stars stars-9">4.5 stars < /span>< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-15T14:21:26+01:00">15 July 2020 < /time>· < span class="recently-updated-article">Updated < /span>< /span>< p class="article-info-description">The Google Assistant centre for your smart home: the Nest Hub is the always connected central point to control smart devices,
+    watch YouTube and more. < /p>< /div>< /div>< div class="article"
+    data - type="Review">< a href="https://www.pocket-lint.com/smart-home/reviews/google/147936-google-nest-hub-max-review"
+    title="Google Nest Hub Max review: Putting the Echo Show on notice">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/147936-smart-home-review-review-google-nest-hub-max-review-images-image1-ynka916hwp.jpg"
+    alt="Google Nest Hub Max review: Putting the Echo Show on notice">< /span>< div class="article-info">< span class="article-info-title">< span>Google Nest Hub Max review: Putting the Echo Show on notice < /span>< /span>< span class="article-info-publish">< span class="stars stars-10">5.0 stars < /span>< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-15T13:07:10+01:00">15 July 2020 < /time>· < span class="recently-updated-article">Updated < /span>< /span>< p class="article-info-description">The Max looks like the original Nest Hub,
+    but with larger 10 - inch display,
+    built - in Nest camera,
+    better sound and more.Is it a smart home winner ? < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/apps/news/whatsapp/138115-secret-whatsapp-tricks-you-might-not-know-about"
+    title="40 secret WhatsApp tips and tricks you might not know about">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/138115-apps-feature-32-secret-whatsapp-tricks-you-might-not-know-about-image1-d8ywgf3h75.jpg"
+    alt="40 secret WhatsApp tips and tricks you might not know about">< /span>< div class="article-info">< span class="article-info-title">< span>40 secret WhatsApp tips and tricks you might not know about < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-15T12:36:01+01:00">15 July 2020 < /time>< /span>< p class="article-info-description">For those familiar with WhatsApp,
+    here are some secret tips you might not know about,
+    mixed in with a few standard tips for those new to the service. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/apple/152976-how-to-create-setup-and-use-an-icloud-email-account"
+    title="How to create, setup and use an iCloud email account">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152976-phones-news-feature-how-to-create-setup-and-use-an-icloud-email-account-image1-pkzduqg0tm.jpg"
+    alt="How to create, setup and use an iCloud email account">< /span>< div class="article-info">< span class="article-info-title">< span>How to create,
+    setup and use an iCloud email account < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-15T11:02:13+01:00">15 July 2020 < /time>< /span>< p class="article-info-description">Everything you need to know about creating and setting up an iCloud email account,
+    as well as problem fixes and setting up an email alias. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/apple/149351-best-apple-iphone-11-pro-max-cases"
+    title="Best iPhone 11 and 11 Pro cases 2020: Protect your new Apple smartphone">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/149351-phones-feature-best-iphone-11-11-pro-and-11-pro-max-cases-protect-your-new-apple-device-image1-we8ekl1mj7.jpg"
+    alt="Best iPhone 11 and 11 Pro cases 2020: Protect your new Apple smartphone">< /span>< div class="article-info">< span class="article-info-title">< span>Best iPhone 11 and 11 Pro cases 2020: Protect your new Apple smartphone < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-15T10:52:00+01:00">15 July 2020 < /time>< /span>< p class="article-info-description">We & #039;
+    ve rounded up the best Apple iPhone 11,
+    iPhone 11 Pro and iPhone 11 Pro Max cases we&# 039;
+    ve found so far to help protect your new smartphone. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/apple/137583-how-to-wipe-an-iphone-and-transfer-your-content-to-a-new-iphone"
+    title="How to wipe an iPhone and transfer your content to a new iPhone">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/137583-phones-news-feature-how-to-wipe-an-iphone-and-transfer-your-content-to-a-new-iphone-image3-5vlxkztmbw.jpg"
+    alt="How to wipe an iPhone and transfer your content to a new iPhone">< /span>< div class="article-info">< span class="article-info-title">< span>How to wipe an iPhone and transfer your content to a new iPhone < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-14T11:45:00+01:00">14 July 2020 < /time>· < span class="recently-updated-article">Updated < /span>< /span>< p class="article-info-description">Everything you need to know to move from one iPhone into another iPhone,
+    including transferring your data and wiping your old device. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/speakers/buyers-guides/sonos/135761-best-sonos-speaker"
+    title="Best Sonos speaker 2020: Sonos Move, One, Five, Beam and Arc compared">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/135761-speakers-buyer-s-guide-best-sonos-speaker-sonos-one-play-1-play-3-play-5-beam-playbar-and-playbase-compared-image1-mdx1fep8hd.jpg"
+    alt="Best Sonos speaker 2020: Sonos Move, One, Five, Beam and Arc compared">< /span>< div class="article-info">< span class="article-info-title">< span>Best Sonos speaker 2020: Sonos Move,
+    One,
+    Five,
+    Beam and Arc compared < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-14T10:16:00+01:00">14 July 2020 < /time>< /span>< p class="article-info-description">Our guide to the best Sonos speakers.Let us help you work out which Sonos sound bar or speaker(s) is right for you.This is how they all compare. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/tablets/buyers-guides/apple/117857-best-ipad-mini-cases-protect-your-7-9-inch-apple-tablet"
+    title="Best iPad mini cases 2020: Protect your 7.9-inch Apple tablet">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/117857-tablets-buyer-s-guide-best-ipad-mini-cases-protect-your-7-9-inch-apple-tablet-image1-gmm2uebayj.jpg"
+    alt="Best iPad mini cases 2020: Protect your 7.9-inch Apple tablet">< /span>< div class="article-info">< span class="article-info-title">< span>Best iPad mini cases 2020: Protect your 7.9 - inch Apple tablet < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-12T21:05:00+01:00">12 July 2020 < /time>< /span>< p class="article-info-description">Read our guide to the best Apple iPad mini cases to buy.From official Apple cases to fabric cases,
+    flip cases,
+    robust and even waterproof cases. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/131514-best-smartphone-camera-accessories-lenses-tripods-flash"
+    title="Best smartphone camera accessory gifts 2020">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/131514-phones-buyer-s-guide-best-smartphone-camera-accessories-2019-image1-subvmrw0xz.jpg"
+    alt="Best smartphone camera accessory gifts 2020">< /span>< div class="article-info">< span class="article-info-title">< span>Best smartphone camera accessory gifts 2020 < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-12T10:18:00+01:00">12 July 2020 < /time>< /span>< p class="article-info-description">We have rounded up some of the best camera accessories we & #039;
+    ve come across to help you get the most out of your smartphone&# 039;
+    s camera. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/tablets/buyers-guides/120903-best-tablets-and-touch-screen-tablets-for-the-money"
+    title="Best tablet 2020: Top tablets to buy today">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/120903-tablets-buyer-s-guide-the-best-tablet-2019-top-tablets-and-2-in-1s-to-buy-today-image1-p8bkhnlvuc.jpg"
+    alt="Best tablet 2020: Top tablets to buy today">< /span>< div class="article-info">< span class="article-info-title">< span>Best tablet 2020: Top tablets to buy today < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-10T17:11:18+01:00">10 July 2020 < /time>< /span>< p class="article-info-description">Our pick of the best tablets to buy today including the best 2 - in -1 devices and compact tablets at a variety of different prices. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/141537-best-outdoor-security-cameras-top-rated-smart-home-security-cameras-to-buy"
+    title="Best outdoor smart home cameras 2020: See outside your home anytime">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/141537-smart-home-buyer-s-guide-best-outdoor-smart-home-cameras-2019-see-outside-your-home-anytime-image1-9roxd8yfts.jpg"
+    alt="Best outdoor smart home cameras 2020: See outside your home anytime">< /span>< div class="article-info">< span class="article-info-title">< span>Best outdoor smart home cameras 2020: See outside your home anytime < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-10T11:07:00+01:00">10 July 2020 < /time>< /span>< p class="article-info-description">Our guide to the best outdoor home security cameras.Smart cameras you can install and control yourself. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/apple/151381-ios-14-release-date-features-leaks-and-news"
+    title="Apple iOS 14: All the key new iPhone features explored">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/151381-phones-feature-ios-14-release-date-news-and-features-what-s-coming-to-apple-s-new-iphone-update-image1-r5x6shcktd.jpg"
+    alt="Apple iOS 14: All the key new iPhone features explored">< /span>< div class="article-info">< span class="article-info-title">< span>Apple iOS 14: All the key new iPhone features explored < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-10T10:40:00+01:00">10 July 2020 < /time>< /span>< p class="article-info-description">Everything we know so far about iOS 14 and the new features coming to iPhone later this year. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/google/151443-google-pixel-5-xl-release-date-specs-price-news-features"
+    title="Google Pixel 5: Release date, rumours, specs and leaks">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/151443-phones-feature-google-pixel-5-release-date-rumours-specs-and-leaks-image1-yqlplzrudd.jpg"
+    alt="Google Pixel 5: Release date, rumours, specs and leaks">< /span>< div class="article-info">< span class="article-info-title">< span>Google Pixel 5: Release date,
+    rumours,
+    specs and leaks < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-08T16:25:13+01:00">8 July 2020 < /time>< /span>< p class="article-info-description">Google & #039;
+    s Pixel 5 smartphone is still a little way off but that doesn&# 039;
+    t mean the leaks and rumours haven & #039;
+    t started. </p></div></div><div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/headphones/news/apple/152877-apple-airpods-3-predicted-to-move-towards-airpods-pro-design"
+    title="Apple AirPods 3 predicted to move towards AirPods Pro design">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152877-headphones-news-apple-airpods-3-predicted-to-move-towards-airpods-pro-design-image1-ptcwlsf6ni.jpg"
+    alt="Apple AirPods 3 predicted to move towards AirPods Pro design">< /span>< div class="article-info">< span class="article-info-title">< span>Apple AirPods 3 predicted to move towards AirPods Pro design < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-08T09:28:11+01:00">8 July 2020 < /time>< /span>< p class="article-info-description">TF Securities analyst Ming - Chi Kuo claims AirPods 3 will move to a system - in -chip solution like the AirPods Pro and adopt a similar design. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/cars/news/apple/127644-apple-carplay-which-cars-support-it-what-can-it-do-and-how-does-it-work"
+    title="Apple CarPlay: Which cars support it, what can it do and how does it work?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/127644-cars-news-feature-what-is-apple-carplay-and-which-cars-support-it-image7-h1tuqznaog.jpg"
+    alt="Apple CarPlay: Which cars support it, what can it do and how does it work?">< /span>< div class="article-info">< span class="article-info-title">< span>Apple CarPlay: Which cars support it,
+    what can it do and how does it work ? < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-07T17:21:57+01:00">7 July 2020 < /time>< /span>< p class="article-info-description">What is Apple CarPlay ? What cars and iPhones are compatible and how does the technology work ? < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smartwatches/buyers-guides/apple/133135-which-apple-watch-and-strap-is-right-for-you"
+    title="Which Apple Watch and strap is right for you? Series 5, Series 3, Nike+, Hermès or Edition?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/133135-smartwatches-buyer-s-guide-which-apple-watch-and-strap-is-right-for-you-series-3-series-5-nike-herm%C3%A8s-or-edition-image1-oxaeo8rhxn.jpg"
+    alt="Which Apple Watch and strap is right for you? Series 5, Series 3, Nike+, Hermès or Edition?">< /span>< div class="article-info">< span class="article-info-title">< span>Which Apple Watch and strap is right for you ? Series 5,
+    Series 3,
+    Nike+,
+    Hermès or Edition ? < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-07T16:08:00+01:00">7 July 2020 < /time>< /span>< p class="article-info-description">What Apple Watch models are available,
+    how much they are and what the differences are explained.Find the right one for you and your budget. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/smartwatches/news/samsung/152864-samsung-galaxy-watch-3-shown-off-from-all-angles-in-leak"
+    title="Samsung Galaxy Watch 3 shown off from all angles in leak">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152864-smartwatches-news-samsung-galaxy-watch-3-shown-off-from-all-angles-in-latest-leak-image1-5yzubizkxd.jpg"
+    alt="Samsung Galaxy Watch 3 shown off from all angles in leak">< /span>< div class="article-info">< span class="article-info-title">< span>Samsung Galaxy Watch 3 shown off from all angles in leak < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-07T15:07:38+01:00">7 July 2020 < /time>< /span>< p class="article-info-description">Latest image leak shows Samsung Galaxy Watch 3 off from all angles. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/cars/news/apple/127690-apple-carplay-explored-taking-ios-on-the-road"
+    title="Apple CarPlay explained: Taking iOS on the road">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/127690-cars-news-feature-apple-carplay-explored-image4-lrvq2xqjfm.jpg"
+    alt="Apple CarPlay explained: Taking iOS on the road">< /span>< div class="article-info">< span class="article-info-title">< span>Apple CarPlay explained: Taking iOS on the road < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-07T14:22:13+01:00">7 July 2020 < /time>< /span>< p class="article-info-description">A detailed look at how Apple & #039;
+    s CarPlay works,
+    with explanations on using Google Maps,
+    sending messages and playing music,
+    among other functions. </p></div></div><div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/146405-best-smart-dishwashers"
+    title="Best smart dishwashers 2020: The technology making cleaning dishes easier">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/146405-smart-home-buyer-s-guide-best-smart-dishwashers-image1-fdmh4tiooj.jpg"
+    alt="Best smart dishwashers 2020: The technology making cleaning dishes easier">< /span>< div class="article-info">< span class="article-info-title">< span>Best smart dishwashers 2020: The technology making cleaning dishes easier < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-07T10:17:00+01:00">7 July 2020 < /time>< /span>< p class="article-info-description">Many dishwashers have smart features,
+    some save water and energy,
+    while others are convenience features.Here are the smartest dishwashers available. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/phones/news/samsung/152852-samsung-galaxy-note-20-ultra-appears-on-twitter-and-fcc"
+    title="Samsung Galaxy Note 20 Ultra appears on Twitter and FCC">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152852-phones-news-samsung-galaxy-note-20-ultra-appears-on-twitter-and-fcc-image1-r7xhqcfak6.jpg"
+    alt="Samsung Galaxy Note 20 Ultra appears on Twitter and FCC">< /span>< div class="article-info">< span class="article-info-title">< span>Samsung Galaxy Note 20 Ultra appears on Twitter and FCC < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-07T09:01:12+01:00">7 July 2020 < /time>< /span>< p class="article-info-description">The Samsung Galaxy Note 20 Ultra has appeared on an FCC listing and a photo of the device has also appeared on Twitter. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/phones/news/samsung/152847-samsung-galaxy-note-20-could-be-available-from-21-august"
+    title="Samsung Galaxy Note 20 could be available from 21 August">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152847-phones-news-samsung-galaxy-note-20-could-be-available-from-21-august-image1-xysufg2ovj.jpg"
+    alt="Samsung Galaxy Note 20 could be available from 21 August">< /span>< div class="article-info">< span class="article-info-title">< span>Samsung Galaxy Note 20 could be available from 21 August < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-06T15:28:09+01:00">6 July 2020 < /time>< /span>< p class="article-info-description">Report suggests Samsung Galaxy Note 20 will go on sale 21 August,
+    two weeks after virtual unveiling. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/fitness-trackers/news/fitbit/148643-fitbit-versa-prime-day-deal-topples-price-to-139-versa-lite-at-109"
+    title="Fitbit Versa 2 gets discounted in Amazon&#039;s summer sales - save £44">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/148643-fitness-trackers-news-fitbit-versa-image2-389uipzgyc.jpg"
+    alt="Fitbit Versa 2 gets discounted in Amazon&#039;s summer sales - save £44">< /span>< div class="article-info">< span class="article-info-title">< span>Fitbit Versa 2 gets discounted in Amazon & #039;
+    s summer sales - save £44</span></span><span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-06T09:02:10+01:00">6 July 2020 < /time>< /span>< p class="article-info-description">The Fitbit Versa 2 adds Alexa to the popular fitness tracker,
+    meaning you can be in control of your fitness and your smart home devices. < /p>< /div>< /div>< div class="article"
+    data - type="News">< a href="https://www.pocket-lint.com/smartwatches/news/garmin/150238-garmin-venu-smartwatch-deal"
+    title="Garmin Venu smartwatch discounted to £244 in summer sales">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/150238-smartwatches-news-garmins-brand-new-venu-smartwatch-has-100-off-in-the-black-friday-sales-image1-ppqtn0jlnc.jpg"
+    alt="Garmin Venu smartwatch discounted to £244 in summer sales">< /span>< div class="article-info">< span class="article-info-title">< span>Garmin Venu smartwatch discounted to£ 244 in summer sales < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-06T00:10:00+01:00">6 July 2020 < /time>< /span>< p class="article-info-description">Amazon is offering a number of discounts across Garmin watches and fitness trackers in the sales. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/motorola/152322-motorola-razr-2-release-date-specs-pricing-features-cameras"
+    title="Motorola Razr 2 release date, specs, pricing and rumours">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152322-phones-feature-motorola-moto-razr-2-release-date-specs-pricing-and-rumours-image1-paative2uz.jpg"
+    alt="Motorola Razr 2 release date, specs, pricing and rumours">< /span>< div class="article-info">< span class="article-info-title">< span>Motorola Razr 2 release date,
+    specs,
+    pricing and rumours < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-03T11:00:00+01:00">3 July 2020 < /time>< /span>< p class="article-info-description">Here & #039;
+    s everything we have heard so far about the Motorola Razr 2,
+    or Motorola Razr (2020). </p></div></div><div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/apple/148427-apple-iphone-5g-release-date-specs-features"
+    title="Apple iPhone 5G: When is it coming and what do we know so far?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/148427-phones-feature-apple-iphone-5g-when-is-it-coming-and-what-do-we-know-so-far-image1-nhblnxf82f.jpg"
+    alt="Apple iPhone 5G: When is it coming and what do we know so far?">< /span>< div class="article-info">< span class="article-info-title">< span>Apple iPhone 5 G: When is it coming and what do we know so far ? < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-02T12:14:43+01:00">2 July 2020 < /time>< /span>< p class="article-info-description">This is everything we know so far about a 5 G - enabled iPhone,
+    including when it might arrive and what the rumours say. < /p>< /div>< /div>< div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/apple/148464-apple-iphone-12-pro-max-release-date-specs-features-news"
+    title="Apple iPhone 12 and 12 Pro release date, rumours, news and features">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/148464-phones-feature-apple-iphone-12-and-12-pro-release-date-rumours-news-and-features-image1-aivqh7z2le.jpg"
+    alt="Apple iPhone 12 and 12 Pro release date, rumours, news and features">< /span>< div class="article-info">< span class="article-info-title">< span>Apple iPhone 12 and 12 Pro release date,
+    rumours,
+    news and features < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-02T11:18:58+01:00">2 July 2020 < /time>< /span>< p class="article-info-description">This feature is tracking what & #039;
+    s been claimed so far in terms of next year&# 039;
+    s iPhones - the iPhone 12,
+    12 Pro and 12 Pro Max. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/apple/145723-best-apple-iphone-xs-and-xs-max-cases"
+    title="Best iPhone XS and XS Max cases 2020: Protect your Apple smartphone">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/145723-phones-buyer-s-guide-best-iphone-xs-and-xs-max-cases-protect-your-new-apple-smartphone-image1-rvpzkeelq8.jpg"
+    alt="Best iPhone XS and XS Max cases 2020: Protect your Apple smartphone">< /span>< div class="article-info">< span class="article-info-title">< span>Best iPhone XS and XS Max cases 2020: Protect your Apple smartphone < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-01T22:00:00+01:00">1 July 2020 < /time>< /span>< p class="article-info-description">The best cases available to protect your iPhone XS or XS Max. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/146037-best-apple-iphone-xr-cases"
+    title="Best iPhone XR cases 2020: Protect your new Apple device">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/146037-phones-buyers-guide-best-iphone-xr-cases-protect-your-new-apple-device-image1-zkal43clwf.jpg"
+    alt="Best iPhone XR cases 2020: Protect your new Apple device">< /span>< div class="article-info">< span class="article-info-title">< span>Best iPhone XR cases 2020: Protect your new Apple device < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-01T15:00:00+01:00">1 July 2020 < /time>< /span>< p class="article-info-description">Here are the best cases available to protect your new iPhone XR. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/samsung/145355-best-samsung-galaxy-note-9-cases"
+    title="Best Samsung Galaxy Note 9 cases: Protect your Samsung device">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/145355-phones-buyer-s-guide-best-samsung-galaxy-note-9-cases-image1-shia96ftz4.jpg"
+    alt="Best Samsung Galaxy Note 9 cases: Protect your Samsung device">< /span>< div class="article-info">< span class="article-info-title">< span>Best Samsung Galaxy Note 9 cases: Protect your Samsung device < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-07-01T10:30:00+01:00">1 July 2020 < /time>< /span>< p class="article-info-description">The best cases to protect your Samsung Galaxy Note 9 < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/smart-home/buyers-guides/146698-best-google-assistant-speakers-top-google-home-alternatives"
+    title="Best Google Assistant speakers 2020: Top Google Home alternatives">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/146698-smart-home-buyer-s-guide-best-google-assistant-speakers-top-google-home-alternatives-image1-raand42isq.jpg"
+    alt="Best Google Assistant speakers 2020: Top Google Home alternatives">< /span>< div class="article-info">< span class="article-info-title">< span>Best Google Assistant speakers 2020: Top Google Home alternatives < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-30T12:30:00+01:00">30 June 2020 < /time>< /span>< p class="article-info-description">Google offers its own Google Assistant - enabled speakers,
+    but there are plenty of Google Home alternatives too.Here are the best ones. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/speakers/buyers-guides/amazon/142414-best-alexa-speakers-amazon-echo-alternatives-and-alexa-powered-smart-speakers-to-buy"
+    title="Best Alexa speakers 2020: Top Amazon Echo alternatives">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/142414-speakers-buyer-s-guide-best-alexa-speakers-amazon-echo-alternatives-image1-wmbpexm2qf.jpg"
+    alt="Best Alexa speakers 2020: Top Amazon Echo alternatives">< /span>< div class="article-info">< span class="article-info-title">< span>Best Alexa speakers 2020: Top Amazon Echo alternatives < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-28T17:19:00+01:00">28 June 2020 < /time>< /span>< p class="article-info-description">Numerous third party speakers have embraced Amazon & #039;
+    s capable Alexa assistant alongside the Echo devices. Here are the best Amazon Echo alternatives. </p></div></div><div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/138137-which-is-the-best-mid-range-phone-under-400-top-mid-range-smartphones-to-buy"
+    title="What&#039;s the best mid-range phone under $400/£400?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/138137-phones-buyer-s-guide-which-is-the-best-mid-range-phone-under-400-image1-w3pdengkrc.jpg"
+    alt="What&#039;s the best mid-range phone under $400/£400?">< /span>< div class="article-info">< span class="article-info-title">< span>What & #039;
+    s the best mid-range phone under $400/£400?</span></span><span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-27T10:36:00+01:00">27 June 2020 < /time>< /span>< p class="article-info-description">We & #039;
+    ve rounded up the best devices that sit between the $/£/€200-400 mark. These are the best mid-range smartphones we&# 039;
+    ve seen. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/tablets/buyers-guides/apple/135888-best-ipad-pro-keyboards"
+    title="Best iPad Pro keyboards 2020: Turn your Apple tablet into a laptop alternative">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/135888-tablets-news-buyer-s-guide-best-ipad-pro-keyboards-2020-turn-your-apple-tablet-into-a-laptop-alternative-image1-w4eahujaus.jpg"
+    alt="Best iPad Pro keyboards 2020: Turn your Apple tablet into a laptop alternative">< /span>< div class="article-info">< span class="article-info-title">< span>Best iPad Pro keyboards 2020: Turn your Apple tablet into a laptop alternative < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-26T09:28:03+01:00">26 June 2020 < /time>< /span>< p class="article-info-description">Whatever Apple iPad Pro you own,
+    there & #039;
+    s a keyboard out there to help you turn them into a mini laptop. </p></div></div><div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/gadgets/buyers-guides/129572-best-battery-packs-portable-chargers-and-power-banks-for-your-smartphone-or-gadget"
+    title="Best power banks 2020: Top power packs for phones and USB-C laptops">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/129572-gadgets-buyer-s-guide-best-power-banks-2020-top-power-packs-for-phones-and-usb-c-laptops-image1-ei7klslynr.jpg"
+    alt="Best power banks 2020: Top power packs for phones and USB-C laptops">< /span>< div class="article-info">< span class="article-info-title">< span>Best power banks 2020: Top power packs for phones and USB - C laptops < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-25T10:00:00+01:00">25 June 2020 < /time>< /span>< p class="article-info-description">Our guide to the best portable chargers and power banks for smartphones and USB - C laptops.Keep your devices charged while you & #039;
+    re on the go. </p></div></div><div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/phones/news/apple/152664-what-are-app-clips-on-iphone-and-how-do-they-work"
+    title="What are App Clips on iPhone and how do they work?">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/152664-phones-feature-what-are-app-clips-on-iphone-and-how-do-they-work-image1-ppneubmkgs.jpg"
+    alt="What are App Clips on iPhone and how do they work?">< /span>< div class="article-info">< span class="article-info-title">< span>What are App Clips on iPhone and how do they work ? < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-23T10:37:47+01:00">23 June 2020 < /time>< /span>< p class="article-info-description">Everything you need to know about iOS 14 & #039;
+    s App Clips and how they will work on iPhone. </p></div></div><div class="article"
+    data - type="News - Feature">< a href="https://www.pocket-lint.com/smartwatches/news/apple/149578-apple-watch-series-6-specs-news-features-release-date"
+    title="Apple Watch Series 6 specs, rumours, news and release date">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/149578-smartwatches-feature-apple-watch-series-6-what-we-want-and-expect-to-see-image1-ryfs6cvm2z.jpg"
+    alt="Apple Watch Series 6 specs, rumours, news and release date">< /span>< div class="article-info">< span class="article-info-title">< span>Apple Watch Series 6 specs,
+    rumours,
+    news and release date < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-23T07:30:00+01:00">23 June 2020 < /time>< /span>< p class="article-info-description">Here & #039;
+    s everything we&# 039;
+    ve heard so far about the Apple Watch Series 6,
+    coupled with what we want and expect to see. < /p>< /div>< /div>< div class="article"
+    data - type="News - Buyer&#039;s Guide">< a href="https://www.pocket-lint.com/phones/buyers-guides/huawei/147629-best-huawei-p30-and-p30-pro-cases"
+    title="Best P30 and P30 Pro cases 2020: Protect your Huawei smartphone">< /a>< span class="article-thumbnail">< img src="//cdn.pocket-lint.com/r/c/120x120/assets/images/147629-phones-feature-best-p30-and-p30-pro-cases-protect-your-new-huawei-device-image1-oezsprnzk1.jpg"
+    alt="Best P30 and P30 Pro cases 2020: Protect your Huawei smartphone">< /span>< div class="article-info">< span class="article-info-title">< span>Best P30 and P30 Pro cases 2020: Protect your Huawei smartphone < /span>< /span>< span class="article-info-publish">< !--· < span class="best-offer">< /span>-->< span style="display: block; margin-top:2px;">< /span>By < span class="author">Britta O & #039;
+    Boyle</span>· <time pubdate="pubdate"
+    datetime="2020-06-22T14:21:00+01:00">22 June 2020 < /time>< /span>< p class="article-info-description">Huawei & #039;
+    s P30 and P30 Pro are both beautiful smartphones. To keep them looking great,
+    here are some of the best cases we have found so far. </p></div></div><div id="loadMoreButtonHub">< div class="load-more-txt-authors"
+    data - currentpage="1"
+    data - totalpages="23"
+    data - slug=""
+    data - author="116">LOAD MORE < /div>< div class="lds-ellipsis"
+    style="display:none;">< div>< /div><div></div>< div>< /div><div></div>< /div>< /div>< div class="load-more-div">< /div>< /div>< /div>< /div>< div class="block block-leader">< div width="728"
+    height="90"
+    gallery="0"
+    data - slot="leaderboard"
+    class="streamamp-block"
+    id="SA-Unit20">< /div>< /div>< script type="text/javascript">
+    /*window.GENETIKZ_WIDGET="6f551f36-fcbf-4081-aecf-a535c1d83afb";
+            window.WIDGET_ID="div-gpt-ad-1516721091362-0";
+            window.WIDGET_STATUS="1";
+            var s = document.createElement('script');
+            s.onload = function() {  _gw.init(); };
+            s.src = 'https://buzz.academy/js/genetikz-widget.js';
+            document.getElementsByTagName('head')[0].appendChild(s);*/
+    < /script>< div class="footer-banner-div"
+    id="footer-banner-div">< div class="footer-banner">< p>< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+    class="flag pt fnone">Você pode ler esta página < br>no seu idioma < a href="https://www.pocket-lint.com/pt-br/info/autores/britta-o-boyle">aqui < /a></p>< button aria - label="Close banner"
+    class="close-button-footer"
+    onclick="closeLanguageBanner()">& times;
+
+    < /button>< /div>< /div>< footer id="footer">< nav class="social">< style>#header nav.social>a.amazon,
+    #footer nav.social>a.amazon {
+        background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/amazon-512-compressor.png") !important;
+        background - size: cover !important;
+        background - repeat: no - repeat !important;
+        background - position: center center !important;
+        height: 18 px;
+        width: 18 px;
+        margin: 1 px;
+    }
+
+    #header nav.social>a.pod - cast,
+    #footer nav.social>a.pod - cast {
+        background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/podcast_icon.png") !important;
+        background - size: cover !important;
+        background - repeat: no - repeat !important;
+        background - position: center center !important;
+        height: 16 px;
+        width: 16 px;
+        margin: 2 px;
+    }
+
+    #footer nav.social {
+        float: left;
+    }
+
+    < /style>< a target="_blank"
+    href="https://www.amazon.co.uk/shop/pocketlint"
+    class="amazon">Amazon UK < /a>< a target="_blank"
+    href="https://www.youtube.com/pocketlintcom"
+    class="youtube">YouTube < /a>< a target="_blank"
+    href="https://www.instagram.com/pocketlintcom/"
+    class="instagram">Instagram < /a>< a target="_blank"
+    href="https://www.facebook.com/pocketlintcom/"
+    class="facebook">Facebook < /a>< a target="_blank"
+    href="https://twitter.com/Pocketlint"
+    class="twitter">Twitter < /a>< a target="_blank"
+    href="https://shows.pippa.io/pocket-lint-podcast/"
+    class="pod-cast">PodCast < /a>< /nav>< form action="/search"
+    method="get">< div>< input type="text"
+    name="q"
+
+    placeholder="Search Pocket-lint">< button type="submit">search < /button>< /div>< /form>< div class="links">< /div>< nav class="internal">< ul>< li>< a href="/awards">Pocket - lint Gadget Awards < /a></li>< li>< a href="/info/rss">RSS Feeds < /a></li>< li>< a href="/info/newsletter">Newsletter < /a></li>< li>< a href="https://shows.pippa.io/pocket-lint-podcast/">Podcast < /a></li>< /ul>< ul>< li class="heading">< span>Popular sections: < /span></li>< li>< a href="/phones">Phones < /a></li>< li>< a href="/apps">Apps < /a></li>< li>< a href="/tv">TV < /a></li>< li>< a href="/smart-home">Smart home < /a></li>< li>< a href="/games">Games < /a></li>< li>< a href="/tablets">Tablets < /a></li>< li>< a href="/laptops">Laptops < /a></li>< li>< a href="/speakers">Speakers < /a></li>< li>< a href="/cameras">Cameras < /a></li>< li>< a href="/smartwatches">Smartwatches < /a></li>< /ul>< ul>< li>< a href="/info/sitemap">Site map < /a></li>< li>< a href="/info/contact-us">Contact us < /a></li>< li>< a href="/info/authors">About Pocket - lint < /a></li>< li>< a href="/info/sustainability">Sustainability < /a></li>< li>< a href="/info/editorial-standards">Editorial Standards < /a></li>< li>< a href="/info/terms">Terms of Use < /a></li>< li>< a href="/info/policies">Privacy Policy < /a></li>< li>< a href="/info/advertise-on-pocket-lint">Advertise on Pocket - lint < /a></li>< li style="cursor: pointer">< a onclick="window.__tcfapi('displayConsentUi', 2, function() {} );">Privacy Settings < /a></li>< /ul>< div style="margin-top: 8px;">2003 - 2020© Pocket - lint Limited PO Box 4770,
+    Ascot,
+    SL5 5 DP.All rights reserved.England and Wales company registration number 5237480. < /div>< /nav>< /footer>< /div>< div id="fb-root">< /div>< script>function closeLanguageBanner() {
+        setCookieLocal("pocket_hide_lang_banner", true, 365);
+        hideBannerDiv();
+    }
+
+    var showBanner=getCookieLocal('pocket_hide_lang_banner');
+
+    if (showBanner) {
+        hideBannerDiv();
+
+    }
+
+    else {
+        showBannerDiv();
+
+    }
+
+    function hideBannerDiv() {
+
+        //$('.footer-banner-div').hide();
+        if (document.getElementById("footer-banner-div")) {
+            document.getElementById("footer-banner-div").style.display="none";
+        }
+
+    }
+
+    function showBannerDiv() {
+
+        //$('.footer-banner-div').show();
+        if (document.getElementById("footer-banner-div")) {
+            document.getElementById("footer-banner-div").style.display="block";
+        }
+    }
+
+    /*window.onload = function() {
+        	var div = document.getElementById("PopupSignupForm_0");
+        	if(div) {
+        		var iFrame = div.getElementsByTagName("iframe")[0];
+        		iFrame.style.height = "156px";
+        	}
+        }*/
+
+
+    document.getElementsByTagName("BODY")[0].onload=function() {
+        var head=document.getElementsByTagName("head")[0];
+        var script=document.createElement("script");
+        //console.log("ISsuing load jquery");
+        script.setAttribute("type", "text/javascript");
+        script.id='jquery_script';
+        script.setAttribute("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/js/jquery/jquery-1.9.0.min.js");
+
+        head.addEventListener("load", function(event) {
+                if (event.target.nodeName==="SCRIPT"&& event.target.id==="jquery_script") {
+                    //	console.log("Script loaded: " + event.target.getAttribute("src"));
+                    jQueryLoaded();
+                }
+            }
+
+            , true);
+
+        head.appendChild(script);
+    }
+
+
+    function jQueryLoaded() {
+        //console.log("jQuery loaded");
+        loadScript("https://cdn.pocket-lint.com/bundles/pocketlintapp/slick/slick.min.js") .then(loadSlick, failureCallback);
+    }
+
+    function failureCallback() {
+        console.log(111);
+    }
+
+    < /script>< script type="text/javascript"> //loadRevContent();
+
+    function loadRevContent() {
+        (function() {
+                var referer="";
+
+                try {
+                    if (referer=document.referrer, "undefined"==typeof referer) throw "undefined"
+                }
+
+                catch (exception) {
+                    referer=document.location.href, (""==referer || "undefined"==typeof referer) && (referer=document.URL)
+                }
+
+                referer=referer.substr(0, 700);
+                var rcel=document.createElement("script");
+                rcel.id='rc_'+ Math.floor(Math.random() * 1000);
+                rcel.type='text/javascript';
+                rcel.src="https://trends.revcontent.com/serve.js.php?w=82106&t="+ rcel.id + "&c="+ (new Date()).getTime() + "&width="+ (window.outerWidth || document.documentElement.clientWidth) + "&referer="+ referer;
+                rcel.async=true;
+                var rcds=document.getElementById("rcjsload_950a9d");
+                rcds.appendChild(rcel);
+            }
+
+        )();
+    }
+
+    var divContent=document.querySelector('.page-content-div');
+
+    if (divContent) {
+        var listImgs=divContent.querySelectorAll('img_to_replace');
+
+
+        for (i=0; i < listImgs.length; ++i) {
+            var el=listImgs[i];
+            var newEl=document.createElement('img');
+            cloneAttributes(newEl, el);
+            el.parentNode.replaceChild(newEl, el);
+        }
+    }
+
+    function cloneAttributes(element, sourceNode) {
+        let attr;
+        let attributes=Array.prototype.slice.call(sourceNode.attributes);
+
+        while (attr=attributes.pop()) {
+            element.setAttribute(attr.nodeName, attr.nodeValue);
+        }
+    }
+
+    < /script>< /body>< /html>

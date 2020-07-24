@@ -1,0 +1,3136 @@
+< !DOCTYPE html>< html lang="en-gb"prefix="og: http://ogp.me/ns#"style="overflow-x: hidden;">< head>< meta http - equiv="Content-Security-Policy"content="upgrade-insecure-requests">< meta http - equiv="X-UA-Compatible"content="IE=edge">< script>var userCountry="PT";
+var websiteLocaleValue="en-gb";
+var showAllText="SHOW ALL";
+var showLessText="SHOW LESS";
+
+< /script><script>var _sf_startpt=(new Date()).getTime();
+
+window.addSiteSkin=function(config) {
+    window.siteSkin=config;
+}
+
+;
+
+window.onPlLoad=function(cb) {
+    window._pl_cb=window._pl_cb || [];
+    window._pl_cb.push(cb)
+}
+
+;
+
+</script>< meta charset="utf-8">< meta name="viewport"content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>< title>Editorial standards - Pocket - lint < /title><script src="https:/ / cdn.pocket - lint.com / media / pf304.js "async></script><script>var _pl_settings= {
+    "
+super_tag ":"
+    Homepage ","
+    targeting ":[["
+    inskin_yes ",["
+    true "]],["
+    Gallery ",[0]],["
+    Supertag ",["
+    Homepage "]]]},_pl_files={"
+    low ":["
+    https: \ /\/apis.google.com\/js\/platform.js","https:\/\/connect.facebook.net\/en_GB\/all.js#xfbml=1&appId=373440233087","https:\/\/platform.twitter.com\/widgets.js"],"high":["https:\/\/static.chartbeat.com\/js\/chartbeat.js"]},___gcfg={"lang":"en-GB"},___pl_lang={"lang":"en-gb","lang_name":"English"},_sf_async_config={"uid":12986,"domain":"pocket-lint.com","useCanonical":"true","sections":"Homepage, English"};
+</script> < script> var _cookies;
+
+    function getCookieLocal(name) {
+        if (_cookies===null) {
+            _cookies=navigator.cookieEnabled || ('cookie'in document && (document.cookie.length > 0 || (document.cookie='__t').indexOf.call(document.cookie, '__t') > -1));
+        }
+
+        if (_cookies===false) {
+            return false;
+        }
+
+        // bug in regexp so space and \s is used to make sure we match
+        var matches=document.cookie.match(new RegExp('(^|;[\s ]+)'+ name.replace(/[-[\] {}
+
+                    ()*+?., \\^$|#\s]/g, "\\$&") + '=([^;]+)'));
+
+        return matches && matches.length>=3 ? matches[2] : null;
+    }
+
+
+    function setCookieLocal(name, value, days) {
+        var expires=new Date();
+        expires.setDate(expires.getDate() + days);
+        document.cookie=encodeURIComponent(name)+'='+encodeURIComponent(value)+'; expires='+expires.toUTCString()+'; Secure; SameSite=none'+";path=/";
+    }
+
+    < /script><script>_adtypes= {
+        'mpu-billboard': ['SA-Unit1', 'SA-Unit2', 'SA-Unit3', 'SA-Unit4', 'SA-Unit5', 'SA-Unit6', 'SA-Unit7', 'SA-Unit8', 'SA-Unit9', 'SA-Unit10'],
+            'interscroller': ['SA-1x1-interscroller'],
+            'mpu': ['SA-Unit11', 'SA-Unit12', 'SA-Unit13', 'SA-Unit14', 'SA-Unit15', 'SA-Unit16', 'SA-Unit17'],
+            'homepage_ad': ['SA-Unit22-HomePage', 'SA-Unit23-HomePage', 'SA-Unit24-HomePage', 'SA-Unit25-HomePage', 'SA-Unit26-HomePage'],
+            'mpu-tall': ['SA-Unit17'],
+            'skin': ['SA-Unit18'],
+            /*'sharethrough': [ 'SA-Unit19' ],*/
+            'leaderboard': ['SA-Unit20'],
+            'mobile-top-bar': ['SA-Unit21'],
+            'sticky-mobile': ['SA-StickyBanner'],
+            'tablet': ['SA-Tablet'],
+            'out-of-page': ['SA-OutOfPage'],
+            'homepage-top-billboard': ['SA-HomepageBillboard']
+    }
+
+    ;
+    var used=[],
+    type,
+    index,
+    length;
+    var _existing_ads=[];
+
+    _existing_ads.push('skin');
+
+    for (type in _adtypes) {
+        if (_existing_ads.indexOf(type) > -1) {
+            if (type==='mpu-billboard') {
+                for (index=0, length=_existing_ads.length; index < length; ++index) {
+                    if (_existing_ads[index]==='mpu-billboard') {
+                        used.push(_adtypes['mpu-billboard'].shift());
+                    }
+                }
+            }
+
+            else if (type==='mpu') {
+                for (index=0, length=_existing_ads.length; index < length; ++index) {
+                    if (_existing_ads[index]==='mpu') {
+                        used.push(_adtypes['mpu'].shift());
+                    }
+                }
+            }
+
+            else if (type==='homepage') {
+                for (index=0, length=_existing_ads.length; index < length; ++index) {
+                    if (_existing_ads[index]==='mpu') {
+                        used.push(_adtypes['mpu'].shift());
+                    }
+                }
+            }
+
+            else {
+                for (index=0, length=_adtypes[type].length; index < length; ++index) {
+                    used.push(_adtypes[type][index]);
+                }
+            }
+        }
+    }
+
+    window.AD_UNITS_TOGGLE_ON=used;
+
+    function initAds() {
+
+        if (typeof makeAdsMove !="undefined") {
+            if (typeof jQuery !="undefined") {
+                makeAdsMove(jQuery);
+            }
+        }
+
+        var adsArray=window.AD_UNITS_TOGGLE_ON;
+
+        adsArray.forEach(function(ad) {
+                googletag.cmd.push(function() {
+                        googletag.display(ad);
+                    }
+
+                );
+            }
+
+        );
+    }
+
+    function sendTagsToLeya() {
+        var leyaTags=["language",
+        "en-gb",
+        "page-title",
+        "Editorial standards - Pocket-lint"];
+        Leya.addTags(leyaTags);
+    }
+
+    < /script>< !--<script type="text/javascript
+" src=" //static.amp.services/clients/Pocket-lint/pocket-lint-section.js">
+
+    </script>-->< !--<script type="text/javascript"src="//static.amp.services/clients/Pocket-lint/pocket-lint-section.js"></script>--><script onload="sendTagsToLeya()"type="text/javascript"src="https://cdn.jsdelivr.net/gh/leya/leyajs/dist/main.js"defer="true"defer></script><script onload='initAds()'type="text/javascript"src="https://static.amp.services/clients/Pocket-lint/pocket-lint-2.js"defer="true"defer></script><script src="https://cdn.pocket-lint.com/media/main_166.js"async></script>< !--<script>window.ga=window.ga||function() {
+        (ga.q=ga.q||[]).push(arguments)
+    }
+
+    ;
+    ga.l=+new Date;
+    ga('create', 'UA-113501-2', 'auto');
+    ga('require', 'linkid');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'contentGroup1', "Homepage");
+    ga('send', 'pageview');
+
+    </script>--><script>window.ga=window.ga || function() {
+        (ga.q=ga.q || []).push(arguments)
+    }
+
+    ;
+    ga.l=+new Date;
+    ga('create', 'UA-113501-2', 'auto');
+    ga('create', 'UA-113501-8', 'auto', 'unifiedTracker');
+    ga('require', 'linkid');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'contentGroup1', "Homepage");
+    ga('send', 'pageview');
+    ga('unifiedTracker.send', 'pageview');
+
+    </script><script async src='https://www.google-analytics.com/analytics.js'></script><script>(function(w, d, s, l, i) {
+            w[l]=w[l] || [];
+
+            w[l].push( {
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                }
+
+            );
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l !='dataLayer'? '&l='+ l : '';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+ i + dl;
+            f.parentNode.insertBefore(j, f);
+        }
+
+    )(window, document, 'script', 'dataLayer', 'GTM-N4GKKG');
+
+    </script><meta name="application-name"content="Pocket-lint"><link rel="shortcut icon"href="/favicon.ico"><link rel="alternate"type="application/rss+xml"title="Pocket-lint Latest"href="https://www.pocket-lint.com/rss/all.xml"><link rel="canonical"href="https://www.pocket-lint.com/info/editorial-standards"><link rel="alternate"hreflang="de-de"href="https://www.pocket-lint.com/de-de/info/redaktionelle-standards"/><link rel="alternate"hreflang="de"href="https://www.pocket-lint.com/de-de/info/redaktionelle-standards"/><link rel="alternate"hreflang="en-gb"href="https://www.pocket-lint.com/info/editorial-standards"/><link rel="alternate"hreflang="x-default"href="https://www.pocket-lint.com/info/editorial-standards"/><link rel="alternate"hreflang="en"href="https://www.pocket-lint.com/info/editorial-standards"/><link rel="alternate"hreflang="es-es"href="https://www.pocket-lint.com/es-es/info/editorial-standards"/><link rel="alternate"hreflang="es"href="https://www.pocket-lint.com/es-es/info/editorial-standards"/><link rel="alternate"hreflang="fr-fr"href="https://www.pocket-lint.com/fr-fr/info/editorial-standards"/><link rel="alternate"hreflang="fr"href="https://www.pocket-lint.com/fr-fr/info/editorial-standards"/><link rel="alternate"hreflang="pt-br"href="https://www.pocket-lint.com/pt-br/info/editorial-standards"/><link rel="alternate"hreflang="pt"href="https://www.pocket-lint.com/pt-br/info/editorial-standards"/><meta name="description"content="In the pursuit of clarity we&#039;ve decided to draw out Pocket-lint.com&#039;s policy of naming particular types of articles. We feel this is important because it means you know exactly what you are reading, and where it is coming from."><meta property="og:url"content="https://www.pocket-lint.com/info/editorial-standards"><meta property="og:title"content="Editorial standards - Pocket-lint"><meta property="og:description"content="In the pursuit of clarity we&#039;ve decided to draw out Pocket-lint.com&#039;s policy of naming particular types of articles. We feel this is important because it means you know exactly what you are reading, and where it is coming from."><meta property="og:site_name"content="Pocket-lint"><meta property="og:locale"content="en_GB"><meta property="og:locale:alternate"content="pt_BR"><meta property="og:type"content="website"><meta property="fb:app_id"content="235355289847092"><script type="application/ld+json"> {
+        "@context": "https://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": "Pocket-lint",
+        "url": "https:\/\/www.pocket-lint.com\/",
+        "logo": "https:\/\/cdn.pocket-lint.com\/bundles\/pocketlintapp\/images\/pllogosingle-white.jpg",
+        "sameAs": ["https:\/\/www.facebook.com\/pocketlintcom\/",
+        "https:\/\/twitter.com\/Pocketlint",
+        "https:\/\/plus.google.com\/+Pocket-lint",
+        "https:\/\/www.linkedin.com\/company\/pocket-lint",
+        "https:\/\/www.youtube.com\/c\/pocketlintcom",
+        "https:\/\/www.instagram.com\/pocketlintcom\/"],
+
+        "foundingDate": "2003-02-19T00:00:00+00:00",
+        "masthead": "https://www.pocket-lint.com/info/authors",
+        "publishingPrinciples": "https://www.pocket-lint.com/info/editorial-standards",
+        "missionCoveragePrioritiesPolicy": "https://www.pocket-lint.com/info/editorial-standards#missionCoveragePrioritiesPolicy",
+        "verificationFactCheckingPolicy": "https://www.pocket-lint.com/info/editorial-standards#verificationFactCheckingPolicy",
+        "ethicsPolicy": "https://www.pocket-lint.com/info/editorial-standards#ethicsPolicy",
+        "diversityPolicy": "https://www.pocket-lint.com/info/editorial-standards#diversityPolicy",
+        "diversityStaffingReport": "https://www.pocket-lint.com/info/editorial-standards#diversityPolicy",
+        "correctionsPolicy": "https://www.pocket-lint.com/info/editorial-standards#correctionsPolicy",
+        "ownershipFundingInfo": "https://www.pocket-lint.com/info/editorial-standards#ownershipFundingInfo",
+        "unnamedSourcesPolicy": "https://www.pocket-lint.com/info/editorial-standards#sources",
+        "actionableFeedbackPolicy": "https://www.pocket-lint.com/info/editorial-standards#actionablefeedback",
+        "address": {
+
+            "@type": "PostalAddress",
+            "streetAddress": "PO Box 4770",
+            "addressLocality": "Ascot",
+            "addressRegion": "Berkshire",
+            "postalCode": "SL5 5DP",
+            "addressCountry": {
+                "@type": "Country",
+                    "name": "GB"
+            }
+        }
+
+        ,
+        "contactPoint": {
+            "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "contact@pocket-lint.com",
+                "url": "https://www.pocket-lint.com/info/contact-us",
+                "areaServed": "GB",
+                "availableLanguage": "English"
+        }
+    }
+
+    < /script><script> //console.log("SCRIPT?");
+
+    function loadScript(src) {
+
+        //console.log("LOAD SCRIPT?");
+        return new Promise(function(resolve, reject) {
+                var s;
+                s=document.createElement('script');
+                s.src=src;
+                s.onload=resolve;
+                s.onerror=reject;
+                document.head.appendChild(s);
+            }
+
+        );
+    }
+
+
+    < /script><script>
+    /*function startSlick(){
+                                                    	var script = document.createElement('script');
+                                                    	script.type = 'text/javascript';
+                                                    	script.id = 'slick_script';
+                                                    	script.onload = function(){
+                                                    		loadSlick();
+                                                    	};
+                                                    	script.src = "";
+                                                    	if(!$("#slick_script").length)
+                                                    	{
+                                                    		document.getElementsByTagName('head')[0].appendChild(script);
+                                                    		console.log("slick script loaded");
+                                                    	}
+                                                    }*/
+
+
+    function loadSlick() {
+        //console.log("Second slick loaded");
+        $('.trending-slide').show();
+
+        $('.topics-slides').slick( {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true
+            }
+
+        );
+
+    }
+
+
+
+
+    < /script><script type="application/ld + json "> {
+        "
+@context ": "
+        https: //schema.org", "@type": "WebSite", "url": "https://www.pocket-lint.com/", "potentialAction": { "@type": "SearchAction", "target": "https://www.pocket-lint.com/search?q={query}", "query-input": "required name=query"} }
+
+        </script>< !--<script src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/js/jquery/jquery-1.9.0.min.js"async="true"async></script>--><link rel="stylesheet"type="text/css"href="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/css/msdropdown/dd.css"/>< !--<script src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/js/msdropdown/jquery.dd.min.js"></script>--><link rel="stylesheet"type="text/css"href="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/css/msdropdown/flags.css"/><style>.sprite-badges,
+        .sprite-badges-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges.png?5b04ce858b53f678278cd25557a517cea5779f69")
+        }
+
+        .sprite-badges-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.25),
+        (min-resolution:1.25dppx),
+        (min-resolution:120dpi) {
+
+            .sprite-badges,
+            .sprite-badges-hide-text {
+                background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges@1.25x.png?864951a1e11b14ae147be8cdf204848480949b32");
+                background-size: 1192px 73px
+            }
+
+            .sprite-badges-hide-text {
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.5),
+        (min-resolution:1.5dppx),
+        (min-resolution:144dpi) {
+
+            .sprite-badges,
+            .sprite-badges-hide-text {
+                background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges@1.5x.png?f292a69ed141d10b9bf086646a1d90243a029973");
+                background-size: 1192px 73px
+            }
+
+            .sprite-badges-hide-text {
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:2),
+        (min-resolution:2dppx),
+        (min-resolution:192dpi) {
+
+            .sprite-badges,
+            .sprite-badges-hide-text {
+                background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-badges@2x.png?da7ab762e672351e7d44c73cb658b9fa1c2004ff");
+                background-size: 1192px 74px
+            }
+
+            .sprite-badges-hide-text {
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main,
+        .sprite-main-hide-text {
+            background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main.png?8ca6b67e06dcf995c8ce9ae167a0957bdbe52d0a")
+        }
+
+        #header .cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #header .social a,
+        .sprite-main-hide-text {
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.25),
+        (min-resolution:1.25dppx),
+        (min-resolution:120dpi) {
+
+            #header .cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #header .social a,
+            .sprite-main,
+            .sprite-main-hide-text {
+                background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.25x.png?d91ad547aac5091288cb5f61e2dbbb1148725771");
+                background-size: 1104px 52px
+            }
+
+            #header .cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #header .social a,
+            .sprite-main-hide-text {
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.5),
+        (min-resolution:1.5dppx),
+        (min-resolution:144dpi) {
+
+            #header .cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #header .social a,
+            .sprite-main,
+            .sprite-main-hide-text {
+                background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.5x.png?dd0e4879e0866cc69ce17dcbfd97ac16c30174e8");
+                background-size: 1104px 52px
+            }
+
+            #header .cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #header .social a,
+            .sprite-main-hide-text {
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:2),
+        (min-resolution:2dppx),
+        (min-resolution:192dpi) {
+
+            #header .cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #header .social a,
+            .sprite-main,
+            .sprite-main-hide-text {
+                background-image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@2x.png?1424b48c3286246eed2e62b77f791550acd8e1af");
+                background-size: 1104px 52px
+            }
+
+            #header .cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #header .social a,
+            .sprite-main-hide-text {
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        body {
+            padding: 0;
+            margin: 0
+        }
+
+        #container,
+        body {
+            background-color: #fff
+        }
+
+        #content {
+            margin: 20px 0
+        }
+
+        body.fullscreen #article,
+        body.fullscreen #footer {
+            display: none;
+            visibility: hidden
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        .invert-links a {
+            color: inherit
+        }
+
+        .invert-links a:hover {
+            color: #1a9def;
+            text-decoration: none
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .pl_no_h1 {
+            font-size: 32px;
+            margin: 0 0 22px
+        }
+
+        .target-480,
+        .target-768,
+        .target-978 {
+            display: none;
+            visibility: hidden
+        }
+
+        @media only screen and (min-width:480px) {
+            .target-480 {
+                visibility: visible;
+                display: inherit
+            }
+
+            .target-320 {
+                visibility: hidden;
+                display: none
+            }
+        }
+
+        @media only screen and (min-width:768px) {
+            .target-768 {
+                visibility: visible;
+                display: inherit
+            }
+
+            .target-480 {
+                visibility: hidden;
+                display: none
+            }
+        }
+
+        @media only screen and (min-width:978px) {
+            .target-978 {
+                visibility: visible;
+                display: inherit
+            }
+
+            .target-768 {
+                visibility: hidden;
+                display: none
+            }
+        }
+
+        #container,
+        body {
+            background-color: #fff
+        }
+
+        .block {
+            position: relative
+        }
+
+        button,
+        img {
+            border: 0
+        }
+
+        #container {
+            max-width: 970px;
+            min-width: 300px
+        }
+
+        .block-leader>div,
+        .block-mpu,
+        .block-mpu>div {
+            text-align: center
+        }
+
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        article,
+        footer,
+        header,
+        nav {
+            display: block
+        }
+
+        a {
+            background-color: transparent;
+            color: #1a9def;
+            text-decoration: none
+        }
+
+        b {
+            font-weight: 700
+        }
+
+        button,
+        input {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible;
+            padding: 0;
+            text-transform: none;
+            -webkit-appearance: button
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input {
+            line-height: normal
+        }
+
+        body {
+            font: 16px/1.4 Georgia, sans-serif;
+            color: #000
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden !important
+        }
+
+        #container {
+            margin: 0 auto;
+            padding: 0 10px
+        }
+
+        #article .popular a,
+        #article .social a,
+        #sidebar .social a {
+            color: inherit
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0 0 22px
+        }
+
+        #article .social .share a:not(.comment),
+        #cross_menu,
+        #header .hamburger_menu,
+        #header .home,
+        #header .search button,
+        #sidebar .social .share a:not(.comment),
+        .social a {
+            background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main.png?8ca6b67e06dcf995c8ce9ae167a0957bdbe52d0a);
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.25),
+        (min-resolution:1.25dppx),
+        (min-resolution:120dpi) {
+
+            #article .social .share a:not(.comment),
+            #cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #sidebar .social .share a:not(.comment),
+            .social a {
+                background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.25x.png?d91ad547aac5091288cb5f61e2dbbb1148725771);
+                background-size: 1104px 52px;
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:1.5),
+        (min-resolution:1.5dppx),
+        (min-resolution:144dpi) {
+
+            #article .social .share a:not(.comment),
+            #cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #sidebar .social .share a:not(.comment),
+            .social a {
+                background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@1.5x.png?dd0e4879e0866cc69ce17dcbfd97ac16c30174e8);
+                background-size: 1104px 52px;
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio:2),
+        (min-resolution:2dppx),
+        (min-resolution:192dpi) {
+
+            #article .social .share a:not(.comment),
+            #cross_menu,
+            #header .hamburger_menu,
+            #header .home,
+            #header .search button,
+            #sidebar .social .share a:not(.comment),
+            .social a {
+                background-image: url(https://cdn.pocket-lint.com/bundles/pocketlintapp/images/sprite-main@2x.png?1424b48c3286246eed2e62b77f791550acd8e1af);
+                background-size: 1104px 52px;
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent
+            }
+        }
+
+        .block {
+            z-index: 100
+        }
+
+        .block>div {
+            margin: 0 auto
+        }
+
+        .block-mpu {
+            width: 300px;
+            min-height: 250px
+        }
+
+        .block-leader-mobile {
+            width: 100%;
+            z-index: 10
+        }
+
+        #container>.block-leader,
+        #container>.block-leader-mobile {
+            display: none;
+            visibility: hidden
+        }
+
+        @media screen and (min-width:340px) {
+            #container>.block-leader-mobile {
+                display: block;
+                visibility: visible;
+                margin: 10px auto
+            }
+        }
+
+        @media screen and (min-width:500px) {
+            #container>.block-leader-mobile {
+                display: none;
+                visibility: hidden
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            #container>.block-leader {
+                display: block;
+                visibility: visible;
+                margin: 10px 0
+            }
+        }
+
+        #sidebar a,
+        #sidebar li {
+            color: #c5c5c5;
+            text-decoration: none
+        }
+
+        #sidebar {
+            font-weight: 700;
+            width: 100%;
+            height: 100vh;
+            background: rgba(30, 30, 49, .988);
+            position: absolute;
+            text-align: left;
+            font-size: 16px;
+            overflow-y: scroll
+        }
+
+        #article .comment.comment-count,
+        .switcher {
+            font-family: Helvetica, sans-serif
+        }
+
+        #sidebar ul {
+            margin-left: 15px;
+            margin-top: 50px;
+            padding: 0;
+            list-style-type: none;
+            list-style-image: none
+        }
+
+        #sidebar li {
+            display: block;
+            padding: 15px 0
+        }
+
+        #sidebar .newsletter-signup {
+            padding: 0;
+            font-size: .9em;
+            text-align: right;
+            margin: 12px 25px 0 2px
+        }
+
+        #sidebar .mobile-search-menu {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            margin-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 32.4px
+        }
+
+        #sidebar .mobile-search-menu input {
+            font-size: 15px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 5px;
+            border: 1px solid #999;
+            border-radius: 0;
+            color: #000;
+            font-weight: 400
+        }
+
+        #sidebar .mobile-search-menu button {
+            font-size: 15px;
+            color: #fff;
+            flex-grow: 0;
+            background: #1e1e31;
+            padding: 5px;
+            font-weight: 400;
+            border: none
+        }
+
+        #sidebar .social {
+            line-height: 0;
+            border-left: 0;
+            border-right: 0;
+            position: relative;
+            padding: 5px 0;
+            width: 95%;
+            text-align: right
+        }
+
+        #sidebar .social .share a.youtube,
+        #sidebar .social .share a:not(.comment) {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            overflow: hidden
+        }
+
+        #sidebar .social .share {
+            display: inline-block;
+            position: relative
+        }
+
+        #sidebar .social .share:last-child {
+            margin-right: 8px
+        }
+
+        #sidebar .social .share a {
+            margin-left: 15px
+        }
+
+        #sidebar .social .share a:not(.comment) {
+            background-position: -38px 0
+        }
+
+        #sidebar .social .share a.twitter {
+            background-position: -98px 0
+        }
+
+        #sidebar .social .share a.gplus {
+            background-position: -58px 0
+        }
+
+        #sidebar .social .share a.youtube {
+            background-position: -18px 0
+        }
+
+        #sidebar .social .share a.instagram {
+            background-position: -78px 0
+        }
+
+        #cross_menu {
+            background-color: unset;
+            outline: 0;
+            border: 0;
+            background-position: -214px 0;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 20px;
+            margin-right: 10px;
+            z-index: 10000000000000
+        }
+
+        .switcher {
+            padding: 10px 0;
+            font-size: 20px;
+            border: 1px solid #999;
+            border-left: 0;
+            border-right: 0;
+            margin: 0 0 20px
+        }
+
+        .switcher span {
+            color: #e75041
+        }
+
+        .switcher a {
+            color: #999
+        }
+
+        .switcher a:last-child:after {
+            display: none;
+            visibility: hidden
+        }
+
+        .switcher a.active {
+            color: #1a9def !important;
+            font-weight: 700
+        }
+
+        #article .nativebox {
+            margin-bottom: 15px
+        }
+
+        #article .nativebox-content {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #999;
+            border-top: 1px solid #999;
+            width: 300px;
+            float: right;
+            margin: 10px 0
+        }
+
+        @media screen and (min-width:950px) {
+            #article .nativebox-content {
+                display: block
+            }
+        }
+
+        @media screen and (max-width:950px) {
+            #article .nativebox-content {
+                display: none
+            }
+        }
+
+        #article .nativebox .article_image {
+            float: left;
+            width: 125px
+        }
+
+        #article .nativebox .article_info {
+            float: right;
+            width: 175px
+        }
+
+        #article .nativebox img {
+            float: left;
+            margin-right: 10px
+        }
+
+        #article .nativebox .article_info a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 16px
+        }
+
+        @media screen and (min-width:950px) {
+            #article .nativebox {
+                display: block
+            }
+        }
+
+        @media screen and (max-width:950px) {
+            #article .nativebox {
+                display: none
+            }
+        }
+
+        #article .social {
+            line-height: 0
+        }
+
+        #article .social .share a:not(.comment) {
+            background-position: -424px 0;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: inline-block;
+            width: 34px;
+            height: 34px
+        }
+
+        #article .social .share a.twitter {
+            background-position: -390px 0
+        }
+
+        #article .social .share a.pintrest {
+            background-position: -356px 0
+        }
+
+        #article .social .share a.linkedin {
+            background-position: -288px 0
+        }
+
+        #article .social .share a.gplus {
+            background-position: -458px 0
+        }
+
+        #article .social .share a.mail {
+            background-position: -322px 0
+        }
+
+        @media screen and (min-width:650px) {
+            #article header .attribution {
+                margin: 0 0 3px !important
+            }
+        }
+
+        #article header .attribution {
+            display: block;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 10px;
+            line-height: 10px;
+            text-align: right;
+            margin: 10px 0 3px
+        }
+
+        #article header h1 {
+            font-size: 30px;
+            font-weight: 400;
+            margin: 10px 0
+        }
+
+        #article header .details {
+            line-height: 1em;
+            font-size: 15px;
+            color: #999;
+            font-family: Helvetica, sans-serif
+        }
+
+        #article header .details time:after,
+        #article header .details time:before {
+            line-height: 1em;
+            margin: 0 4px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        #article header .summary {
+            margin: 10px 0 0;
+            font-size: 15px;
+            color: #595959
+        }
+
+        #article header .summary .mobile-pice-when-reviewed {
+            display: flex
+        }
+
+        #article header .summary .sccore-flex {
+            flex: 35%
+        }
+
+        #article header .summary .figures {
+            padding: 0 0 10px
+        }
+
+        #article header .summary .container_verdict {
+            border-top: 1px solid #999
+        }
+
+        #article header .social {
+            border: 1px solid #999;
+            border-left: 0;
+            border-right: 0;
+            position: relative;
+            padding: 5px 0
+        }
+
+        #article header .social>a {
+            display: none;
+            visibility: hidden
+        }
+
+        #article header .social .share {
+            display: inline-block;
+            position: relative
+        }
+
+        @media screen and (min-width:500px) {
+            #article header .social>a {
+                display: inline-block;
+                visibility: visible;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin: -.5em 0 0;
+                line-height: 1em
+            }
+        }
+
+        @media screen and (min-width:550px) {
+            #article header h1 {
+                font-size: 35px
+            }
+
+            #article header .container {
+                padding: 10px 0 0
+            }
+
+            #article header .summary {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0
+            }
+
+            #article header .summary .mobile-pice-when-reviewed {
+                display: block
+            }
+
+            #article header .summary .figures {
+                min-width: 145px;
+                padding: 0
+            }
+
+            #article header .summary .container_verdict {
+                border-top: 0 solid #999
+            }
+        }
+
+        @media screen and (min-width:650px) {
+            #article header h1 {
+                font-size: 40px
+            }
+        }
+
+        @media screen and (min-width:850px) {
+
+            #article header .social,
+            #article header .summary {
+                margin-right: 320px
+            }
+        }
+
+        #article .content {
+            position: relative
+        }
+
+        #article .content p {
+            font-size: 18px;
+            color: #464645;
+            padding: 0 10px 0 0;
+            margin: 15px 0;
+            line-height: 1.6875em
+        }
+
+        #article .content .block-mpu:before {
+            display: block;
+            color: #6d7984;
+            content: "ADVERTISEMENT";
+            font-size: 10px;
+            font-family: sans-serif
+        }
+
+        #article .content .sticky_parent {
+            margin-bottom: 10px
+        }
+
+        @media screen and (max-width:849px) {
+            #article .content .block-mpu:before {
+                display: block;
+                color: #6d7984;
+                content: "ARTICLE CONTINUES AFTER ADVERTISEMENT";
+                font-size: 10px;
+                font-family: sans-serif
+            }
+        }
+
+        @media screen and (min-width:550px) {
+            #article .content p {
+                margin: 15px 50px 15px 0
+            }
+        }
+
+        @media screen and (min-width:850px) {
+            #article .content p {
+                margin-right: 310px
+            }
+        }
+
+        #article footer {
+            margin: 25px 0 0
+        }
+
+        #article footer .tags {
+            font-family: Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 10px 0;
+            line-height: 1em;
+            font-weight: 300;
+            font-size: 13px
+        }
+
+        #article footer .tags a,
+        #article footer .tags span {
+            display: inline-block;
+            padding: 4px 6px;
+            margin: 0 0 4px
+        }
+
+        #article footer .tags span {
+            text-transform: uppercase;
+            background: #1e1e31
+        }
+
+        #article footer .tags a {
+            color: #fff;
+            background: #999
+        }
+
+        @media screen and (min-width:850px) {
+            #article footer .tags {
+                margin-right: 370px
+            }
+        }
+
+        #article .popular .switcher {
+            border: 0 solid #999;
+            border-left: 0;
+            border-right: 0;
+            font-size: 18px;
+            padding: 0;
+            margin: 0 0 5px;
+            font-family: Georgia
+        }
+
+        #article .popular .switcher span {
+            font-weight: 700;
+            color: #000 !important
+        }
+
+        #article .popular .switcher a {
+            margin: 0 0 0 5px;
+            font-weight: 300;
+            color: #999
+        }
+
+        #article .popular .switcher a.active {
+            color: #000 !important;
+            font-weight: 700
+        }
+
+        #article .popular .articles-top {
+            width: 100%;
+            display: grid;
+            margin-right: 310px
+        }
+
+        #article .popular .articles-top .single-article {
+            width: 100%
+        }
+
+        #article .popular .articles-top .single-article .image-link {
+            float: left;
+            width: 100%;
+            max-width: 31%;
+            padding: 5px 0
+        }
+
+        @media screen and (min-width:850px) {
+
+            #article .text-content *,
+            #article .text-content>* {
+                margin-right: 0 !important
+            }
+
+            #article .ads-content {
+                display: block
+            }
+
+            #rcjsload_950a9d,
+            .popular {
+                margin-right: 310px
+            }
+        }
+
+        @media screen and (max-width:849px) {
+            #article .text-content {
+                width: 100% !important
+            }
+
+            #article .ads-content {
+                display: none
+            }
+        }
+
+        .streamamp-block {
+            text-align: center
+        }
+
+        .breadcrumb {
+            font-family: Helvetica, sans-serif;
+            font-size: 10pt
+        }
+
+        @media screen and (min-width:550px) {
+            .breadcrumb {
+                font-size: 16px
+            }
+        }
+
+        .breadcrumb ol {
+            padding-left: 0
+        }
+
+        .breadcrumb ol,
+        .breadcrumb ol li {
+            display: inline;
+            list-style-type: none
+        }
+
+        #article #admin_link {
+            display: inline-block;
+            width: 14px;
+            margin: 0 5px;
+            position: relative;
+            top: 1px
+        }
+
+        #article #admin_link img {
+            width: 100%
+        }
+
+        #article .content iframe,
+        #article .content img {
+            max-width: 100%
+        }
+
+        span.recently-updated-article {
+            font-family: Helvetica, sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 11px;
+            background: #567582;
+            color: #fff;
+            border-radius: 2px;
+            padding: 1px 3px 0;
+            box-shadow: 0 0 3px -1px #000;
+            bottom: 1px;
+            position: relative
+        }
+
+        #article .content p.blurb-advertisement-alert:before {
+            display: block;
+            color: #6d7984;
+            content: "ADVERTISEMENT";
+            text-align: center;
+            font-size: 10px;
+            font-family: sans-serif
+        }
+
+        #article .content p.blurb-advertisement-alert {
+            margin-bottom: 0
+        }
+
+        #article .content p.parenting.ad-warning {
+            margin-top: 0
+        }
+
+        #header {
+            font-family: sans-serif;
+            background: #1e1e31;
+            color: #fff;
+            position: relative
+        }
+
+        #header>div {
+            max-width: 970px;
+            min-width: 300px;
+            position: relative;
+            padding: 10px 10px 0;
+            line-height: 1em;
+            margin: 0 auto
+        }
+
+        #header a {
+            color: inherit
+        }
+
+        #header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+        #header .home,
+        #header li {
+            display: inline-block
+        }
+
+        #header .home {
+            background-position: -877px 0;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            width: 227px;
+            height: 44px
+        }
+
+        #header .menu {
+            display: block;
+            visibility: hidden
+        }
+
+        #header .menu a:hover {
+            text-decoration: none
+        }
+
+        #header .menu-mobile-icons {
+            display: none;
+            margin-top: 0
+        }
+
+        #header .hamburger_menu {
+            display: none !important
+        }
+
+        @media screen and (max-width:980px) {
+            #header .home {
+                background-image: url("https://cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                text-indent: 100%;
+                white-space: nowrap;
+                color: transparent;
+                margin: 4px 0 -3px;
+                background-size: 150px
+            }
+
+            #header .header-container {
+                padding: 10px 0 0
+            }
+
+            #header .menu-mobile-icons {
+                display: block;
+                margin-top: 10px
+            }
+
+            #header .menu-mobile-icons ul {
+                text-align: center;
+                width: 100%
+            }
+
+            #header .menu-mobile-icons img {
+                width: 35px
+            }
+
+            #header .menu-mobile-icons li {
+                display: inline-grid;
+                width: 19%;
+                font-size: 10px
+            }
+
+            #header .menu {
+                display: none !important
+            }
+        }
+
+        @media screen and (max-width:980px) and (-webkit-min-device-pixel-ratio:2),
+        screen and (max-width:980px) and (min-resolution:2dppx),
+        screen and (max-width:980px) and (min-resolution:192dpi) {
+            #header .home {
+                background-image: url("https://cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn@2x.png") !important
+            }
+        }
+
+        @media screen and (max-width:980px) and (-webkit-min-device-pixel-ratio:3) {
+            #header .home {
+                background-image: url("https://cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn@3x.png") !important
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            #header .menu-mobile-icons li {
+                width: 18%;
+                font-size: 8px
+            }
+        }
+
+        @media screen and (min-width:600px) {
+            #header .menu {
+                position: absolute;
+                display: inline-block;
+                visibility: visible;
+                top: 20px;
+                left: 240px;
+                font-weight: 700;
+                z-index: 1000
+            }
+
+            #header .menu a {
+                padding: 6px 20px;
+                display: block
+            }
+
+            #header .menu>ul {
+                height: 28px;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                list-style: none
+            }
+
+            #header .menu>ul ul {
+                display: none;
+                visibility: hidden
+            }
+
+            #header .menu li.active ul {
+                display: block;
+                visibility: visible;
+                position: absolute;
+                background: #4c627e;
+                min-width: 160px
+            }
+
+            #header .menu li.active ul li {
+                display: block
+            }
+
+            #header .menu li.active ul li a {
+                padding: 8px 20px
+            }
+
+            #header .menu li.active ul li:hover {
+                color: #1e1e31
+            }
+        }
+
+        #header .search,
+        #header .social {
+            display: none;
+            visibility: hidden
+        }
+
+        #header .hamburger_menu {
+            cursor: pointer;
+            background-position: -190px 0;
+            display: inline-block;
+            height: 30px;
+            margin-top: 18px;
+            z-index: 1
+        }
+
+        #header .cross_menu,
+        #header .hamburger_menu {
+            background-color: unset;
+            outline: none;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            width: 24px;
+            position: absolute;
+            border: 0;
+            top: 0;
+            right: 0;
+            margin-right: 10px
+        }
+
+        #header .cross_menu {
+            background-position: -214px 0;
+            display: inline-block;
+            height: 24px;
+            display: none;
+            margin-top: 10px;
+            z-index: 10000000000000
+        }
+
+        #header .mobile-pocket-menu {
+            z-index: 1000000;
+            font-weight: 700;
+            font-size: 1em;
+            width: 100%;
+            height: 100vh;
+            background: rgba(30, 30, 49, .988);
+            left: 0;
+            position: absolute;
+            text-align: left;
+            font-size: 16px;
+            overflow-y: scroll
+        }
+
+        #header .mobile-pocket-menu ul {
+            margin-top: 60px;
+            padding: 0;
+            list-style-type: none;
+            list-style-image: none
+        }
+
+        #header .mobile-pocket-menu li,
+        #header .mobile-pocket-menu li:hover {
+            display: block;
+            padding: 15px 0
+        }
+
+        #header .mobile-pocket-menu ul li a {
+            text-decoration: none;
+            margin: 0;
+            color: #666
+        }
+
+        #header .mobile-pocket-menu ul li a:hover {
+            color: #666;
+            text-decoration: none
+        }
+
+        #header .mobile-pocket-menu a {
+            text-decoration: none;
+            color: #c5c5c5
+        }
+
+        #header .mobile-pocket-menu a:hover {
+            text-decoration: none;
+            color: #fdf2f2
+        }
+
+        #header .mobile-header-active {
+            background: #1e1e31;
+            position: absolute;
+            width: 100%
+        }
+
+        #header .mobile-space-li {
+            display: inline-block;
+            width: 10px
+        }
+
+        #header .mobile-pocket-menu .home {
+            float: left;
+            margin-left: 10px
+        }
+
+        #header .mobile-pocket-menu .mobile-topics {
+            font-size: 1.5em
+        }
+
+        #header .topics {
+            display: block;
+            visibility: visible;
+            background: #ccc;
+            color: #000;
+            margin: 10px 0 0;
+            font-size: 15px;
+            min-height: 40px;
+        }
+
+        #header .topics>div {
+            display: inline-block;
+            justify-content: space-between;
+            align-items: stretch;
+            max-width: 970px;
+            min-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%
+        }
+
+        #header .topics .sqweb-button {
+            line-height: 0;
+            flex-shrink: 0
+        }
+
+        #header .topics .multipass-slim>.sqw-btn-mp {
+            border-radius: 0;
+            float: right
+        }
+
+        #header .topics ul {
+            display: inline-table;
+            width: 100%;
+            max-height: 1em;
+            padding-top: 4px
+        }
+
+        #header .topics li {
+            background-color: #42464b;
+            color: #fff;
+            border-radius: 3px;
+            margin-left: 6px;
+            padding: 3px;
+            margin-bottom: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 7px;
+            font-family: sans-serif
+        }
+
+        #header .topics li.active,
+        #header .topics li:hover {
+            background: #4c627e;
+            text-decoration: none
+        }
+
+        #header .topics li>a {
+            display: inline-block;
+            vertical-align: middle;
+            text-decoration: none
+        }
+
+        #header .topics li .sqweb-button {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px
+        }
+
+        #header .topics li:first-child:before {
+            display: none;
+            content: ""
+        }
+
+        #header .mobile-search {
+            padding: 10px 10px 0;
+            background: #fff;
+            display: flex;
+            justify-content: space-between
+        }
+
+        #header .mobile-search input {
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 5px;
+            border: 1px solid #999;
+            border-radius: 0;
+            color: #000
+        }
+
+        #header .mobile-search button {
+            color: #fff;
+            flex-grow: 0;
+            background: #1e1e31;
+            padding: 5px
+        }
+
+        #header .mobile-search-menu {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            padding: 37px 10px 19px;
+            height: 32.4px
+        }
+
+        #header .mobile-search-menu input {
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 5px;
+            border: 1px solid #999;
+            border-radius: 0;
+            color: #000;
+            font-weight: 400
+        }
+
+        #header .mobile-search-menu button {
+            color: #fff;
+            flex-grow: 0;
+            background: #1e1e31;
+            padding: 5px;
+            font-weight: 400
+        }
+
+        @media screen and (min-width:980px) {
+
+            #header .cross_menu,
+            #header .hamburger_menu {
+                display: none;
+                visibility: hidden
+            }
+
+            #header .search,
+            #header .social {
+                display: block;
+                visibility: visible
+            }
+
+            #header .search {
+                position: absolute;
+                top: 28px;
+                right: 11px;
+                background: #fff
+            }
+
+            #header .search input {
+                border: 0;
+                font-size: 12px;
+                padding: 2px 6px;
+                width: 170px;
+                height: 20px;
+                color: #000
+            }
+
+            #header .search button {
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: inline-block;
+                width: 18px;
+                height: 20px;
+                background-color: transparent;
+                position: relative;
+                top: 0;
+                right: 4px
+            }
+
+            #header .social {
+                position: absolute;
+                top: 5px;
+                right: 8px
+            }
+
+            #header .social a {
+                background-position: -18px 0;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 4px;
+                background-repeat: no-repeat;
+                overflow: hidden
+            }
+
+            #header .social a.instagram {
+                background-position: -78px 0
+            }
+
+            #header .social a.facebook {
+                background-position: -38px 0
+            }
+
+            #header .social a.twitter {
+                background-position: -98px 0
+            }
+
+            #header .social a.gplus {
+                background-position: -58px 0
+            }
+
+            #header .mobile-search,
+            #header .mobile-search-menu {
+                display: none;
+                visibility: hidden
+            }
+
+            #header .topics {
+                display: block;
+                visibility: visible;
+                background: #ccc;
+                color: #000;
+                margin: 10px 0 0;
+                font-size: 15px
+            }
+
+            #header .topics>div {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                max-width: 970px;
+                min-width: 300px;
+                margin: 0 auto;
+                height: 39px;
+                text-align: left
+            }
+
+            #header .topics .sqweb-button {
+                line-height: 0;
+                flex-shrink: 0
+            }
+
+            #header .topics .multipass-slim>.sqw-btn-mp {
+                border-radius: 0
+            }
+
+            #header .topics ul {
+                display: block;
+                visibility: visible;
+                overflow: inherit;
+                padding: 4px 0 4px 10px;
+                width: 100%;
+                margin-right: 10px;
+                max-height: 1em;
+                padding-left: 0;
+                padding-bottom: 10px
+            }
+
+            #header .topics li {
+                background-color: #42464b;
+                color: #fff;
+                border-radius: 3px;
+                margin-left: 6px;
+                padding: 3px;
+                margin-bottom: 4px;
+                font-weight: 700;
+                font-size: 12px;
+                padding: 7px;
+                font-family: sans-serif
+            }
+
+            #header .topics li:first-child {
+                margin-left: 0
+            }
+
+            #header .topics li.active,
+            #header .topics li:hover {
+                background: #4c627e;
+                text-decoration: none
+            }
+
+            #header .topics li>a {
+                display: inline-block;
+                vertical-align: middle;
+                text-decoration: none
+            }
+
+            #header .topics li .sqweb-button {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px
+            }
+
+            #header .topics li:first-child:before {
+                display: none;
+                content: ""
+            }
+        }
+
+        #footer {
+            font-family: sans-serif;
+            background: #1e1e31;
+            color: #fff;
+            font-size: 12px;
+            padding: 25px;
+            margin: 20px 0 0;
+            clear: both
+        }
+
+        #footer a {
+            color: inherit
+        }
+
+        #footer ul {
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+        #footer .links {
+            border-top: 1px solid #fff;
+            padding: 20px 0 0
+        }
+
+        #footer .links nav {
+            margin: 0 0 20px
+        }
+
+        #footer .links .col {
+            width: 25%;
+            min-width: 75px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        #footer .links li {
+            margin: 5px 0
+        }
+
+        #footer .pl_no_h6,
+        #footer h6 {
+            font-size: 12px;
+            margin: 0 0 8px;
+            text-transform: uppercase
+        }
+
+        #footer form {
+            margin: 0 0 20px;
+            text-align: right
+        }
+
+        #footer form div {
+            display: inline-block;
+            padding: 4px;
+            text-align: left;
+            background: #4c627e
+        }
+
+        #footer form button,
+        #footer form input {
+            vertical-align: middle;
+        }
+
+        #footer form input {
+            color: #000;
+            width: 145px
+        }
+
+        @media screen and (min-width:375px) {
+            #footer form input {
+                width: 200px;
+            }
+        }
+
+        #footer form button {
+            background: #1e1e31;
+            padding: 2px 10px;
+            font-size: 12px;
+            width: 25%;
+        }
+
+        #footer .internal a {
+            display: inline-block
+        }
+
+        #footer .internal ul {
+            margin: 8px 0 0
+        }
+
+        #footer .internal ul li.heading {
+            margin-right: 4px
+        }
+
+        #footer .internal ul li.heading span {
+            font-weight: 800
+        }
+
+        #footer .internal ul li.heading:after {
+            content: none !important
+        }
+
+        #footer .internal li {
+            display: inline-block
+        }
+
+        #footer .internal li:after {
+            content: "|";
+            margin: 0 4px 0 8px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        #footer .internal li:last-child:after {
+            display: none;
+            content: ""
+        }
+
+        @media screen and (min-width:600px) {
+            #footer {
+                padding: 25px 40px
+            }
+        }
+
+        #footer .social a {
+            background-position: -18px 0;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 4px;
+            background-repeat: no-repeat;
+            overflow: hidden
+        }
+
+        #footer .social a.instagram {
+            background-position: -78px 0
+        }
+
+        #footer .social a.facebook {
+            background-position: -38px 0
+        }
+
+        #footer .social a.twitter {
+            background-position: -98px 0
+        }
+
+        #footer .social a.gplus {
+            background-position: -58px 0
+        }
+
+        #footer .social.mobile {
+            display: block;
+            visibility: visible;
+            margin: 30px auto 0;
+            width: max-content;
+            width: -moz-max-content
+        }
+
+        .powerbox {
+            margin: 10px 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .powerbox img {
+            width: 100%;
+            height: auto;
+            display: block
+        }
+
+        .powerbox .pl_no_h1,
+        .powerbox .pl_no_h2,
+        .powerbox .pl_no_h3,
+        .powerbox .pl_no_h4,
+        .powerbox a,
+        .powerbox h1,
+        .powerbox h2,
+        .powerbox h3,
+        .powerbox h4,
+        .powerbox span {
+            display: inline-block
+        }
+
+        .powerbox span {
+            padding: 6px 4px
+        }
+
+        .powerbox .promotion span:before {
+            font-size: .8em;
+            content: "Promotion";
+            text-transform: uppercase;
+            padding: 0 3px;
+            margin: 0 4px 0 0;
+            color: #fff;
+            background-color: #fcca00
+        }
+
+        .powerbox .pl_no_h1,
+        .powerbox .pl_no_h2,
+        .powerbox .pl_no_h3,
+        .powerbox .pl_no_h4,
+        .powerbox h1,
+        .powerbox h2,
+        .powerbox h3,
+        .powerbox h4 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            background: rgba(0, 0, 0, .5);
+            width: 100%;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            max-height: 100%
+        }
+
+        .powerbox .pl_no_h4,
+        .powerbox h4 {
+            font-size: 15px
+        }
+
+        .powerbox a {
+            position: relative;
+            display: block;
+            width: 48.96907216%
+        }
+
+        .powerbox a:first-child {
+            width: 100%;
+            margin-bottom: 10px
+        }
+
+        .powerbox a:first-child .pl_no_h1,
+        .powerbox a:first-child .pl_no_h3,
+        .powerbox a:first-child h1,
+        .powerbox a:first-child h3 {
+            font-size: 20px
+        }
+
+        .powerbox a:first-child span {
+            padding: 10px 8px
+        }
+
+        .powerbox a:nth-child(4) {
+            display: none;
+            visibility: hidden
+        }
+
+        .powerbox a:hover .pl_no_h1,
+        .powerbox a:hover .pl_no_h2,
+        .powerbox a:hover .pl_no_h3,
+        .powerbox a:hover .pl_no_h4,
+        .powerbox a:hover h1,
+        .powerbox a:hover h2,
+        .powerbox a:hover h3,
+        .powerbox a:hover h4 {
+            height: 100%
+        }
+
+        .powerbox a:hover .pl_no_h1 span,
+        .powerbox a:hover .pl_no_h2 span,
+        .powerbox a:hover .pl_no_h3 span,
+        .powerbox a:hover .pl_no_h4 span,
+        .powerbox a:hover h1 span,
+        .powerbox a:hover h2 span,
+        .powerbox a:hover h3 span,
+        .powerbox a:hover h4 span {
+            position: absolute;
+            bottom: 0
+        }
+
+        @media screen and (min-width:650px) {
+            .powerbox {
+                position: relative;
+                display: block
+            }
+
+            .powerbox .pl_no_h1,
+            .powerbox .pl_no_h2,
+            .powerbox .pl_no_h3,
+            .powerbox .pl_no_h4,
+            .powerbox h1,
+            .powerbox h2,
+            .powerbox h3,
+            .powerbox h4 {
+                font-size: 14px
+            }
+
+            .powerbox a {
+                width: 22.37113402%
+            }
+
+            .powerbox a:first-child {
+                width: 76.49484536%;
+                margin-bottom: auto
+            }
+
+            .powerbox a:first-child .pl_no_h1,
+            .powerbox a:first-child .pl_no_h3,
+            .powerbox a:first-child h1,
+            .powerbox a:first-child h3 {
+                font-size: 34px
+            }
+
+            .powerbox a:nth-child(2),
+            .powerbox a:nth-child(3),
+            .powerbox a:nth-child(4) {
+                position: absolute;
+                right: 0
+            }
+
+            .powerbox a:nth-child(2) {
+                top: 0
+            }
+
+            .powerbox a:nth-child(3) {
+                top: 34%
+            }
+
+            .powerbox a:nth-child(4) {
+                display: block;
+                visibility: visible;
+                bottom: 0
+            }
+        }
+
+        @media screen and (min-width:890px) {
+
+            .powerbox .pl_no_h1,
+            .powerbox .pl_no_h2,
+            .powerbox .pl_no_h3,
+            .powerbox .pl_no_h4,
+            .powerbox h1,
+            .powerbox h2,
+            .powerbox h3,
+            .powerbox h4 {
+                font-size: 16px
+            }
+
+            .powerbox a:first-child .pl_no_h1,
+            .powerbox a:first-child .pl_no_h3,
+            .powerbox a:first-child h1,
+            .powerbox a:first-child h3 {
+                font-size: 34px
+            }
+        }
+
+
+        .footer - banner {
+
+            background: white;
+            border: 1 px solid #cccccc;
+            border - radius: 0 px 0 px 10 px 10 px;
+            display: inline - block;
+            width: 100 %;
+            height: 75 px;
+            box - shadow: rgba(0, 0, 0, 0.8) 3 px 3 px 10 px 1 px;
+            - moz - box - shadow: 10 px - 10 px 5 px rgba(0, 0, 0, 0.6);
+            - webkit - box - shadow: rgba(0, 0, 0, 0.8) 3 px 3 px 10 px 1 px;
+            - o - box - shadow: 10 px - 10 px 5 px rgba(0, 0, 0, 0.6);
+            border - radius: 0 px 0 px 10 px 10 px;
+        }
+
+        .footer - banner - div {
+            text - align: center;
+            width: 970 px;
+            position: fixed;
+            z - index: 999999;
+            height: 65 px;
+            top: 0 px;
+
+        }
+
+        .close - button - footer {
+            position: absolute;
+            top: 2 px;
+            right: 5 px;
+            font - size: 20 px;
+            background: none;
+        }
+
+        .logoDiv {
+            display: none;
+        }
+
+        .nonMobileLogo {
+            display: block;
+        }
+
+
+        #header.logoDiv {
+            height: 45 px;
+            text - align: center;
+        }
+
+        .mobileLogo {
+            background - image: url(https: //cdn.pocket-lint.com//bundles/pocketlintapp/images/pl-logo-cdn.png);
+            background - position: 50 %;
+            background - repeat: no - repeat;
+            overflow: hidden;
+            display: inline - block;
+            height: 30 px;
+            text - indent: 100 %;
+            white - space: nowrap;
+            color: transparent;
+            background - size: 150 px;
+            width: 153 px;
+            float: left;
+            margin: 8 px 0 px - 3 px 0 px;
+            padding - left: 10 px;
+
+        }
+
+        .logoDiv.ddTitleText {
+            line - height: 30 px;
+            text - align: right;
+            float: right;
+            margin: 0 px 0 px - 3 px 0 px;
+        }
+
+        .logoDiv.flag {
+            float: none;
+        }
+
+        #countries - mob_title>img {
+            padding - right: 0 px !important;
+        }
+
+        .logoDiv.dd.ddTitle.ddTitleText {
+            padding: 10 px 25 px 0 px 0 px;
+        }
+
+        .logoDiv.dd.ddArrow {
+            margin - top: 1 px;
+        }
+
+        .logoDiv.dd {
+            float: right;
+            margin - right: 10 px;
+            width: 40 % !important;
+        }
+
+        .logoDiv.dd.ddChild {
+            right: 0 px;
+            text - align: left;
+            padding: 0;
+            width: 90 %;
+            overflow: hidden;
+        }
+
+        .logoDiv.dd.ddChild li img {
+            padding: 0 0 px 0 0;
+        }
+
+        .logoDiv.dd.ddChild li {
+            padding: 5 px 19 px 6 px 18 px;
+        }
+
+        .logoDiv.borderRadiusTp.border,
+        .borderRadius.border {
+            -moz - border - radius: 0;
+            border - radius: 0;
+        }
+
+
+        .logoDiv.borderRadiusTp ul li: last - child {
+            -moz - border - radius: 0;
+            border - radius: 0;
+        }
+
+        .logoDiv.dd.ddChild li.selected {
+            padding - bottom: 10 px !important;
+        }
+
+        .flag {
+            padding: 0 !important;
+        }
+
+        @media only screen and(max - width: 980 px) {
+
+            .logoDiv {
+                display: block;
+            }
+
+            .nonMobileLogo {
+                display: none !important;
+            }
+        }
+
+        @media only screen and(max - width: 970 px) {
+            .footer - banner {
+                width: 90 %;
+            }
+
+            .footer - banner - div {
+                width: 100 %;
+                text - align: center;
+                margin - left: -10 px;
+            }
+
+            .close - button - footer {
+                right: 6 %;
+            }
+        }
+
+
+        @media screen and(min - width: 980 px) {
+            #header.search {
+                position: absolute;
+                top: 22 px;
+                right: 81 px;
+                background: #fff;
+            }
+        }
+
+        < /style><style>@media screen and(min - width: 600 px) {
+            #header.menu a {
+                padding: 6 px 12 px;
+                display: block;
+            }
+        }
+
+        .languageChooser {
+            z - index: 9999;
+            visibility: visible;
+            height: 145 px;
+            display: block;
+            background: #f2f2f2;
+            position: absolute;
+            bottom: 100 %;
+            /* left: 76%; */
+            margin - left: -5 px;
+            border - width: 1 px;
+            border - style: solid;
+            border - color: #303840;
+            color: # 000000;
+            top: 55 px;
+            right: 19 px;
+            width: 130 px;
+            padding: 10 px;
+            text - align: left;
+            font: 15 px / 1.2 em sans - serif;
+        }
+
+        .languageChooser.enabled {
+            margin: 10 px;
+        }
+
+        body.dark - mode #countries_child>div>a {
+            color: #00adb5;
+        }
+
+        .languageChooser .selected>a {
+            font-weight: bold;
+        }
+
+        /*.languageChooser .selected{
+        margin-top: 10px;
+        background-color: # 5 aaf0b;
+                padding: 7 px;
+            }*/
+        .flag {
+            margin: 0;
+        }
+
+        #countries_child>ul>li {
+            display: flex;
+            vertical - align: middle;
+        }
+
+        @media screen and(max - width: 980 px) {
+            .slick - prev {
+                left: 5 px !important;
+                z - index: 999 !important;
+                top: 20 px !important;
+            }
+
+            .slick - next {
+                right: 5 px !important;
+                z - index: 999 !important;
+                top: 20 px !important;
+            }
+        }
+
+        < /style><style>@media screen and(min - width: 600 px) {
+            #header.menu a {
+                padding: 6 px 13 px;
+                display: block;
+            }
+        }
+
+        < /style><link href="https:/ / cdn.pocket - lint.com / media / complement_9.css "rel="
+stylesheet "><link href="
+        https: //cdn.pocket-lint.com/media/dark_mode_10.css" rel="stylesheet"><!--<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>--><!--<script type="text/javascript">if(typeof window.dojoRequire !== "undefined") { window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"dca0be4c218697c80d899962b","lid":"9d5e0811b7","uniqueMethods":true}) }) }</script>--><script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dca0be4c218697c80d899962b/809e316d6fb5f4eeb64312564.js");</script>			<script async src="https://cdn.ampproject.org/v0.js?w=2222"></script>
+
+
+        < script async custom - element="amp-sidebar"
+        src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js">< /script>< script async custom - element="amp-accordion"
+        src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js">< /script>< script async custom - element="amp-carousel"
+        src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js">< /script>< script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js">< /script>< script defer src="https://cdn.pocket-lint.com/init-firebase_3.js?v3">< /script>< /head>< body style="overflow-x: hidden; ">< script>var color_mode=window.getCookieLocal("color_mode");
+
+        //window.onPlLoad(function ($) {
+        getCurrentColorMode();
+
+        //});
+        function getCurrentColorMode() {
+            var body=document.getElementsByTagName("BODY")[0];
+
+            color_mode=window.getCookieLocal("color_mode");
+
+            // COOKIE
+            if (color_mode) {
+                if (color_mode && color_mode=='dark-mode') {
+                    //$('body').addClass('dark-mode');
+                    body.className+=" dark-mode";
+                    //$(".dark_mode_switcher_image").attr("src", "" );
+                }
+
+                else {
+                    //$(".dark_mode_switcher_image").attr("src", "" );
+                }
+            }
+
+            else {
+                // OS THEME
+
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    // dark mode
+                    color_mode='dark-mode';
+                    body.className+=" dark-mode";
+                    //$('body').addClass('dark-mode');
+                    //$(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg" );
+
+                }
+
+                else {
+                    //TIME
+                    currentTime=new Date();
+                    time=currentTime.getTime();
+                    hours=currentTime.getHours();
+
+                    if (isBetweenHours('22', '7')) {
+                        color_mode=='dark-mode';
+                        body.className+=" dark-mode";
+                        //$('body').addClass('dark-mode');
+                        //$(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg");
+                    }
+                }
+            }
+        }
+
+        function isBetweenHours(startHour, endHour) {
+            var now=new Date().getHours();
+
+            return (now >=startHour || now <=endHour);
+        }
+
+        function enableTheme(newTheme='light') {
+
+            if ($('body').hasClass('dark-mode')) {
+                $('body').removeClass('dark-mode');
+                newTheme='light';
+                $(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg");
+            }
+
+            else {
+                $(".dark_mode_switcher_image").attr("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg");
+
+                $('body').addClass('dark-mode');
+                newTheme='dark-mode';
+            }
+
+            /*
+            if(newTheme=='dark-mode'){
+            	$('body').addClass('dark-mode');
+            } else {
+            	$('body').removeClass('dark-mode');
+            }*/
+            window.setCookieLocal("color_mode", newTheme, 365);
+        }
+
+        < /script>< amp - sidebar id="sidebar"
+        layout="nodisplay"
+        side="right"
+        style="display: none; visibility: hidden;">< button class="amp-close-image"
+        id="cross_menu"
+        on="tap:sidebar.close"
+        role="button"
+        tabindex="0">< /button>< !-- < a href="/"
+        class="home">Pocket - lint < /a>-->< ul>< li>< form action="/search"
+        method="get"
+        class="mobile-search-menu"
+        target="_blank">< input type="text"
+        name="q"
+        placeholder="Search Pocket-lint">< button type="submit">search < /button>< /form>< /li>< p class="newsletter-signup">< a href="/info/newsletter">Sign - up to our Newsletter < /a></p>< li>< div class="social">< div class="share">< a href="https://www.youtube.com/pocketlintcom"
+        class="youtube">YouTube < /a>< a href="https://www.instagram.com/pocketlintcom/"
+        class="instagram">Instagram < /a>< a href="https://www.facebook.com/pocketlintcom/">Facebook < /a>< a href="https://twitter.com/Pocketlint"
+        class="twitter">Twitter < /a>< /div>< /div></li>< /ul>< /amp-sidebar>< noscript>< iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4GKKG"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">< /iframe></noscript>< header id="header">< div class="header-container">< button on="tap:sidebar.toggle"
+        class="hamburger_menu">< /button>< div class="switchers_nav_mobile">< img id="dark_mode_switcher_image_mobile"
+        class="dark_mode_switcher_image"
+        style="float:none; margin-left: -28px;"
+        onclick="enableTheme()"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg"/>< /div>< a href="/"
+        class="home home-logo ">Pocket - lint < /a>< div class="switchers_nav_mobile_language">< img id="language_switcher_image"
+        class="language_switcher_image"
+        style="margin-right: -24px;"
+        width="25"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/language_white.svg"
+        onclick="toggleLanguageSwitcher()"/>< /div>< div class="languageChooser"
+        id="languageChooser"
+        style="display:none;">< div class="enabled _msddli_  "
+        title="Deutsch">< img alt="Deutsch"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+        class="flag de fnone">< a href="https://www.pocket-lint.com/de-de/info/redaktionelle-standards">< span class="ddlabel">Deutsch < /span>< /a>< /div>< div class="enabled _msddli_   selected "
+        title="English">< img alt="English"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+        class="flag gb fnone">< a href="https://www.pocket-lint.com/info/editorial-standards">< span class="ddlabel">English < /span>< /a>< /div>< div class="enabled _msddli_  "
+        title="Español">< img alt="Español"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+        class="flag es fnone">< a href="https://www.pocket-lint.com/es-es/info/editorial-standards">< span class="ddlabel">Español < /span>< /a>< /div>< div class="enabled _msddli_  "
+        title="Français">< img alt="Français"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+        class="flag fr fnone">< a href="https://www.pocket-lint.com/fr-fr/info/editorial-standards">< span class="ddlabel">Français < /span>< /a>< /div>< div class="enabled _msddli_  "
+        title="Português">< img alt="Português"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+
+        class="flag br fnone">< a href="https://www.pocket-lint.com/pt-br/info/editorial-standards">< span class="ddlabel">Português < /span>< /a>< /div>< /div>< div class="clearfix mobile-clear-fix">< /div>< div class="menu-mobile-icons">< ul>< li>< a href="/reviews">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-facebook-like-128-cdn.png">< br>Reviews < /a></li>< li>< a href="/news">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-smartphone-tablet-80-cdn.png">< br>News < /a></li>< li>< a href="/buyers-guides">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-about-100-cdn.png">< br>Buyer 's guides</a></li> <
+li>< a href="/deals">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-money-box-80-cdn.png">< br>Deals < /a></li>< li>< a href="/info/sitemap">< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/icons8-more-90-cdn.png">< br>More < /a></li>< /ul>< /div>< nav class="menu">< ul>< li>< a href="/reviews">Reviews < /a></li>< li>< a href="/news">News < /a></li>< li>< a href="/buyers-guides">Buyer 's guides</a></li><li><a href="/deals">Deals</a></li><li><a href="/info/sitemap">More...</a></li></ul> <
+/nav>< nav class="social">< style>.social a.pt - br {
+            background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/brazil.png") !important;
+            background - size: cover !important;
+            background - repeat: no - repeat !important;
+            background - position: center center !important;
+        }
+
+        .social a.es {
+            background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/spain.png") !important;
+            background - size: cover !important;
+            background - repeat: no - repeat !important;
+            background - position: center center !important;
+        }
+
+        .social a.en {
+            background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/uk.png") !important;
+            background - size: cover !important;
+            background - repeat: no - repeat !important;
+            background - position: center center !important;
+        }
+
+        < /style>< /nav>< form action="/search"
+        method="get"
+        class="search">< input type="text"
+        name="q"
+        placeholder="Search Pocket-lint">< button type="submit">search < /button>< /form>< div class="switchers_nav">< img id="language_switcher_image"
+        class="language_switcher_image"
+        style="float: left;"
+        width="25"
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/language_white.svg"
+        onclick="toggleLanguageSwitcher()"/>< img id="dark_mode_switcher_image"
+        class="dark_mode_switcher_image"
+        onclick="enableTheme()"
+
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg"/>< /div>< script>if (color_mode) {
+            if (color_mode && color_mode=='dark-mode') {
+                document.getElementById("dark_mode_switcher_image").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg";
+                document.getElementById("dark_mode_switcher_image_mobile").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon_dark.svg";
+            }
+
+            else {
+                document.getElementById("dark_mode_switcher_image").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg";
+                document.getElementById("dark_mode_switcher_image_mobile").src="https://cdn.pocket-lint.com/bundles/pocketlintapp/images/moon.svg";
+            }
+        }
+
+        function toggleLanguageSwitcher() {
+            if (document.getElementById("languageChooser").style.display==="block") {
+                document.getElementById("languageChooser").style.display="none";
+            }
+
+            else {
+                document.getElementById("languageChooser").style.display="block";
+            }
+
+        }
+
+        < /script>< /div>< link rel="stylesheet"
+        type="text/css"
+        href="https://cdn.pocket-lint.com/bundles/pocketlintapp/slick/slick.css"/>< link rel="stylesheet"
+        type="text/css"
+        href="/bundles/pocketlintapp/slick/slick-theme.css"/>< !-- < script type="text/javascript"
+
+        src="https://cdn.pocket-lint.com/bundles/pocketlintapp/slick/slick.min.js">< /script>-->< style>div.trending - slide {
+            font: 16 px / 1.4 Georgia,
+                sans - serif;
+            background - color: #42464b;
+            color: # fff;
+            border - radius: 3 px;
+            margin: 5 px 15 px 0 px 10 px;
+            font - weight: 700;
+            font - size: 12 px;
+            padding: 7 px 0 px;
+            font - family: sans - serif;
+            text - align: center;
+            width: 94 %;
+            height: 16 px;
+        }
+
+        div.trending - slide a {
+            display: block;
+            height: 100 %;
+            width: 100 %;
+        }
+
+        < /style>< nav class="topics">< div class="topics-slides">< div class="trending-slide">< a href="/phones/news/apple/151842-iphone-se-2020-price-how-much-will-the-new-cheap-iphone-cost">New iPhone SE deals < /a></div>< div class="trending-slide">< a href="/smart-home/buyers-guides/151662-best-bbq-barbecue-gas-charcoal">Best BBQ 2020 < /a></div>< div class="trending-slide"
+        style="display:none">< a href="/gadgets/news/147975-pocket-lint-weekly-podcast-tech-news-reviews-and-interviews">Get the podcast ! < /a></div>< div class="trending-slide"
+        style="display:none">< a href="/laptops/news/microsoft/151860-what-s-new-in-the-windows-10-may-2020-update-and-how-to-get-it">Next Windows 10 update < /a></div>< /div>< /nav>< form action="/search"
+        method="get"
+        class="mobile-search">< input type="text"
+        name="q"
+        placeholder="Search Pocket-lint">< button type="submit">search < /button>< /form>< /header>< div id="container">< div class="block block-leader im-desktop">< div data - disable - refresh="true"
+        gallery="0"
+        data - slot="skin"
+        class="streamamp-block"
+
+        id="SA-Unit18">< /div>< /div>< div class="block block-leader-mobile">< /div>< div class="breadcrumb">< a href="/">Home < /a>>< a href="/info">Info < /a>< /div>< script type="application/ld+json"> {
+
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [ {
+
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "WebPage",
+                        "@id": "/",
+                        "name": "Home"
+                }
+            }
+
+            ,
+                {
+
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "WebPage",
+                        "@id": "/info",
+                        "name": "Info"
+                }
+            }
+
+            ]
+        }
+
+        < /script>< div id="desktop-filters"
+        class="filters norewrite nolinks"
+        style="width: 20%; float: left; background-color: #f7f8f9; margin-right: 20px; padding-left: 10px; padding-top: 5px; margin-top: 16px;
+margin - bottom: 30 % "> <
+div class="filter-brands norewrite nolinks"
+        style="position: relative; z-index: 9999">< div>< span class="pl_no_h3"
+        style="font-family: Helvetica, sans-serif; margin-top: 0;">Sections < /span>< ul style="list-style-type: none; padding-left: 0px;">< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/editorial-standards">Editorial standards < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/advertise-on-pocket-lint">Advertise < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/policies">Policies < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/authors">About Pocket - lint < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/cookies">Cookies < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/sitemap">Sitemap < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/jobs">Jobs < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/podcast">Podcast < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/licensing">Licensing & amp;
+        Syndication < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/terms">Terms of Use < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/competition-terms">Competition terms < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/sustainability">Sustainability < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/rss">RSS Feeds < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/newsletter">Newsletter Subscription < /a>< /li>< li style="margin-bottom: 5px">< a id="brand-item"
+        style="color: black; text-decoration: none;"
+        href="/info/contact-us">Contact Us < /a>< /li>< /ul>< /div>< /div>< /div>< div id="page">< div class="content">< div class="mobile-filters">< div class="filter-brands norewrite nolinks">< div class="sections-mobile-list"
+        style="padding-bottom: 20px;">< span class="pl_no_h4"
+        style="margin-bottom: 5px; font-family: Helvetica, sans-serif;">Sections < /span>< ul class="section-mobile-navigator">< li class="mobile-brand-navigator-item">< a href="/info/editorial-standards">Editorial standards < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/advertise-on-pocket-lint">Advertise < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/policies">Policies < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/authors">About Pocket - lint < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/cookies">Cookies < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/sitemap">Sitemap < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/jobs">Jobs < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/podcast">Podcast < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/licensing">Licensing & amp;
+        Syndication < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/terms">Terms of Use < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/competition-terms">Competition terms < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/sustainability">Sustainability < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/rss">RSS Feeds < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/newsletter">Newsletter < /a></li>< li class="mobile-brand-navigator-item">< a href="/info/contact-us">Contact Us < /a></li>< /ul>< /div>< /div></div>< h1 style="margin-top: 20px;">Editorial standards < /h1>< div class="content page-content-div"
+        style="margin-bottom: 40px;">< p class="first-para">Updated July 2020 < /p><ul>< li>< a href="/#missionCoveragePrioritiesPolicy"
+        rel=""
+        target="_blank">Mission statement < /a></li>< li>< a href="/#Ourpromise"
+        rel=""
+        target="_blank">Our promise to you < /a></li>< li>< a href="/#ethicsPolicy"
+        rel=""
+        target="_blank">Ethics Policy < /a></li>< li>< a href="/#diversityPolicy"
+        rel=""
+        target="_blank">Diversity Policy < /a></li>< li>< a href="/#diversityStaffing"
+        rel=""
+        target="_blank">Diversity Staffing < /a></li>< li>< a href="/#privacyPolicy"
+        rel=""
+        target="_blank">Privacy Policy < /a></li>< li>< a href="/#whoarewe"
+        rel=""
+        target="_blank">Who Are We ? < /a></li>< li>< a href="/#ownershipFundingInfo"
+        rel=""
+        target="_blank">Ownership Structure < /a></li>< li>< a href="/#verificationFactCheckingPolicy"
+        rel=""
+        target="_blank">Verification and fact - checking standards < /a></li>< li>< a href="/#sources"
+        rel=""
+        target="_blank">Sources < /a></li>< li>< a href="/#correctionsPolicy"
+        rel=""
+        target="_blank">Corrections < /a></li>< li>< a href="/#actionablefeedback"
+        rel=""
+        target="_blank">Actionable feedback < /a></li>< li>< a href="/#newsarticles"
+        rel=""
+        target="_blank">News article types < /a></li>< li>< a href="/#buyersguidearticles"
+        rel=""
+        target="_blank">Buyer 's Guide articles</a></li> <
+li>< a href="/#dealsarticles"
+        rel=""
+        target="_blank">Deals articles < /a></li>< li>< a href="/#reviewarticles"
+        rel=""
+        target="_blank">Review article types < /a></li>< li>< a href="/#reviewscores"
+        rel=""
+        target="_blank">How we score our reviews < /a></li>< li>< a href="/#olderterms"
+        rel=""
+        target="_blank">Old terms no longer used < /a></li>< /ul><h2 class="nolinks2"><a id="missionCoveragePrioritiesPolicy"rel=""target="_blank"></a>Mission statement < /h2><p>Pocket-lint's goal is to be unbiased, trusted, and respected. We are here to inform and entertain on the tech that matters.</p > < p > We are an independent publisher founded in 2003 and have seen and written about thousands of products during that time. & nbsp; < /p><p>Our review program is simple but effective: reviewing products in real-world environments, just how you would use them, rather than in a lab, benchmarking.&nbsp;</p > < p > Our review process starts with a first look at a launch event or a trade show, and then we move to the next stage of the process until the product is fully reviewed. & nbsp; < /p><h2 class="nolinks2"><a id="Ourpromise" rel="" target="_blank"></a > Our promise to you < /h2><ul> <
+li>We do not take payment for product reviews.We never have and we never will. < /li>< li>We select products for the market. < /li>< li>Our reviews are written by our in -house team of freelance experts in their field. < /li>< li>Our reviews always cover the good and the bad points(pros and cons) of any product,
+        helping you decide if it 's the right product for you.</li> <
+li>Our reviews are balanced.We understand that some products are not for everyone. < /li>< li>If you think we can do it better than we are doing it - let us know - via the feedback form - and we 'll work towards putting it right.</li> <
+/ul><p>Many sites deal with their reviews and news in different ways. In the pursuit of clarity,
+        we've detailed the different types of work we write and publish on the site <a href="/#newsarticles
+" rel="
+        " target="
+        _blank ">below.</a></p><h2 class="
+        nolinks2 "><a id="
+        ethicsPolicy " rel="
+        " target="
+        _blank "></a>Ethics Policy</h2><p>We consider these guidelines to be a "
+        living document " that we will continually modify and update on our feedback, from our readers, and from our perceptions of our changing needs.</p><p>Our commitment is to produce journalism that is accurate, fair and complete. Our journalists act with honesty, transparency and independence, including from conflicts of interest.</p><p>We believe in editorial independence and integrity, and never show any content we produce to their PR representatives before publishing.</p><h2 class="
+        nolinks2 "><a id="
+        diversityPolicy " rel="
+        " target="
+        _blank "></a>Diversity Policy</h2><p>Diversity is important to Pocket-lint. We do everything we can to seek out various voices, not only in our staff and freelancers but also the people we interview and feature in the stories we cover. Race, class, generation, gender and geography are all equal in their status at Pocket-lint.</p><h2 class="
+        nolinks2 "><a id="
+        diversityStaffing " rel="
+        " target="
+        _blank "></a>Diversity Staffing</h2><table width="
+        100 % " cellspacing="
+        5 px " cellpadding="
+        5 px "> <
+tbody>< tr>< td style="background-color: #d6dbdf;"
+        colspan="3">< strong>Pocket - lint diversity report 2020 < /strong></td>< /tr>< tr>< td colspan="3">< strong>Gender < /strong></td>< /tr>< tr>< td style="width: 80%;">Male(including transgender men) < /td>< td style="width: 80%;">85 % < /td>< /tr>< tr>< td style="width: 80%;">Female(including transgender women) < /td>< td style="width: 80%;">15 % < /td>< /tr>< tr>< td style="width: 100%;"
+        colspan="3">< strong>Age < /strong></td>< /tr>< tr>< td style="width: 80%;">18 - 29 years old < /td>< td style="width: 80%;">10 % < /td>< /tr>< tr>< td style="width: 80%;">30 - 39 years old < /td>< td style="width: 80%;">36 % < /td>< /tr>< tr>< td style="width: 80%;">40 - 49 years old < /td>< td style="width: 80%;">41 % < /td>< /tr>< tr>< td style="width: 80%;">50+years old < /td>< td style="width: 80%;">13 % < /td>< /tr>< tr>< td colspan="3">< strong>Race < /strong></td>< /tr>< tr>< td style="width: 80%;">White < /td>< td style="width: 80%;">94 % < /td>< /tr>< tr>< td style="width: 80%;">Mixed < /td>< td style="width: 80%;">3 % < /td>< /tr>< tr>< td style="width: 80%;">Indo Caribbeans < /td>< td style="width: 80%;">3 % < /td>< /tr>< tr>< td style="width: 100%;"
+        colspan="3">< em>Conducted May 2020 on all permanent staff at Pocket - lint and any freelancer who had work published on Pocket - lint between 4 May 2019 - 4 May 2020. < /em></td>< /tr>< /tbody>< /table><h2 class="nolinks2"><a id="privacyPolicy"rel=""target="_blank"></a>Privacy policy < /h2><p>We respect privacy and your rights to control your data. Our principle guidelines are simple. We will be clear about the data we collect and why.</p>< p>We may change this policy to ensure that you are happy with any changes.By using our website,
+        you 're agreeing to be bound by this Policy.</p><p>If you have any questions about our Privacy Policy, please contact us via our <a href="https://www.pocket-lint.com/info/contact-us" rel="follow" target="_blank">feedback form</a>&nbsp;or our postal address.&nbsp;</p><h2 class="nolinks2"><a id="whoarewe" rel="" target="_blank"></a>Who are we?</h2><p>Unless we tell you otherwise, you'
+        re dealing with Pocket - lint Limited(the company that publishes Pocket - lint). & nbsp;
+        < /p><p>Pocket-lint is a registered company incorporated in England and Wales (5237480).</p>< p>Our postal address is Pocket - lint Ltd,
+        PO Box 4770,
+        Ascot SL5 5 DP,
+        UK. < /p><p>You can find out who our senior editorial and management team are on our&nbsp;
+        <a href="https:/ / www.pocket - lint.com / info / authors "rel="
+follow " target="
+        _blank ">about us</a>&nbsp;page. &nbsp;&nbsp;</p><p>You can contact us via our <a href="
+        https: //www.pocket-lint.com/info/contact-us" rel="follow" target="_blank">feedback form</a>&nbsp;or our postal address.&nbsp;</p><h2 class="nolinks2"><a id="ownershipFundingInfo" rel="" target="_blank"></a>Ownership Structure</h2><p>Pocket-lint is an independent media company that was founded in 2003. It is funded through advertising, native content and affiliate revenue. As an example, Pocket-lint earns from qualifying purchases as an Amazon Associate.</p><p>The company is privately owned by the Miles family. There are no outside investors.</p><p>Pocket-lint has complete editorial independence and our editorial staff and contributors take their roles seriously.</p><p>All stories carry an author byline. Paid for promotions will carry a "Pocket-lint Promotion" byline.</p><p>You can see a list of current Pocket-lint staff and key contributors on our <a href="https://www.pocket-lint.com/info/authors" rel="follow" target="_blank">about us</a> page.</p><h2 class="nolinks2"><a id="verificationFactCheckingPolicy" rel="" target="_blank"></a>Verification and fact-checking standards</h2><p>Pocket-lint strives to publish the most accurate information we can, and we take several steps to ensure the accuracy of our investigations. We invite companies to comment on rumour stories and using our journalistic knowledge and experience, evaluate rumours when they appear. We also never publish unsubstantiated rumours without verifying the sources and declaring if it's a source we're not familiar with.</p><div>
+        < p>For reviews,
+        we stringently test all products in real - life situations rather than in a lab.Our reviewers are experts in their field having,
+        in some cases,
+        covered the industry for over 20 years.Every review is peer - reviewed by either the Reviews editor or another member of the team to ensure we 've answered all the relevant questions for the device.</p> <
+/div><p>We stand by the journalism we produce and when it is incorrect,
+        make every possible way to correcting it. We welcome feedback from our readers and sources regarding the information that we publish. We agree and follow with the <a href="https:/ / www.ipso.co.uk / editors - code - of -practice / "rel="
+follow " target="
+        _blank ">Editors' Code of Practice</a></p><h2 class="
+        nolinks2 "><a id="
+        sources " rel="
+        " target="
+        _blank "></a>Sources</h2><p>We strive to treat sources fairly. This means putting things into perspective and summarising the arguments of people we are recognisably fair and accurate.</p><p>At times sources will ask to remain anonymous, and we will work with them to protect their anonymity in the interest of protecting the professional standing of the source.</p><h2 class="
+        nolinks2 "><a id="
+        correctionsPolicy " rel="
+        " target="
+        _blank "></a>Corrections</h2><p>All Pocket-lint articles can be updated as soon as possible. Articles may be "
+        updated " to reflect developments in the news cycle. Posts can be "
+        corrected " if there are factual inaccuracies. If a story is factually incorrect and has been corrected we will add a correction to the bottom of the article for readers to see.</p><p>Readers can report factual errors via our <a href="
+        https: //www.pocket-lint.com/info/contact-us" rel="follow" target="_blank">feedback form</a> or our postal address.</p><p>When we publish erroneous information on social networks, we will endeavour to correct it on that platform.</p><h2 class="nolinks2"><a id="actionablefeedback" rel="" target="_blank"></a>&nbsp;Actionable feedback</h2><p>We believe that public feedback is important. We are committed to engaging with you and taking action based on your suggestions, complaints and other feedback. Whether that's asking you to help us develop an individual story or line of coverage, answer questions that a story may raise, identify related or under-covered issues, and teach us about new and diverse sources, experts and perspectives.&nbsp;</p><p>In line with this, we are committed to providing greater transparency about our journalism and offering regular points of contact and interaction. We believe that news organisations have a responsibility to engage with the public on the values, issues and ideas of the day, and that we have much to gain in return.</p><p>You can reach our journalists individually via email listed on the articles they write, or via the Feedback form.</p><h2 class="nolinks2"><a id="newsarticles" rel="" target="_blank"></a>News article types</h2><p>There are a number of different articles that fit under the news section. These include general news articles, factual news, opinion, analysis, explainers, and promotions.</p><h2 class="nolinks2"><a id="buyersguidearticles" rel="" target="_blank"></a>Buyer's Guide articles</h2><p>Pocket-lint produces Buyer's Guides and articles that sit within the Buyer's Guide categories, where we insert links to products that are relevant. Pocket-lint may get a small bounty in return if you buy something. For more see our <a href="https://www.pocket-lint.com/info/terms" rel="follow" target="_blank">terms of use page</a>.</p><h2 class="nolinks2"><a id="dealarticles" rel="" target="_blank"></a>Deals articles</h2><p>We write and feature a number of deals on Pocket-lint that have been hand-picked by our team because they represent a good price. We will always try to ensure that it is a reputable company but are not responsible for external websites. Like Buyer's Guide articles links on-page, which can be found in both the Deals section and News section, may include shopping links. For more see our <a href="https://www.pocket-lint.com/info/terms" rel="follow" target="_blank">terms of use page</a>.</p><h2 class="nolinks2"><a id="reviewarticles" rel="" target="_blank"></a>Review article types</h2><h3 class="nolinks2">Initial review</h3><p>Our journalists' hands-on first impressions of a product; we've seen the device, touched it. These initial impressions are not always based on a final review.</p><h3 class="nolinks2">Review</h3><p>An in-depth criticism of a product; we have lived with the device, used it extensively over a number of hours, days, weeks, even months.&nbsp;</p><h3 class="nolinks2">Updates</h3><p>In the ever-moving world of tech, product software is becoming an important aspect. The hardware you buy on day one could be better via firmware and new features later in its life. To reflect this, we update reviews, adding additional information, criticism and context. Note, however, we do not degrade original scores (these remain in place, with a "first published" date showing at the base of the verdict for clarity)</p><h2 class="nolinks2"><a id="reviewscores" rel="" target="_blank"></a>How we score our reviews</h2><p>Products are rated up to five stars maximum, based on our opinion of the market. Best-of-best 'Editor's Choice' badge is awarded to full-marks products; the 'Recommended' badge is four-and-a-half stars; four stars or less are presented without a badge</p><p>When scoring products we look at a number of factors including design, features, usability, performance, value, and most importantly if it does what it claims to do.&nbsp;</p><h2 class="nolinks2"><a id="olderterms" rel="" target="_blank"></a>Old terms no longer used</h2><h3 class="nolinks2">Hands-on / Pictures and hands-on</h3><p>Some of our older articles may be presented as "hands-on" or "pictures and hands-on".&nbsp;</p><h3 class="nolinks2">In pictures</h3><p>Occasionally we run stories on products we've seen be it a car unveiling, a designer version of a new phone, or similar, such pieces are presented with a small amount of copy, letting the pictures do the talking.</p>
+        < /div>< /div>< /div>< script type="text/javascript">
+        /*window.GENETIKZ_WIDGET="6f551f36-fcbf-4081-aecf-a535c1d83afb";
+            window.WIDGET_ID="div-gpt-ad-1516721091362-0";
+            window.WIDGET_STATUS="1";
+            var s = document.createElement('script');
+            s.onload = function() {  _gw.init(); };
+            s.src = 'https://buzz.academy/js/genetikz-widget.js';
+            document.getElementsByTagName('head')[0].appendChild(s);*/
+        < /script>< div class="footer-banner-div"
+        id="footer-banner-div">< div class="footer-banner">< p>< img src="https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/images/msdropdown/icons/blank.gif"
+        class="flag pt fnone">Você pode ler esta página < br>no seu idioma < a href="https://www.pocket-lint.com/pt-br/info/editorial-standards">aqui < /a></p>< button aria - label="Close banner"
+        class="close-button-footer"
+        onclick="closeLanguageBanner()">& times;
+
+        < /button>< /div>< /div>< footer id="footer">< nav class="social">< style>#header nav.social>a.amazon,
+        #footer nav.social>a.amazon {
+            background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/amazon-512-compressor.png") !important;
+            background - size: cover !important;
+            background - repeat: no - repeat !important;
+            background - position: center center !important;
+            height: 18 px;
+            width: 18 px;
+            margin: 1 px;
+        }
+
+        #header nav.social>a.pod - cast,
+        #footer nav.social>a.pod - cast {
+            background - image: url("https://cdn.pocket-lint.com/bundles/pocketlintapp/images/podcast_icon.png") !important;
+            background - size: cover !important;
+            background - repeat: no - repeat !important;
+            background - position: center center !important;
+            height: 16 px;
+            width: 16 px;
+            margin: 2 px;
+        }
+
+        #footer nav.social {
+            float: left;
+        }
+
+        < /style>< a target="_blank"
+        href="https://www.amazon.co.uk/shop/pocketlint"
+        class="amazon">Amazon UK < /a>< a target="_blank"
+        href="https://www.youtube.com/pocketlintcom"
+        class="youtube">YouTube < /a>< a target="_blank"
+        href="https://www.instagram.com/pocketlintcom/"
+        class="instagram">Instagram < /a>< a target="_blank"
+        href="https://www.facebook.com/pocketlintcom/"
+        class="facebook">Facebook < /a>< a target="_blank"
+        href="https://twitter.com/Pocketlint"
+        class="twitter">Twitter < /a>< a target="_blank"
+        href="https://shows.pippa.io/pocket-lint-podcast/"
+        class="pod-cast">PodCast < /a>< /nav>< form action="/search"
+        method="get">< div>< input type="text"
+        name="q"
+
+        placeholder="Search Pocket-lint">< button type="submit">search < /button>< /div>< /form>< div class="links">< /div>< nav class="internal">< ul>< li>< a href="/awards">Pocket - lint Gadget Awards < /a></li>< li>< a href="/info/rss">RSS Feeds < /a></li>< li>< a href="/info/newsletter">Newsletter < /a></li>< li>< a href="https://shows.pippa.io/pocket-lint-podcast/">Podcast < /a></li>< /ul>< ul>< li class="heading">< span>Popular sections: < /span></li>< li>< a href="/phones">Phones < /a></li>< li>< a href="/apps">Apps < /a></li>< li>< a href="/tv">TV < /a></li>< li>< a href="/smart-home">Smart home < /a></li>< li>< a href="/games">Games < /a></li>< li>< a href="/tablets">Tablets < /a></li>< li>< a href="/laptops">Laptops < /a></li>< li>< a href="/speakers">Speakers < /a></li>< li>< a href="/cameras">Cameras < /a></li>< li>< a href="/smartwatches">Smartwatches < /a></li>< /ul>< ul>< li>< a href="/info/sitemap">Site map < /a></li>< li>< a href="/info/contact-us">Contact us < /a></li>< li>< a href="/info/authors">About Pocket - lint < /a></li>< li>< a href="/info/sustainability">Sustainability < /a></li>< li>< a href="/info/editorial-standards">Editorial Standards < /a></li>< li>< a href="/info/terms">Terms of Use < /a></li>< li>< a href="/info/policies">Privacy Policy < /a></li>< li>< a href="/info/advertise-on-pocket-lint">Advertise on Pocket - lint < /a></li>< li style="cursor: pointer">< a onclick="window.__tcfapi('displayConsentUi', 2, function() {} );">Privacy Settings < /a></li>< /ul>< div style="margin-top: 8px;">2003 - 2020© Pocket - lint Limited PO Box 4770,
+        Ascot,
+        SL5 5 DP.All rights reserved.England and Wales company registration number 5237480. < /div>< /nav>< /footer>< /div>< div id="fb-root">< /div>< script>function closeLanguageBanner() {
+            setCookieLocal("pocket_hide_lang_banner", true, 365);
+            hideBannerDiv();
+        }
+
+        var showBanner=getCookieLocal('pocket_hide_lang_banner');
+
+        if (showBanner) {
+            hideBannerDiv();
+
+        }
+
+        else {
+            showBannerDiv();
+
+        }
+
+        function hideBannerDiv() {
+
+            //$('.footer-banner-div').hide();
+            if (document.getElementById("footer-banner-div")) {
+                document.getElementById("footer-banner-div").style.display="none";
+            }
+
+        }
+
+        function showBannerDiv() {
+
+            //$('.footer-banner-div').show();
+            if (document.getElementById("footer-banner-div")) {
+                document.getElementById("footer-banner-div").style.display="block";
+            }
+        }
+
+        /*window.onload = function() {
+        	var div = document.getElementById("PopupSignupForm_0");
+        	if(div) {
+        		var iFrame = div.getElementsByTagName("iframe")[0];
+        		iFrame.style.height = "156px";
+        	}
+        }*/
+
+
+        document.getElementsByTagName("BODY")[0].onload=function() {
+            var head=document.getElementsByTagName("head")[0];
+            var script=document.createElement("script");
+            //console.log("ISsuing load jquery");
+            script.setAttribute("type", "text/javascript");
+            script.id='jquery_script';
+            script.setAttribute("src", "https://cdn.pocket-lint.com/bundles/pocketlintapp/flagsbox/js/jquery/jquery-1.9.0.min.js");
+
+            head.addEventListener("load", function(event) {
+                    if (event.target.nodeName==="SCRIPT"&& event.target.id==="jquery_script") {
+                        //	console.log("Script loaded: " + event.target.getAttribute("src"));
+                        jQueryLoaded();
+                    }
+                }
+
+                , true);
+
+            head.appendChild(script);
+        }
+
+
+        function jQueryLoaded() {
+            //console.log("jQuery loaded");
+            loadScript("https://cdn.pocket-lint.com/bundles/pocketlintapp/slick/slick.min.js") .then(loadSlick, failureCallback);
+        }
+
+        function failureCallback() {
+            console.log(111);
+        }
+
+        < /script>< script type="text/javascript"> //loadRevContent();
+
+        function loadRevContent() {
+            (function() {
+                    var referer="";
+
+                    try {
+                        if (referer=document.referrer, "undefined"==typeof referer) throw "undefined"
+                    }
+
+                    catch (exception) {
+                        referer=document.location.href, (""==referer || "undefined"==typeof referer) && (referer=document.URL)
+                    }
+
+                    referer=referer.substr(0, 700);
+                    var rcel=document.createElement("script");
+                    rcel.id='rc_'+ Math.floor(Math.random() * 1000);
+                    rcel.type='text/javascript';
+                    rcel.src="https://trends.revcontent.com/serve.js.php?w=82106&t="+ rcel.id + "&c="+ (new Date()).getTime() + "&width="+ (window.outerWidth || document.documentElement.clientWidth) + "&referer="+ referer;
+                    rcel.async=true;
+                    var rcds=document.getElementById("rcjsload_950a9d");
+                    rcds.appendChild(rcel);
+                }
+
+            )();
+        }
+
+        var divContent=document.querySelector('.page-content-div');
+
+        if (divContent) {
+            var listImgs=divContent.querySelectorAll('img_to_replace');
+
+
+            for (i=0; i < listImgs.length; ++i) {
+                var el=listImgs[i];
+                var newEl=document.createElement('img');
+                cloneAttributes(newEl, el);
+                el.parentNode.replaceChild(newEl, el);
+            }
+        }
+
+        function cloneAttributes(element, sourceNode) {
+            let attr;
+            let attributes=Array.prototype.slice.call(sourceNode.attributes);
+
+            while (attr=attributes.pop()) {
+                element.setAttribute(attr.nodeName, attr.nodeValue);
+            }
+        }
+
+        < /script>< /body>< /html>

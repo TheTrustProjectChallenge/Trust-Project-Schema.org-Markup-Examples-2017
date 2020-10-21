@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsMediaOrganization",
+		"name": "20minutos",
+		"foundingDate": "2000-02-03", 
+		"ethicsPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#principios",
+		"missionCoveragePrioritiesPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#principios",
+		"masthead": "https://www.20minutos.es/estaticos/buenas-practicas#estructura",
+		"diversityPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#diversidad",
+		"diversityStaffingReport": "https://www.20minutos.es/estaticos/buenas-practicas#diversidad",
+		"verificationFactCheckingPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#verificacion",
+		"unnamedSourcesPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#fuentes", 
+		"correctionsPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#correcciones",
+		"actionableFeedbackPolicy": "https://www.20minutos.es/estaticos/buenas-practicas#lectores",
+		"ownershipFundingInfo": "https://www.20minutos.es/estaticos/buenas-practicas#contacto",
+		"contactPoint" : {
+        "@type" : "ContactPoint",
+        "contactType" : "Newsroom Contact",
+        "email" : "20minutoseditora@20minutos.es"
+  },
+        "address": {
+            "name": "20minutos",
+            "telephone":"917 015 600",
+            "email": "20minutoseditora@20minutos.es",
+            "@type": "PostalAddress",
+            "addressLocality": "Madrid, España",
+            "postalCode": "28027",
+            "streetAddress": "Condesa de Venadito 1, 2a planta",
+            "url" : "https://www.20minutos.es" ,
+            "sameAs" : ["https://www.facebook.com/20minutos.es", "https://twitter.com/20m", "https://www.youtube.com/user/20minutos/"]
+        },
+        "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Henneo",
+          "logo" : "https://www.20minutos.es/static/images/logo_20m.png"
+        }
+      ]
+    }
+</script>

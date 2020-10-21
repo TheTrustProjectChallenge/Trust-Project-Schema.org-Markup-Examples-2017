@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": "La Información",
+        "foundingDate": "2000-02-03", 
+        "ethicsPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#principios",
+        "missionCoveragePrioritiesPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#principios",
+        "masthead": "https://www.lainformacion.com/estaticos/buenas-practicas#estructura",
+        "diversityPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#diversidad",
+        "diversityStaffingReport": "https://www.lainformacion.com/estaticos/buenas-practicas#diversidad",
+        "verificationFactCheckingPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#verificacion",
+        "unnamedSourcesPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#fuentes", 
+        "correctionsPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#correcciones",
+        "actionableFeedbackPolicy": "https://www.lainformacion.com/estaticos/buenas-practicas#lectores",
+        "ownershipFundingInfo": "https://www.lainformacion.com/estaticos/buenas-practicas#contacto",
+        "contactPoint" : {
+        "@type" : "ContactPoint",
+        "contactType" : "Newsroom Contact",
+        "email" : "info@lainformacion.com"
+  },
+        "address": {
+            "name": "La Información",
+            "telephone":"917 015 600",
+            "email": "info@lainformacion.com",
+            "@type": "PostalAddress",
+            "addressLocality": "Madrid, España",
+            "postalCode": "28027",
+            "streetAddress": "Calle Condesa de Venadito 1, planta 1ª, puerta derecha",
+            "url" : "https://www.lainformacion.com" ,
+            "sameAs" : ["https://www.facebook.com/lainformacion/", "https://twitter.com/la_informacion", "https://www.youtube.com/lainformacion/"]
+        },
+        "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Henneo",
+          "logo" : "https://www.lainformacion.com/static/images/logo-henneo.png"
+        }
+      ]
+    }
+</script>

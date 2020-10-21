@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": "Heraldo de Aragón",
+        "foundingDate": "1895-09-20", 
+        "ethicsPolicy": "https://www.heraldo.es/buenas-practicas#principios",
+        "missionCoveragePrioritiesPolicy": "https://www.heraldo.es/buenas-practicas#principios",
+        "masthead": "https://www.heraldo.es/buenas-practicas#estructura",
+        "diversityPolicy": "https://www.heraldo.es/buenas-practicas#diversidad",
+        "diversityStaffingReport": "https://www.heraldo.es/buenas-practicas#diversidad",
+        "verificationFactCheckingPolicy": "https://www.heraldo.es/buenas-practicas#verificacion",
+        "unnamedSourcesPolicy": "https://www.heraldo.es/buenas-practicas#fuentes", 
+        "correctionsPolicy": "https://www.heraldo.es/buenas-practicas#correcciones",
+        "actionableFeedbackPolicy": "https://www.heraldo.es/buenas-practicas#lectores",
+        "ownershipFundingInfo": "https://www.heraldo.es/buenas-practicas#contacto",
+        "contactPoint" : {
+        "@type" : "ContactPoint",
+        "contactType" : "Newsroom Contact",
+        "email" : "info@heraldo.es"
+  },        
+         "address": {
+            "name": "Heraldo de Aragón",
+            "url" : "https://www.heraldo.es" ,
+            "sameAs" : [ "https://www.facebook.com/heraldodearagon" , "https://twitter.com/heraldoes" ],
+            "telephone":" 976 765 000",
+            "email": "info@heraldo.es",
+            "@type": "PostalAddress",
+            "addressLocality": "Zaragoza, España",
+            "postalCode": "50001",
+            "streetAddress": "Pº. Independencia, 29,"
+          },
+        "memberOf": [
+        {
+          "@type": "Organization",
+          "logo" : "https://www.heraldo.es/images/logoheraldo.png",
+          "name": "Henneo"
+        }
+      ]
+    }
+</script>

@@ -1,0 +1,59 @@
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "ReportageNewsArticle",
+            "@id": "https://www.20minutos.es/noticia/4400330/0/sanidad-propone-cerrar-madrid-diez-ciudades/",
+            "headline": "Sanidad propone restringir las entradas y salidas de Madrid y otras diez ciudades y cerrar los parques infanti",
+            "description": "Las Comunidades Autónomas que tengan municipios de más de 100.000 habitantes con una incidencia acumulada de casos de coronavirus en los últimos 14 de más de 500 por 100.000 habitantes estarán obligadas a restringir las entradas y salidas de los mismos, así como limitar las reuniones a seis personas y cerrar los parques infantiles. Así lo indica el borrador elaborado por el Ministerio de Sanidad y que presentará esta tarde en el Consejo Interterritorial para que sea firmado por las Comunidades Autónomas.",
+            "datePublished": "2020-09-30T11:58:08+02:00",
+            "dateModified": "2020-10-01T11:08:25+02:00",
+            "mainEntityOfPage": {
+                "@id": "https://www.20minutos.es/noticia/4400330/0/sanidad-propone-cerrar-madrid-diez-ciudades/"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2020/09/29/salvador-illa.jpeg",
+                "width": "1200",
+                "height": "675"
+            },
+                                            
+                                                    
+                "video":{
+                    "@type": "VideoObject",
+                    "@id": "https://www.20minutos.es/noticia/4400330/0/sanidad-propone-cerrar-madrid-diez-ciudades/",
+                    "name": "Vídeo: Sanidad propone restringir las entradas y salidas de Madrid y otras diez ciudades y cerrar los parques infanti",
+                    "description": "Las Comunidades Autónomas que tengan municipios de más de 100.000 habitantes con una incidencia acumulada de casos de coronavirus en los últimos 14 de más de 500 por 100.000 habitantes estarán obligadas a restringir las entradas y salidas de los mismos, así como limitar las reuniones a seis personas y cerrar los parques infantiles. Así lo indica el borrador elaborado por el Ministerio de Sanidad y que presentará esta tarde en el Consejo Interterritorial para que sea firmado por las Comunidades Autónomas.",
+                    "thumbnailUrl": "https://www.20minutos.es/uploads/2020/09/30/5f749e1f49009.jpeg",
+                    "uploadDate": "2020-09-30T17:02:55+02:00",
+                    "contentUrl": "https://www.20minutos.es/videoplayer/69508",
+                    "embedUrl": "https://www.20minutos.es/videoplayer/69508"
+                },
+                        "author": {
+                "@type": "Person",
+                 "name": "Lorena Gamarra"
+                                    ,"sameAs": "https://www.20minutos.es/autor/lorena-gamarra"
+                            },
+            "editor": {
+                "@type": "Person",
+                 "name": "Lorena Gamarra"
+            },
+            "publisher": {
+                "@type": "NewsMediaOrganization",
+                "name": "20minutos",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.20minutos.es/static/images/logo_20m.png",
+                    "width": 600,
+                    "height": 60
+                }
+            },
+            "citation": [
+         // External Original Materials                            
+         {
+         "@type":"CreativeWork",
+         "headline": "Borrador del acuerdo del Consejo Interterritorial del Sostema Nacional de Salud sobre las nuevas restricciones por la Covid",
+         "url": "https://www.slideshare.net/20minutos/borrador-acuerdo"
+         }
+         ]
+        }
+        </script>

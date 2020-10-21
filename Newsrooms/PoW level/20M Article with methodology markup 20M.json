@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "ReportageNewsArticle",
+            "@id": "https://www.20minutos.es/noticia/3716112/0/campamentos-verano/",
+            "headline": "Niños con discapacidad en los campamentos de verano: &#039;No te dejan ser, te dejan estar&#039;",
+            "description": "&quot;Saben que estoy, pero no me ven&quot;. Dani tiene 16 años y autismo de alto funcionamiento. Desde que era pequeño ha pasado por varios campamentos de v...",
+            "datePublished": "2019-07-31T06:53:58+02:00",
+            "dateModified": "2019-07-31T06:53:58+02:00",
+            "mainEntityOfPage": {
+                "@id": "https://www.20minutos.es/noticia/3716112/0/campamentos-verano/"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2020/01/27/dani-durante-un-campamento-de-verano.jpeg",
+                "width": "1200",
+                "height": "675"
+            },
+                        "author": {
+                "@type": "Person",
+                 "name": "Lorena Gamarra"
+                                    ,"sameAs": "https://www.20minutos.es/autor/lorena-gamarra"
+                            },
+            "editor": {
+                "@type": "Person",
+                 "name": "Lorena Gamarra"
+            },
+            "publisher": {
+                "@type": "NewsMediaOrganization",
+                "name": "20minutos",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.20minutos.es/static/images/logo_20m.png",
+                    "width": 600,
+                    "height": 60
+                }
+            },
+         "backstory": "Para la realización de este reportaje se han extraído datos del INE (Instituto Nacional de Estadística) sobre niños escolarizados con necesidades educativas especiales asociadas con alguna discapacidad. En los meses previos a la publicación del artículo se realizó una entrevista a un joven con discapacidad, otras tres a padres y madres de niños discapacitados, a Jesús Martín, delegado de Derechos Humanos del CERMI (Comité Español de Representantes de Personas con Discapacidad) y a Silvia Sánchez, directora general de la organización Plena Inclusión."
+        }
+        </script>

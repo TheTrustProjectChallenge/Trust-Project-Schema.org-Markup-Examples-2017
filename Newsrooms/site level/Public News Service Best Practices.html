@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Public News Service</title>
+<script type="text/javascript">
+<!--
+function popup(mylink, windowname, w, h)
+{
+  if (! window.focus)return true;
+    var href;
+  if (typeof(mylink) == 'string')
+     href=mylink;
+  else
+     href=mylink.href;
+      if (w == 0)
+    {
+       w = 780; h = 580; // default sizes
+      if (window.screen) {
+        w = window.screen.availWidth * 75 / 100;
+        h = window.screen.availHeight * 75 / 100;
+      }
+    }
+  window.open(href, windowname, 'width='+w+',height='+h+',scrollbars=yes,location=no');
+  return false;
+}
+//-->
+</script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index,follow" />
+<meta name="twitter:widgets:new-embed-design" content="on">
+<meta property="fb:pages" content="271906814169" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap, multi level menu, submenu, treeview nav menu examples" />
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" >
+<script src="/js/jquery-1.12.4.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js" ></script>
+
+    
+
+
+    <!-- Custom styles for this template -->
+    <link href="/css/pns-navbar.css" rel="stylesheet">
+    <link href="/css/pns-styles.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+<script type="text/javascript">
+// audio play pause
+function audpp(id) {
+var myaud = document.getElementById(id);
+if (myaud.paused) { 
+ myaud.controls = true; 
+ myaud.play(); 
+ myaud.setAttribute("controlsList", "nodownload");
+ $(myaud.parentElement).find(".playsound").css({"display":"none"}); } else { myaud.pause(); $(myaud.parentElement).children(".playsound").css({"display":"block"}); }
+}
+$(function(){
+    $("audio").on("play", function() {
+        $("audio").not(this).each(function(index, audio) {
+            audio.pause();
+			audio.controls = false;
+			$(audio.parentElement).find(".playsound").css({"display":"block"});
+        });
+    });
+});
+</script>
+
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item pns-nav">
+            <form action="/results.php" method="post">
+
+				<input type="text" id="keywords" name="keywords" placeholder="Search.." style="display:none" />
+            	<input type="image" alt="submit" name="submit" id="searchSubmit" src="/assets/images/icon-search.svg" onClick="return searchWork();">
+
+			</form>
+          </li>
+<li class="nav-item pns-nav dropdown"><a class="nav-link blue dropdown-toggle" id="TopicsDropDown" role="button" data-toggle="dropdown" href="#">TOPICS</a>        
+              <!-- Topics Submenus -->
+              <ul class="dropdown-menu" aria-labelledby="TopicsDropDown01">
+<li class="dropdown-submenu"><a class="dropdown-item" href="/news-environment/IEnvironment">Environment</a>
+			  
+				<!-- Environment Submenu Level 1 -->
+				<ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/news-animal-welfare/C2">Animal Welfare</a></li>
+<li><a class="dropdown-item" href="/news-climate-change-air-quality/C16">Climate Change/Air Quality</a></li>
+<li><a class="dropdown-item" href="/news-endangered-species-and-wildlife/C14">Endangered Species &amp; Wildlife</a></li>
+<li><a class="dropdown-item" href="/news-energy-policy/C9">Energy Policy</a></li>
+<li><a class="dropdown-item" href="/news-environment/C15">Environment</a></li>
+<li><a class="dropdown-item" href="/news-environmental-justice/C51">Environmental Justice</a></li>
+<li><a class="dropdown-item" href="/news-nuclear-waste/C23">Nuclear Waste</a></li>
+<li><a class="dropdown-item" href="/news-oceans/C54">Oceans</a></li>
+<li><a class="dropdown-item" href="/news-public-lands-wilderness/C24">Public Lands/Wilderness</a></li>
+<li><a class="dropdown-item" href="/news-rural-farming/C25">Rural/Farming</a></li>
+<li><a class="dropdown-item" href="/news-salmon-recovery/C26">Salmon Recovery</a></li>
+<li><a class="dropdown-item" href="/news-sustainable-agriculture/C30">Sustainable Agriculture</a></li>
+<li><a class="dropdown-item" href="/news-toxics/C32">Toxics</a></li>
+<li><a class="dropdown-item" href="/news-urban-planning-transportation/C33">Urban Planning/Transportation</a></li>
+<li><a class="dropdown-item" href="/news-waste-reduction-recycling/C44">Waste Reduction/Recycling</a></li>
+<li><a class="dropdown-item" href="/news-water/C34">Water</a></li>
+</ul>
+			  </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/news-health-and-wellness/IHealth+and+Wellness">Health and Wellness</a>
+			  
+				<!-- Environment Submenu Level 1 -->
+				<ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/news-alcohol-and-drug-abuse-prevention/C38">Alcohol and Drug Abuse Prevention</a></li>
+<li><a class="dropdown-item" href="/news-disabilities/C10">Disabilities</a></li>
+<li><a class="dropdown-item" href="/news-domestic-violence-sexual-assault/C11">Domestic Violence/Sexual Assault</a></li>
+<li><a class="dropdown-item" href="/news-health-issues/C17">Health Issues</a></li>
+<li><a class="dropdown-item" href="/news-hiv-aids-prevention/C43">HIV/AIDS Prevention</a></li>
+<li><a class="dropdown-item" href="/news-mental-health/C22">Mental Health</a></li>
+<li><a class="dropdown-item" href="/news-reproductive-health/C59">Reproductive Health</a></li>
+<li><a class="dropdown-item" href="/news-smoking-prevention/C28">Smoking Prevention</a></li>
+<li><a class="dropdown-item" href="/news-teen-pregnancy-prevention/C31">Teen Pregnancy Prevention</a></li>
+</ul>
+			  </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/news-social-issues/ISocial+Issues">Social Issues</a>
+			  
+				<!-- Environment Submenu Level 1 -->
+				<ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/news-arts-and-culture/C1">Arts &amp; Culture</a></li>
+<li><a class="dropdown-item" href="/news-budget-policy-and-priorities/C3">Budget Policy &amp; Priorities</a></li>
+<li><a class="dropdown-item" href="/news-campaign-finance-reform-money-in-pol/C4">Campaign Finance Reform/Money in Pol</a></li>
+<li><a class="dropdown-item" href="/news-census/C56">Census</a></li>
+<li><a class="dropdown-item" href="/news-childrens-issues/C5">Children's Issues</a></li>
+<li><a class="dropdown-item" href="/news-civic-engagement/C40">Civic Engagement</a></li>
+<li><a class="dropdown-item" href="/news-civil-rights/C42">Civil Rights</a></li>
+<li><a class="dropdown-item" href="/news-community-issues-and-volunteering/C6">Community Issues and Volunteering</a></li>
+<li><a class="dropdown-item" href="/news-consumer-issues/C7">Consumer Issues</a></li>
+<li><a class="dropdown-item" href="/news-criminal-justice/C8">Criminal Justice</a></li>
+<li><a class="dropdown-item" href="/news-cultural-resources/C53">Cultural Resources</a></li>
+<li><a class="dropdown-item" href="/news-early-childhood-education/C12">Early Childhood Education</a></li>
+<li><a class="dropdown-item" href="/news-education/C13">Education</a></li>
+<li><a class="dropdown-item" href="/news-family-father-issues/C49">Family/Father Issues</a></li>
+<li><a class="dropdown-item" href="/news-gun-violence-prevention/C50">Gun Violence Prevention</a></li>
+<li><a class="dropdown-item" href="/news-housing-homelessness/C18">Housing/Homelessness</a></li>
+<li><a class="dropdown-item" href="/news-human-rights-racial-justice/C19">Human Rights/Racial Justice</a></li>
+<li><a class="dropdown-item" href="/news-hunger-food-nutrition/C20">Hunger/Food/Nutrition</a></li>
+<li><a class="dropdown-item" href="/news-immigrant-issues/C46">Immigrant Issues</a></li>
+<li><a class="dropdown-item" href="/news-international-relief/C45">International Relief</a></li>
+<li><a class="dropdown-item" href="/news-juvenile-justice/C58">Juvenile Justice</a></li>
+<li><a class="dropdown-item" href="/news-lgbtqia-issues/C41">LGBTQIA Issues</a></li>
+<li><a class="dropdown-item" href="/news-livable-wages-working-families/C21">Livable Wages/Working Families</a></li>
+<li><a class="dropdown-item" href="/news-media-reform/C57">Media Reform</a></li>
+<li><a class="dropdown-item" href="/news-native-american-issues/C47">Native American Issues</a></li>
+<li><a class="dropdown-item" href="/news-peace/C37">Peace</a></li>
+<li><a class="dropdown-item" href="/news-philanthropy/C48">Philanthropy</a></li>
+<li><a class="dropdown-item" href="/news-poverty-issues/C55">Poverty Issues</a></li>
+<li><a class="dropdown-item" href="/news-senior-issues/C27">Senior Issues</a></li>
+<li><a class="dropdown-item" href="/news-social-justice/C29">Social Justice</a></li>
+<li><a class="dropdown-item" href="/news-welfare-reform/C35">Welfare Reform</a></li>
+<li><a class="dropdown-item" href="/news-womens-issues/C36">Women's Issues</a></li>
+<li><a class="dropdown-item" href="/news-youth-issues/C52">Youth Issues</a></li>
+</ul>
+			  </li>
+			  </ul>
+			  </li>
+			  <li class="nav-item pns-nav dropdown">
+            <a class="nav-link blue dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">REGION</a>
+
+            <!-- Region Submenus -->
+            <ul class="dropdown-menu" aria-labelledby="RegionDropDown01">
+			<li class="dropdown-submenu"><a class="dropdown-item" href="/region-midwest/Midwest">Midwest</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-iowa/IA">Iowa</a></li>
+				  <li><a class="dropdown-item" href="/state-illinois/IL">Illinois</a></li>
+				  <li><a class="dropdown-item" href="/state-indiana/IN">Indiana</a></li>
+				  <li><a class="dropdown-item" href="/state-michigan/MI">Michigan</a></li>
+				  <li><a class="dropdown-item" href="/state-minnesota/MN">Minnesota</a></li>
+				  <li><a class="dropdown-item" href="/state-missouri/MO">Missouri</a></li>
+				  <li><a class="dropdown-item" href="/state-north-dakota/ND">North Dakota</a></li>
+				  <li><a class="dropdown-item" href="/state-nebraska/NE">Nebraska</a></li>
+				  <li><a class="dropdown-item" href="/state-ohio/OH">Ohio</a></li>
+				  <li><a class="dropdown-item" href="/state-south-dakota/SD">South Dakota</a></li>
+				  <li><a class="dropdown-item" href="/state-wisconsin/WI">Wisconsin</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-northeast/Northeast">Northeast</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-connecticut/CT">Connecticut</a></li>
+				  <li><a class="dropdown-item" href="/state-massachusetts/MA">Massachusetts</a></li>
+				  <li><a class="dropdown-item" href="/state-maryland/MD">Maryland</a></li>
+				  <li><a class="dropdown-item" href="/state-maine/ME">Maine</a></li>
+				  <li><a class="dropdown-item" href="/state-new-hampshire/NH">New Hampshire</a></li>
+				  <li><a class="dropdown-item" href="/state-new-york/NY">New York</a></li>
+				  <li><a class="dropdown-item" href="/state-pennsylvania/PA">Pennsylvania</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-southeast/Southeast">Southeast</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-arkansas/AR">Arkansas</a></li>
+				  <li><a class="dropdown-item" href="/state-florida/FL">Florida</a></li>
+				  <li><a class="dropdown-item" href="/state-kentucky/KY">Kentucky</a></li>
+				  <li><a class="dropdown-item" href="/state-north-carolina/NC">North Carolina</a></li>
+				  <li><a class="dropdown-item" href="/state-tennessee/TN">Tennessee</a></li>
+				  <li><a class="dropdown-item" href="/state-virginia/VA">Virginia</a></li>
+				  <li><a class="dropdown-item" href="/state-west-virginia/WV">West Virginia</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-southwest/Southwest">Southwest</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-arizona/AZ">Arizona</a></li>
+				  <li><a class="dropdown-item" href="/state-colorado/CO">Colorado</a></li>
+				  <li><a class="dropdown-item" href="/state-new-mexico/NM">New Mexico</a></li>
+				  <li><a class="dropdown-item" href="/state-texas/TX">Texas</a></li>
+				  <li><a class="dropdown-item" href="/state-utah/UT">Utah</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-western/Western">Western</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-california/CA">California</a></li>
+				  <li><a class="dropdown-item" href="/state-idaho/ID">Idaho</a></li>
+				  <li><a class="dropdown-item" href="/state-montana/MT">Montana</a></li>
+				  <li><a class="dropdown-item" href="/state-nevada/NV">Nevada</a></li>
+				  <li><a class="dropdown-item" href="/state-oregon/OR">Oregon</a></li>
+				  <li><a class="dropdown-item" href="/state-washington/WA">Washington</a></li>
+				  <li><a class="dropdown-item" href="/state-wyoming/WY">Wyoming</a></li>
+				  </ul>
+              </li>
+			  </ul>
+			  </li>
+			  <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="/index.php?/content/lang/4">ESPA&Ntilde;OL</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="https://pnsne.ws/PNS-Spanish-Translation">TRANSLATE SITE</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="btn pns-btn-primary pns-btn active" href="/media-outlet.php">MEDIA OUTLET SIGN UP</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="btn pns-btn pns-btn-secondary active" href="/dn1.php">SUPPORT</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="/supporters.php">SUPPORTERS</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="/nc/login.php">LOGIN</a>
+          </li>
+	</ul>
+		  </div>
+		</div>
+	  </nav>
+  
+    <!-- Header -->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 text-center">
+          <p class="pns-date">Monday, July 12, 2021</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <a href="/"><img src="/assets/images/logo-new.png" style="width:95%"></a>
+          
+        </div>
+        <div class="col-md-3 text-center align-middle">
+          <a href="https://www.facebook.com/PublicNewsService" target="_blank"><img class="pns-social-padding align-middle" src="/assets/images/icon-fb.svg"></a>
+          <a href="https://www.instagram.com/publicnewsservice/" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-ig.svg"></a>
+          <a href="https://www.linkedin.com/company/public-news-service" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-in.svg"></a>
+          <a href="https://www.reddit.com/user/publicnewsservice" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-social.svg"></a>
+          <a href="https://www.youtube.com/channel/UCZn6cOvEFEcysl3plFpWDxw" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-yt.svg"></a>
+		  <a href="http://twitter.com/PNS_News" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-twitter-blue.svg"></a>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="container-fluid pns-bottom-border pns-mb-20 pns-mt-20"></div>
+<script type="text/javascript">
+
+      $(".pns-nav, .dropdown").hover(
+          function () {
+              $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+              $(this).addClass('open');
+          },
+          function () {
+              $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+              $(this).removeClass('open');
+          });
+		function searchWork()
+		{
+			var sf = document.getElementById("keywords");
+			if (sf.style.display == "none") {
+				sf.style.display = "block";
+				var b = document.getElementById("searchSubmit");
+				b.style.display = "none";
+				sf.focus();
+				return false;
+			} else return true;
+		}
+
+    </script>
+
+<!-- Newscast Subscribe Modal -->
+<div class="modal fade" id="newscastModal" tabindex="-1" role="dialog" aria-labelledby="newscastModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newscastModalLabel">PNS National Newscast?> Talks</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="rowSBS">
+				<div class="imageSBS3"><a href="https://pnsne.ws/PNS-Stitcher" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/stitcher-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/PNS-Spotify"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/spotify-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/PNS-RSS-Feed"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/rss-feed-logo.png" /></a></div>
+				</div>
+				<div class="rowSBS">
+				<div class="imageSBS2"><a href="https://pnsne.ws/PNS-Google" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/google-podcasts-logo.png" /></a></div>
+				<div class="imageSBS2"><a href="https://pnsne.ws/PNS-Apple-Podcast"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/apple-podcasts-logo.png" /></a></div>
+				</div>
+				<table border="0">
+				<tr><td colspan="2">Audio Activation</td></tr>
+				<tr><td style="text-align:center"><img src="/images/siri-logo.png" style="max-height:70px" /></td><td>&quot;Siri, play the Public News Service (podcast)&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/google-home-logo.png" style="max-height:70px" /></td><td>&quot;Hey Google, play the Public News Service podcast&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/amazon-alexa-logo.png" style="max-height:70px" /></td><td>&quot;Alexa, play Public News Service podcast&quot;<br />or &quot;Alexa, what's my news flash?&quot; once you set it up in the Alexa app</td></tr>
+				</table>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- YYYY talks Subscribe Modal -->
+<div class="modal fade" id="talksModal" tabindex="-1" role="dialog" aria-labelledby="talksModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="talksModalLabel"> Talks</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="rowSBS">
+				<div class="imageSBS3"><a href="https://pnsne.ws/2020Talks-Stitcher" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/stitcher-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/2020Talks-Spotify"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/spotify-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/2020Talks-RSS-Feed"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/rss-feed-logo.png" /></a></div>
+				</div>
+				<div class="rowSBS">
+				<div class="imageSBS2"><a href="https://pnsne.ws/2020Talks-Google" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/google-podcasts-logo.png" /></a></div>
+				<div class="imageSBS2"><a href="https://pnsne.ws/2020Talks"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/apple-podcasts-logo.png" /></a></div>
+				</div>
+				<table border="0">
+				<tr><td colspan="2">Audio Activation</td></tr>
+				<tr><td style="text-align:center"><img src="/images/siri-logo.png" style="max-height:70px" /></td><td>&quot;Siri, play the 2020Talks podcast&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/google-home-logo.png" style="max-height:70px" /></td><td>&quot;Hey Google, play the 2020Talks podcast&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/amazon-alexa-logo.png" style="max-height:70px" /></td><td>&quot;Alexa, play Two-Thousand-Twenty Talks podcast&quot;<br />or &quot;Alexa, what's my news flash?&quot; once you set it up in the Alexa app</td></tr>
+				</table>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Two Column Top Newscasts -->
+  <div class="container mt-4 pns-bb-1 pb-3">
+    <div class="row">
+      <div class="col-md-6 pns-br-1 mobile-pb-30">
+	  	  <a href="/index.php?/content/newscasts/3272">
+          <img class="float-start pns-pr-12" src="/assets/images/graphic-pns-daily-newscast.png"></a>
+        <div class="w-50 float-start">
+		  <a href="/index.php?/content/newscasts/3272">
+          <h6>PNS Daily Newscast - July 12, 2021</h6></a>
+        </div>
+        <div class="float-end align-items-center">
+          <img class="playsound" src="/assets/images/icon-play.svg" onClick="return audpp('newscastAudio');"><small>Play</small>
+		  <audio id="newscastAudio"  preload="none"  src="https://www.newsservice.org/mp3.php?f=comp-3272.mp3"></audio>
+		  
+		  <button type="button" class="btn pns-btn pns-btn-secondary-tight" data-bs-toggle="modal" data-bs-target="#newscastModal">
+  SUBSCRIBE
+</button>
+        </div>
+        <p class="pt-2 w-75 pns-small-medium">The deadly heatwave in the Northwest is laying bare the link between climate change and worker's rights, and multiple states are dealing with energy issues.</p>
+      </div>
+      
+
+      <div class="col-md-6">
+	  	<a href="/index.php?/content/newscasts/3273">
+        <img class="float-start pns-pr-12" src="/assets/images/graphic-2021-talks.png"></a>
+        <div class="w-50 float-start">
+		  <a href="/index.php?/content/newscasts/3273">
+          <h6>2021Talks - July 12, 2021</h6></a>
+        </div>
+        <div class="float-end align-items-center">
+          <img class="playsound" src="/assets/images/icon-play.svg" onClick="return audpp('talksAudio');"><small>Play</small>
+		  <audio id="talksAudio"  preload="none"  src="https://www.newsservice.org/mp3.php?f=comp-3273.mp3"></audio>
+		  
+          <button type="button" class="btn pns-btn pns-btn-secondary-tight" data-bs-toggle="modal" data-bs-target="#talksModal">
+  SUBSCRIBE
+</button>
+        </div>
+        <p class="pt-2 w-75 pns-small-medium">Two towering reminders of the confederacy come down, Congress looks to finalize an infrastructure bill as it gets back to work, and former president Donald Trump leads the pack in a CPAC presidential poll.</p>
+      
+      </div>
+      
+    </div>
+  </div>
+<div class="container mt-1 pt-5">
+  <div class="row ">
+    <div class="col-md-9">
+							<a name="ethics"></a>
+							<h2>Ethics policy</h2>
+		<p>We are committed to accurate, fair and complete reporting that prioritizes perspectives that have often been excluded from mainstream media coverage.</p>
+		<p> 
+		These policies guide our journalism as we deliver news and information in a rapidly changing media environment. These guidelines are dynamic; we will continually modify and update based on feedback from our journalists, readers and staff. Because the circumstances under which information is obtained and reported vary widely from one case to the next, these guidelines should not be understood as establishing hard and fast rules or as covering every situation that might arise.
+		</p>
+							<a name="diversity"></a>
+							<h2>
+							Diverse Voices Statement - You Are Invited
+							</h2>
+							<p>
+							The complex issues we face as a society demand different perspectives. For Public News Service, this means including a wide variety of voices from all backgrounds as sources and producers. Whether our differences are visible or private, all are welcome, regardless of ethnicity, age, gender identity, race, sexual orientation, physical or mental ability or experience in the judicial system.
+							We invite you to tell us about any and all issues that you believe should be publicly examined. Our reporting is dedicated to sharing and learning from the most marginalized voices.
+							</p>
+							<a name="staffing"></a>
+							<h2>Staffing Report</h2>
+							Percentages are based on 32 total survey responses. The numbers include full-time and part-time editorial staff, full-time non-editorial staff and part-time interns.
+							</p>
+							<center>
+							<img src="/images/about/age.png" /><br />
+							<img src="../images/about/beyond-english.png" /><br />
+							<img src="../images/about/gender-identity.png" /><br />
+							<img src="../images/about/race-ethnicity.png" /><br />
+							<img src="../images/about/sexual-orientation.png" /><br />
+							<img src="../images/about/time-zone.png" /><br />
+							</center>
+							<a name="corrections"></a>
+							<h2>Public News Service Corrections Policy</h2>
+							<p>Public News Service prioritizes accurate and factual news. We strive to promptly correct any errors in material published on audio and digital platforms. If a correction or clarification is needed in a story, we will make a note in the original story that it has been updated.</p>
+							<p>When we publish incorrect information on social networks, we will correct it on that platform.</p>
+							<p>To report corrections and clarifications contact:
+							<br>&bull; Phone: 303.448.9105
+							<br>&bull; E-mail: <a href="mailto:info@publicnewsservice.org">info@publicnewsservice.org</a>
+							<p>Please indicate which specific story and the date published in your message.</p>
+							<h2>Founding Date/Ownership Structure</h2>
+							<p>
+							Founded in 1996 in Idaho, PNS is now an employee-owned certified B Corps (Benefit Corporation.)</p>
+							<a name="funding"></a>
+							<h2>Editorial Policy/Funding
+							</h2>
+							<p>We are funded by grants, gifts and memberships from nonprofits, individuals, corporations and foundations. Over 400 organizations contribute to fund the news services, which are independently operated by professional journalists. We
+								solicit support for subject areas in which we have an interest.
+							</p>
+							<p>We recognize the possibility that those
+								who fund any medium may seek to influence its content. Therefore,
+								we have instituted policies to ensure that our practices and
+								content conform to common journalistic standards. As with
+								any other objective news medium, there is a &quot;wall&quot;
+								between the news and fundraising functions. Our producers
+								and editors practice attribution, fairness and balance. All
+								supporters are given the explicit understanding that editorial
+								content and control is entirely under the authority of PNS
+								staff.					</p>
+							<h2>Mission and Coverage</h2>
+							<p>We are an independent news service supporting local newsrooms through trusted news that lifts up voices of justice, compassion and solutions to help better engage and inform their communities.
+							</p><p>
+							A big part of our mission is equity in local news. Our original content is state-level and issue-oriented news, not political or "gotcha" stories, and we aim to raise the level of public dialogue by focusing on historically under-represented voices and perspective.
+							</p><p>
+							In any individual story, we're looking to understand the conflict underlying the conflict, not "he said/she said" reporting that creates division, leaves the audience wondering who's lying, or worse, actively turned off to learning more.
+							</p><p>
+							We train our editorial team to practice "Polarity Management" and what we call "Deep Balance," the idea that many conflicts are based on polarities that can be respectfully understood and managed, rather than problems that can be "correctly solved" - for example, how do we balance individual responsibility versus collective, or a community's short-term versus long-term needs?
+							</p><p>
+							When solutions require balancing many sides of a complex equation, and on a daily news cycle that is fast-paced and often superficial and sensational when communities need more thoughtful deliberation, we seek to include the voices of the quieter, more thoughtful and less powerful.
+							</p><p>
+							On a day-to-day basis we reach out to hundreds of grassroots organizations who keep us informed on a cross-cutting range of social justice, environmental and economic issues.
+							</p><p>
+							Public News Service is independent and collaborative. We partner with news outlets, journalism schools, our members, and the social change field at large, to develop stories, connect with sources, and ensure high quality news gets out to a geographically, demographically, and ideologically diverse audience.</p>
+							<a name="verification"></a>
+							<h2>Verification Standards</h2>
+							<p>Public News Service commits to do its best to publish accurate information across all of its content. We take many steps to ensure accuracy: We investigate claims with skepticism; question assumptions; challenge conventional wisdom; confirm information with experts; and seek to corroborate what sources tell us by talking with other informed people or consulting documents. We verify content, such as technical terms, stats, etc., against source documents or make clear who is providing the information. We may share relevant components of a story with a primary source or an outside expert to verify the information and/or confirm that sources are quoted correctly.
+		</p>
+							<p>We stand by the information as accurate, and if it's not, we will change it as quickly as possible and be transparent with our readers about the magnitude of the error. </p>
+							<p>We guide our journalists to ask the following questions when they double-check information in a quest for the truth.</p>
+							<ul>
+							<li style="list-style-type:disc;list-style-position: inside;font-size:15px">How do you know?</li>
+							<li style="list-style-type:disc;list-style-position: inside;font-size:15px">How can you be sure?</li>
+							<li style="list-style-type:disc;list-style-position: inside;font-size:15px">Where is the evidence?</li>
+							<li style="list-style-type:disc;list-style-position: inside;font-size:15px">Who is the source, and how does the source know?</li>
+							<li style="list-style-type:disc;list-style-position: inside;font-size:15px">What is the supporting documentation? </li>
+							</ul>
+							<br />
+							<p>If you believe any information about our stories to be inaccurate, please email <a href="mailto:editors@publicnewsservice.org">editors@publicnewsservice.org</a> and include the link to the story in question.</p>
+						
+							<a name="sources"></a>
+							<h2>Unnamed Source Policy</h2>
+							<p>Public News Service does not publish stories with unnamed sources, with the following exception: In rare cases, the names of interviewed sources may be withheld to protect people in sensitive situations where using their name could endanger their livelihood or life. If we use an unnamed source, we will inform our readers as much as we can about why our unnamed sources deserve our confidence in the footnote of the story.</p>
+							<a name="feedback"></a>
+							<h2>Actionable Feedback: Contact Point</h2>
+							<p>You are a frontline witness, and your insights help shape our stories and the possibilities of reimagining equitable public safety, civil rights, politics, health, housing, social movements, schools, immigration, culture, energy, and conservation - the list goes on. We invite your comments and complaints on news stories, and suggestions for issues and events to cover or sources to consult. We believe that news organizations have a responsibility to center the interests of our communities on the values, issues and ideas of the day, and we need your help to fulfill that commitment.
+		</p><p>
+		Contact with the editorial staff: Public News Service stories on the web appear with a byline of each respective journalist. By selecting the journalist's name, it leads to a bio and/or contact email. Please contact either an individual reporter, or if you wish to communicate more generally with the editorial staff of Public News Service, please contact us directly through <a href="mailto:pnseditors@publicnewsservice.org">pnseditors@publicnewsservice.org</a>.
+		</p><p>
+		Good practices: If you have a comment regarding our editorial process or the coverage of a news item, we invite you to tell us about it at <a href="goodpractices@publicnewsservice.org">goodpractices@publicnewsservice.org</a>.
+		</p><p>
+		You can help us develop a story or news coverage line, answer questions a story may raise, identify related or uncovered issues, and teach us about new sources, experts, and diverse perspectives. If you have a story that deserves or needs to be told, please contact us directly through <a href="mailto:pnseditors@publicnewsservice.org">pnseditors@publicnewsservice.org</a>.</p>
+		<a name="privacy"></a>
+		<h2>Privacy Policy</h2>
+							<p>Public News Service operates a website, found at&nbsp;<a href="http://www.publicnewsservice.org/" target="_blank" rel="noopener">www.publicnewsservice.org</a>; operates several social media accounts; delivers news and other content via email; and makes the same or similar content available to mobile users. Our Privacy Policy applies when you use any of these Services. It describes the kinds of information we may gather when you use the Services, how we use your information, when we might disclose your information, and how you can manage your information.</p>
+							<p>By visiting and/or subscribing to Public News Service, you are accepting the practices described in our Privacy Policy, including our use of cookies and similar online tools. If you do not agree to the terms of this Privacy Policy, please do not use our Services.</p>
+							<p><strong><u>What information do we gather about you?</u></strong></p>
+							<p>The information we gather falls into two categories: Non-identifying tracking information collected as you navigate through our site, and personal information you voluntarily supply when you subscribe, contribute, complete a survey, or provide your email address.</p>
+							<p><strong>Log Data</strong></p>
+							<p>When you visit our website, our servers may automatically log the standard data provided by your web browser. This data is considered &ldquo;non-identifying information,&rdquo; as it does not personally identify you on its own. It may include your computer&rsquo;s Internet Protocol (IP) address, your browser type and version, the pages you visit, the time and date of your visit, the time spent on each page, and other details. This information is used for internal purposes only.</p>
+							<p><strong>Personal Information</strong></p>
+							<p>If you choose to subscribe, Public News Service will send you a daily email of stories. This data is considered &ldquo;identifying information,&rdquo; as it can personally identify you. We request personal information relevant to providing you with our email newsletters, and only use it to help provide or improve this service. This is a voluntary service we offer &mdash; you are not required to provide your email address or sign up for our email newsletters.</p>
+							<p>Public News Service complies fully with the federal CAN-SPAM Act of 2003. We will not share, sell, rent, swap or authorize any third party to use your email address. If you feel you have received an email from us in error, please contact&nbsp;<a href="mailto:info@publicnewsservice.org" target="_blank">info@publicnewsservice.org</a></p>
+							<p>Our policy does not apply to websites maintained by other companies or organizations to which we may link or who may link to us. We are not responsible for the actions and privacy policies of third party websites.</p>
+							<p><strong>Voluntary Information for Contributions</strong></p>
+							<p>Contributing to fund our work is a voluntary action and no user is required to provide this information to navigate the Public News Service site and content. You are not required to submit personal information to use this site, but if you choose to make a contribution to Public News Service, we will request the following information in order to process your payment:</p>
+							<blockquote>
+							  <p>Cardholder Name
+							  <br>Credit Card number, expiration date and CVC code
+							  <br>Billing address, including ZIP code
+							  <br>Email address
+							  <br>Phone number (optional)</p>
+						  </blockquote>
+							<p>None of your personal financial data, including credit card numbers and other identifying information, is housed on Public News Service&rsquo;s servers, nor is it retained or re-sold for commercial use. Records are maintained through third-party point-of-sale systems (PayPal) to enable recurring contributions when authorized by you, the user, and to contact you should an issue arise with payment. Recurring contributions can be cancelled at any time by emailing <a href="mailto:info@publicnewsservice.org" target="_blank">info@publicnewsservice.org</a>.</p>
+							<p><strong><u>How we collect information</u></strong></p>
+							<p><strong>Cookies</strong></p>
+							<p>As is standard practice on many websites, Public News Service uses &ldquo;cookies&rdquo; and other technologies for legitimate interests to recognize you to help us understand which parts of our website are the most popular, where our visitors are going and how much time they spend there. We use Google analytics to do some of this collection. We reserve the right to change the vendors who provide us with usage data.</p>
+							<p><strong>Use of information</strong></p>
+							<p>We may use a combination of identifying and non-identifying information to understand who our visitors are, how they use our services, and how we may improve their experience of our website in future. We use the IP address log in an aggregate fashion to track access to, and analyze usage of, our site.</p>
+							<p>Public News Service will not sell, rent, swap or authorize any third party to use your email address without your permission. You can unsubscribe to our emails at any time.</p>
+							<p><strong><u>What do we do with the information we gather about you?</u></strong></p>
+							<p>PNS may collect personal information from our users in connection with voluntarily visiting our site. Data may be collected on our website, on the phone, or via email. Readers are primarily contacted via email, with daily news updates, but may occasionally be contacted by telephone or mail. All survey data is reported and/or used in aggregate form only, and no personally identifiable information is released.</p>
+							<p><strong>Statistical Analysis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+							<p>Public News Service may perform statistical, demographic and marketing analyses of subscribers.</p>
+							<p><strong>Email &amp; Newsletters</strong></p>
+							<p>If you provide your email address as a donor or subscriber, Public News Service will send you daily email news stories if you request. PNS reserves the right to send you occasional promotional emails, fundraising campaigns and occasional events or development related to our work. You may opt out of these emails at any time. If you feel you have received an email from us in error, or want to unsubscribe at any time, please contact <a href="mailto:info@publicnewsservice.org" target="_blank">info@publicnewsservice.org</a>.</p>
+							<p><strong>Account and Service-Related Email</strong></p>
+							<p>Public News Service reserves the right to send you email relating to your account status. This includes alerts, confirmations, notices of account problems, other transactional emails and notifications about major changes to our website and/or to our Privacy Policy. If you would like to stop all communications from PNS, please email info [at] publicnewsservice.org with your name, address, and any specific information to help us identify what you want and do not want. If you have registered for online discussions or other services, you may receive email specific to your participation in those activities.</p>
+							<p><strong>Survey Email</strong></p>
+							<p>We may send you an email inviting you to participate in user surveys. User surveys greatly help us to improve our website and any information we obtain in such surveys will not be shared with third parties.</p>
+							<p><strong>Emails From You</strong></p>
+							<p>If you send us email, you should be aware that information disclosed in email may not be secure or encrypted and thus may be available to others. We suggest that you exercise caution when deciding to disclose any personal or confidential information via email. Please do not send credit card information via email. This is better conveyed via a secure form on our website or over the phone to our Customer Service representatives. We will use your email address to respond directly to your questions or comments.</p>
+							<p><strong>Data Security</strong></p>
+							<p>We use reasonable precautions to protect our users&rsquo; personal information (e.g. addresses and emails) and to store it securely.</p>
+							<p>Although we take appropriate measures to safeguard your information, we cannot guarantee its absolute security. To further protect your data, we recommend that you use complex passwords for your accounts with us and for accounts with third parties that you link to any of your accounts with us. Please do not use the same passwords you use for your account with us for other services or share your password with unauthorized people. If you have reason to believe that your interaction with us is no longer secure, please immediately notify us in accordance with the &ldquo;Contact Us&rdquo; section below.</p>
+							<p><strong>Financial Information</strong></p>
+							<p>Public News Service does not collect or store financial information (e.g. credit card numbers) from our website since we process transactions through PayPal. PNS reserves the right to change vendors.</p>
+							<p><strong><u>Users in the EEA and Switzerland</u></strong></p>
+							<p>If you are a resident of the EEA or Switzerland, the following information applies with respect to personal data collected through your use of our Services.</p>
+							<p>Purposes of processing and legal basis for processing: We process personal data consistent with our disclosures in this Privacy Policy. We process personal data on the following legal bases: (1) with your consent; (2) as necessary to perform our agreement to provide Services (such as when you become a Subscriber); and (3) as necessary for our legitimate interests in providing the Services where those interests do not override your fundamental rights and freedoms related to data privacy.</p>
+							<p>Transfers: Personal data we collect may be transferred to, and stored and processed in, the United States or any other country in which we or our affiliates or processors maintain facilities. We will ensure that transfers of personal data to a third country or an international organization are subject to appropriate safeguards.</p>
+							<p>Your Rights: You are entitled to the rights under Chapter III of the EU General Data Protection Regulation or Section 2 of the Swiss Federal Act on Data Protection with respect to the processing of your personal data, which include the right to access and correct and to request erasure of personal data. To exercise these rights, contact <a href="mailto:info@publicnewsservice.org" target="_blank">info@publicnewsservice.org</a>&nbsp;and provide as complete a description of your request as possible.</p>
+							<p><strong>Children Under 18</strong></p>
+							<p>We do not intentionally collect any personally identifiable information from individuals under the age of 18, and we will make every effort to delete any details of such users where a parent or guardian has informed us that these details have been collected.</p>
+							<p><strong><u>Who We Are:&nbsp; Contact Us</u></strong></p>
+							<br>Public News Service
+							<br>3980 Broadway Suite 103 Box 139
+							<br>Boulder, CO 80304
+							<br>Phone: 303.448.9105
+							<br>Email:&nbsp;<a href="mailto:info@publicnewsservice.org" target="_blank">info@publicnewsservice.or</a></p>
+							<p>For help, email: info [at] publicnewsservice.org</p>
+							<p><strong><u>Changes to This Policy</u></strong></p>
+							<p>This Privacy Policy may be amended from time to time. Any such changes will be posted on this page so you should check here from time to time.</p>
+		
+		<p>
+		Here's how you can reach us: 
+		<a href="mailto:info@publicnewsservice.org">info@publicnewsservice.org</a>
+		</p>
+    </div>
+
+
+
+  <div class="col-md-3 pns-align">
+					<div id="officecontact">
+							<h1>Contact Us</h1>
+							<p>
+								3980 Broadway Suite 103 Box 139 <br />
+								Boulder, CO 80304<br />
+								Phone: 303.448.9105 <br />
+								Toll free: 888.891.9416<br />
+								Fax: 208.247.1830
+							</p>
+							<p>
+							Complete Staff List
+							</p>
+							<p class="pns-small"><a href="/producers.php?id=9"  >
+					Chris Thomas</a><br>Senior Editor<br>
+					<a href="/nc/contact.php?id=1&t=Chris+Thomas">Contact</a></p><br>
+			<p class="pns-small"><a href="/producers.php?id=27"  >
+					Alfonso Collada</a><br>Spanish Editor<br>
+					<a href="/nc/contact.php?id=2&t=Alfonso+Collada">Contact</a></p><br>
+			<p class="pns-small"><a href="/producers.php?id=6"  >
+					Lark Corbeil</a><br>CEO/Publisher & Founder<br>
+					<a href="/nc/contact.php?id=13&t=Lark+Corbeil">Contact</a></p><br>
+										
+					</div>
+	</div>
+  </div>
+</div>
+
+
+			  <!-- Divider -->
+
+  <div class="container-fluid pns-bottom-border pb-1 pb-5"></div>
+
+
+  <!-- Footer -->
+  <div class="container pt-5">
+    <div class="row">
+        <div class="col-md-3 text-center">
+          <a href="https://www.facebook.com/PublicNewsService" target="_blank"><img class="pns-social-padding align-middle" src="/assets/images/icon-fb.svg"></a>
+          <a href="https://www.instagram.com/publicnewsservice/" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-ig.svg"></a>
+          <a href="https://www.linkedin.com/company/public-news-service" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-in.svg"></a>
+          <a href="https://www.reddit.com/user/publicnewsservice" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-social.svg"></a>
+          <a href="https://www.youtube.com/channel/UCZn6cOvEFEcysl3plFpWDxw" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-yt.svg"></a>
+		  <a href="http://twitter.com/PNS_News" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-twitter-blue.svg"></a>
+
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/assets/images/logo-small.png" class="pb-4" style="width:200px;">
+          <p class="px-5">Phone: 303.448.9105 Toll Free: 888.891.9416 Fax: 208.247.1830
+            Your trusted member and audience-supported news source since 1996
+            Copyright © 2021</p>
+        </div>
+        <div class="col-md-3 mobile-center mobile-w-65">
+          
+          <ul class="float-start pns-pl-0">
+            <li><a href="/about.php" class="pns-date blue">About PNS</a></li>
+            <li><a href="/media/index.php" class="pns-date blue">Media Facts</a></li>
+            <li><a href="/dn1.php" class="pns-date blue">Support Us</a></li>
+            <li><a href="/releases/index.php" class="pns-date blue">Contact Us</a></li>
+          </ul>
+
+          <ul class="float-end">
+            <li><a href="/about/jobs.php" class="pns-date blue">PNS Employment</a></li>
+            <li><a href="/about/mission.php" class="pns-date blue">Mission/History</a></li>
+            <li><a href="/about/bestpractices.php" class="pns-date blue">Best Practices</a></li>
+            <li><a href="/nc/contact.php?id=1&m=Pitch+Our+Journalists" target="_blank" class="pns-date blue">Pitch Our Journalists</a></li>
+			<li><a href="/staff.php" class="pns-date blue">Staff</a></li>
+          </ul>
+
+
+          </p>
+        </div>
+    </div>
+  </div>
+
+	
+ 
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsMediaOrganization",
+
+  "name": "Public News Service",
+"ethicsPolicy": "https://www.publicnewsservice.org/about/bestpractices.php#ethics",
+"masthead": "https://www.publicnewsservice.org/about.php",
+"foundingDate": "1996-1-1",
+"diversityPolicy": "https://www.publicnewsservice.org/about/bestpractices.php#diversity",
+"correctionsPolicy": "https://www.publicnewsservice.org/about/bestpractices.php#corrections",
+"verificationFactCheckingPolicy": "https://www.publicnewsservice.org/about/bestpractices.php#verification",
+"unnamedSourcesPolicy": "https://www.publicnewsservice.org/about/bestpractices.php#sources",
+"actionableFeedbackPolicy": "https://www.publicnewsservice.org/about/bestpractices.php#feedback",
+"ownershipFundingInfo": "https://www.publicnewsservice.org/about/bestpractices.php#funding",
+"diversityStaffingReport": "https://www.publicnewsservice.org/about/bestpractices.php#staffing",
+"contactPoint" : [{
+        "@type" : "ContactPoint",
+        "contactType" : "Newsroom Contact",
+        "url" : "https://www.publicnewsservice.org/releases/index.php"
+  },
+  {
+        "@type" : "ContactPoint",
+        "contactType" : "Public Engagement",
+        "url" : "https://www.publicnewsservice.org/nc/contact.php?id=13"
+  }]
+}
+</script>
+
+<script language="JavaScript1.2"
+        src="/js/HM_Loader.js"
+        type='text/javascript'></script>
+	</body>
+</html>

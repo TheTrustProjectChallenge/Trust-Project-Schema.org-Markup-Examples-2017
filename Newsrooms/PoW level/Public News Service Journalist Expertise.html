@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+
+<title>Public News Service</title>
+<script type="text/javascript">
+<!--
+function popup(mylink, windowname, w, h)
+{
+  if (! window.focus)return true;
+    var href;
+  if (typeof(mylink) == 'string')
+     href=mylink;
+  else
+     href=mylink.href;
+      if (w == 0)
+    {
+       w = 780; h = 580; // default sizes
+      if (window.screen) {
+        w = window.screen.availWidth * 75 / 100;
+        h = window.screen.availHeight * 75 / 100;
+      }
+    }
+  window.open(href, windowname, 'width='+w+',height='+h+',scrollbars=yes,location=no');
+  return false;
+}
+//-->
+</script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index,follow" />
+<meta name="twitter:widgets:new-embed-design" content="on">
+<meta property="fb:pages" content="271906814169" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap, multi level menu, submenu, treeview nav menu examples" />
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" >
+<script src="/js/jquery-1.12.4.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js" ></script>
+
+    
+
+
+    <!-- Custom styles for this template -->
+    <link href="/css/pns-navbar.css" rel="stylesheet">
+    <link href="/css/pns-styles.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+<script type="text/javascript">
+// audio play pause
+function audpp(id) {
+var myaud = document.getElementById(id);
+if (myaud.paused) { 
+ myaud.controls = true; 
+ myaud.play(); 
+ myaud.setAttribute("controlsList", "nodownload");
+ $(myaud.parentElement).find(".playsound").css({"display":"none"}); } else { myaud.pause(); $(myaud.parentElement).children(".playsound").css({"display":"block"}); }
+}
+$(function(){
+    $("audio").on("play", function() {
+        $("audio").not(this).each(function(index, audio) {
+            audio.pause();
+			audio.controls = false;
+			$(audio.parentElement).find(".playsound").css({"display":"block"});
+        });
+    });
+});
+</script>
+
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item pns-nav">
+            <form action="/results.php" method="post">
+
+				<input type="text" id="keywords" name="keywords" placeholder="Search.." style="display:none" />
+            	<input type="image" alt="submit" name="submit" id="searchSubmit" src="/assets/images/icon-search.svg" onClick="return searchWork();">
+
+			</form>
+          </li>
+<li class="nav-item pns-nav dropdown"><a class="nav-link blue dropdown-toggle" id="TopicsDropDown" role="button" data-toggle="dropdown" href="#">TOPICS</a>        
+              <!-- Topics Submenus -->
+              <ul class="dropdown-menu" aria-labelledby="TopicsDropDown01">
+<li class="dropdown-submenu"><a class="dropdown-item" href="/news-environment/IEnvironment">Environment</a>
+			  
+				<!-- Environment Submenu Level 1 -->
+				<ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/news-animal-welfare/C2">Animal Welfare</a></li>
+<li><a class="dropdown-item" href="/news-climate-change-air-quality/C16">Climate Change/Air Quality</a></li>
+<li><a class="dropdown-item" href="/news-endangered-species-and-wildlife/C14">Endangered Species &amp; Wildlife</a></li>
+<li><a class="dropdown-item" href="/news-energy-policy/C9">Energy Policy</a></li>
+<li><a class="dropdown-item" href="/news-environment/C15">Environment</a></li>
+<li><a class="dropdown-item" href="/news-environmental-justice/C51">Environmental Justice</a></li>
+<li><a class="dropdown-item" href="/news-nuclear-waste/C23">Nuclear Waste</a></li>
+<li><a class="dropdown-item" href="/news-oceans/C54">Oceans</a></li>
+<li><a class="dropdown-item" href="/news-public-lands-wilderness/C24">Public Lands/Wilderness</a></li>
+<li><a class="dropdown-item" href="/news-rural-farming/C25">Rural/Farming</a></li>
+<li><a class="dropdown-item" href="/news-salmon-recovery/C26">Salmon Recovery</a></li>
+<li><a class="dropdown-item" href="/news-sustainable-agriculture/C30">Sustainable Agriculture</a></li>
+<li><a class="dropdown-item" href="/news-toxics/C32">Toxics</a></li>
+<li><a class="dropdown-item" href="/news-urban-planning-transportation/C33">Urban Planning/Transportation</a></li>
+<li><a class="dropdown-item" href="/news-waste-reduction-recycling/C44">Waste Reduction/Recycling</a></li>
+<li><a class="dropdown-item" href="/news-water/C34">Water</a></li>
+</ul>
+			  </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/news-health-and-wellness/IHealth+and+Wellness">Health and Wellness</a>
+			  
+				<!-- Environment Submenu Level 1 -->
+				<ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/news-alcohol-and-drug-abuse-prevention/C38">Alcohol and Drug Abuse Prevention</a></li>
+<li><a class="dropdown-item" href="/news-disabilities/C10">Disabilities</a></li>
+<li><a class="dropdown-item" href="/news-domestic-violence-sexual-assault/C11">Domestic Violence/Sexual Assault</a></li>
+<li><a class="dropdown-item" href="/news-health-issues/C17">Health Issues</a></li>
+<li><a class="dropdown-item" href="/news-hiv-aids-prevention/C43">HIV/AIDS Prevention</a></li>
+<li><a class="dropdown-item" href="/news-mental-health/C22">Mental Health</a></li>
+<li><a class="dropdown-item" href="/news-reproductive-health/C59">Reproductive Health</a></li>
+<li><a class="dropdown-item" href="/news-smoking-prevention/C28">Smoking Prevention</a></li>
+<li><a class="dropdown-item" href="/news-teen-pregnancy-prevention/C31">Teen Pregnancy Prevention</a></li>
+</ul>
+			  </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/news-social-issues/ISocial+Issues">Social Issues</a>
+			  
+				<!-- Environment Submenu Level 1 -->
+				<ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/news-arts-and-culture/C1">Arts &amp; Culture</a></li>
+<li><a class="dropdown-item" href="/news-budget-policy-and-priorities/C3">Budget Policy &amp; Priorities</a></li>
+<li><a class="dropdown-item" href="/news-campaign-finance-reform-money-in-pol/C4">Campaign Finance Reform/Money in Pol</a></li>
+<li><a class="dropdown-item" href="/news-census/C56">Census</a></li>
+<li><a class="dropdown-item" href="/news-childrens-issues/C5">Children's Issues</a></li>
+<li><a class="dropdown-item" href="/news-civic-engagement/C40">Civic Engagement</a></li>
+<li><a class="dropdown-item" href="/news-civil-rights/C42">Civil Rights</a></li>
+<li><a class="dropdown-item" href="/news-community-issues-and-volunteering/C6">Community Issues and Volunteering</a></li>
+<li><a class="dropdown-item" href="/news-consumer-issues/C7">Consumer Issues</a></li>
+<li><a class="dropdown-item" href="/news-criminal-justice/C8">Criminal Justice</a></li>
+<li><a class="dropdown-item" href="/news-cultural-resources/C53">Cultural Resources</a></li>
+<li><a class="dropdown-item" href="/news-early-childhood-education/C12">Early Childhood Education</a></li>
+<li><a class="dropdown-item" href="/news-education/C13">Education</a></li>
+<li><a class="dropdown-item" href="/news-family-father-issues/C49">Family/Father Issues</a></li>
+<li><a class="dropdown-item" href="/news-gun-violence-prevention/C50">Gun Violence Prevention</a></li>
+<li><a class="dropdown-item" href="/news-housing-homelessness/C18">Housing/Homelessness</a></li>
+<li><a class="dropdown-item" href="/news-human-rights-racial-justice/C19">Human Rights/Racial Justice</a></li>
+<li><a class="dropdown-item" href="/news-hunger-food-nutrition/C20">Hunger/Food/Nutrition</a></li>
+<li><a class="dropdown-item" href="/news-immigrant-issues/C46">Immigrant Issues</a></li>
+<li><a class="dropdown-item" href="/news-international-relief/C45">International Relief</a></li>
+<li><a class="dropdown-item" href="/news-juvenile-justice/C58">Juvenile Justice</a></li>
+<li><a class="dropdown-item" href="/news-lgbtqia-issues/C41">LGBTQIA Issues</a></li>
+<li><a class="dropdown-item" href="/news-livable-wages-working-families/C21">Livable Wages/Working Families</a></li>
+<li><a class="dropdown-item" href="/news-media-reform/C57">Media Reform</a></li>
+<li><a class="dropdown-item" href="/news-native-american-issues/C47">Native American Issues</a></li>
+<li><a class="dropdown-item" href="/news-peace/C37">Peace</a></li>
+<li><a class="dropdown-item" href="/news-philanthropy/C48">Philanthropy</a></li>
+<li><a class="dropdown-item" href="/news-poverty-issues/C55">Poverty Issues</a></li>
+<li><a class="dropdown-item" href="/news-senior-issues/C27">Senior Issues</a></li>
+<li><a class="dropdown-item" href="/news-social-justice/C29">Social Justice</a></li>
+<li><a class="dropdown-item" href="/news-welfare-reform/C35">Welfare Reform</a></li>
+<li><a class="dropdown-item" href="/news-womens-issues/C36">Women's Issues</a></li>
+<li><a class="dropdown-item" href="/news-youth-issues/C52">Youth Issues</a></li>
+</ul>
+			  </li>
+			  </ul>
+			  </li>
+			  <li class="nav-item pns-nav dropdown">
+            <a class="nav-link blue dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">REGION</a>
+
+            <!-- Region Submenus -->
+            <ul class="dropdown-menu" aria-labelledby="RegionDropDown01">
+			<li class="dropdown-submenu"><a class="dropdown-item" href="/region-midwest/Midwest">Midwest</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-iowa/IA">Iowa</a></li>
+				  <li><a class="dropdown-item" href="/state-illinois/IL">Illinois</a></li>
+				  <li><a class="dropdown-item" href="/state-indiana/IN">Indiana</a></li>
+				  <li><a class="dropdown-item" href="/state-michigan/MI">Michigan</a></li>
+				  <li><a class="dropdown-item" href="/state-minnesota/MN">Minnesota</a></li>
+				  <li><a class="dropdown-item" href="/state-missouri/MO">Missouri</a></li>
+				  <li><a class="dropdown-item" href="/state-north-dakota/ND">North Dakota</a></li>
+				  <li><a class="dropdown-item" href="/state-nebraska/NE">Nebraska</a></li>
+				  <li><a class="dropdown-item" href="/state-ohio/OH">Ohio</a></li>
+				  <li><a class="dropdown-item" href="/state-south-dakota/SD">South Dakota</a></li>
+				  <li><a class="dropdown-item" href="/state-wisconsin/WI">Wisconsin</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-northeast/Northeast">Northeast</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-connecticut/CT">Connecticut</a></li>
+				  <li><a class="dropdown-item" href="/state-massachusetts/MA">Massachusetts</a></li>
+				  <li><a class="dropdown-item" href="/state-maryland/MD">Maryland</a></li>
+				  <li><a class="dropdown-item" href="/state-maine/ME">Maine</a></li>
+				  <li><a class="dropdown-item" href="/state-new-hampshire/NH">New Hampshire</a></li>
+				  <li><a class="dropdown-item" href="/state-new-york/NY">New York</a></li>
+				  <li><a class="dropdown-item" href="/state-pennsylvania/PA">Pennsylvania</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-southeast/Southeast">Southeast</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-arkansas/AR">Arkansas</a></li>
+				  <li><a class="dropdown-item" href="/state-florida/FL">Florida</a></li>
+				  <li><a class="dropdown-item" href="/state-kentucky/KY">Kentucky</a></li>
+				  <li><a class="dropdown-item" href="/state-north-carolina/NC">North Carolina</a></li>
+				  <li><a class="dropdown-item" href="/state-tennessee/TN">Tennessee</a></li>
+				  <li><a class="dropdown-item" href="/state-virginia/VA">Virginia</a></li>
+				  <li><a class="dropdown-item" href="/state-west-virginia/WV">West Virginia</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-southwest/Southwest">Southwest</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-arizona/AZ">Arizona</a></li>
+				  <li><a class="dropdown-item" href="/state-colorado/CO">Colorado</a></li>
+				  <li><a class="dropdown-item" href="/state-new-mexico/NM">New Mexico</a></li>
+				  <li><a class="dropdown-item" href="/state-texas/TX">Texas</a></li>
+				  <li><a class="dropdown-item" href="/state-utah/UT">Utah</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown-submenu"><a class="dropdown-item" href="/region-western/Western">Western</a>
+                <!-- Midwest Submenu Level -->
+                <ul class="dropdown-menu" >
+				<li><a class="dropdown-item" href="/state-california/CA">California</a></li>
+				  <li><a class="dropdown-item" href="/state-idaho/ID">Idaho</a></li>
+				  <li><a class="dropdown-item" href="/state-montana/MT">Montana</a></li>
+				  <li><a class="dropdown-item" href="/state-nevada/NV">Nevada</a></li>
+				  <li><a class="dropdown-item" href="/state-oregon/OR">Oregon</a></li>
+				  <li><a class="dropdown-item" href="/state-washington/WA">Washington</a></li>
+				  <li><a class="dropdown-item" href="/state-wyoming/WY">Wyoming</a></li>
+				  </ul>
+              </li>
+			  </ul>
+			  </li>
+			  <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="/index.php?/content/lang/4">ESPA&Ntilde;OL</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="https://pnsne.ws/PNS-Spanish-Translation">TRANSLATE SITE</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="btn pns-btn-primary pns-btn active" href="/media-outlet.php">MEDIA OUTLET SIGN UP</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="btn pns-btn pns-btn-secondary active" href="/dn1.php">SUPPORT</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="/supporters.php">SUPPORTERS</a>
+          </li>
+          <li class="nav-item pns-nav">
+            <a class="nav-link blue" href="/nc/login.php">LOGIN</a>
+          </li>
+	</ul>
+		  </div>
+		</div>
+	  </nav>
+  
+    <!-- Header -->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 text-center">
+          <p class="pns-date">Monday, July 12, 2021</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <a href="/"><img src="/assets/images/logo-new.png" style="width:95%"></a>
+          
+        </div>
+        <div class="col-md-3 text-center align-middle">
+          <a href="https://www.facebook.com/PublicNewsService" target="_blank"><img class="pns-social-padding align-middle" src="/assets/images/icon-fb.svg"></a>
+          <a href="https://www.instagram.com/publicnewsservice/" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-ig.svg"></a>
+          <a href="https://www.linkedin.com/company/public-news-service" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-in.svg"></a>
+          <a href="https://www.reddit.com/user/publicnewsservice" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-social.svg"></a>
+          <a href="https://www.youtube.com/channel/UCZn6cOvEFEcysl3plFpWDxw" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-yt.svg"></a>
+		  <a href="http://twitter.com/PNS_News" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-twitter-blue.svg"></a>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="container-fluid pns-bottom-border pns-mb-20 pns-mt-20"></div>
+<script type="text/javascript">
+
+      $(".pns-nav, .dropdown").hover(
+          function () {
+              $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+              $(this).addClass('open');
+          },
+          function () {
+              $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+              $(this).removeClass('open');
+          });
+		function searchWork()
+		{
+			var sf = document.getElementById("keywords");
+			if (sf.style.display == "none") {
+				sf.style.display = "block";
+				var b = document.getElementById("searchSubmit");
+				b.style.display = "none";
+				sf.focus();
+				return false;
+			} else return true;
+		}
+
+    </script>
+
+<!-- Newscast Subscribe Modal -->
+<div class="modal fade" id="newscastModal" tabindex="-1" role="dialog" aria-labelledby="newscastModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newscastModalLabel">PNS National Newscast?> Talks</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="rowSBS">
+				<div class="imageSBS3"><a href="https://pnsne.ws/PNS-Stitcher" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/stitcher-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/PNS-Spotify"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/spotify-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/PNS-RSS-Feed"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/rss-feed-logo.png" /></a></div>
+				</div>
+				<div class="rowSBS">
+				<div class="imageSBS2"><a href="https://pnsne.ws/PNS-Google" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/google-podcasts-logo.png" /></a></div>
+				<div class="imageSBS2"><a href="https://pnsne.ws/PNS-Apple-Podcast"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/apple-podcasts-logo.png" /></a></div>
+				</div>
+				<table border="0">
+				<tr><td colspan="2">Audio Activation</td></tr>
+				<tr><td style="text-align:center"><img src="/images/siri-logo.png" style="max-height:70px" /></td><td>&quot;Siri, play the Public News Service (podcast)&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/google-home-logo.png" style="max-height:70px" /></td><td>&quot;Hey Google, play the Public News Service podcast&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/amazon-alexa-logo.png" style="max-height:70px" /></td><td>&quot;Alexa, play Public News Service podcast&quot;<br />or &quot;Alexa, what's my news flash?&quot; once you set it up in the Alexa app</td></tr>
+				</table>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- YYYY talks Subscribe Modal -->
+<div class="modal fade" id="talksModal" tabindex="-1" role="dialog" aria-labelledby="talksModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="talksModalLabel"> Talks</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="rowSBS">
+				<div class="imageSBS3"><a href="https://pnsne.ws/2020Talks-Stitcher" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/stitcher-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/2020Talks-Spotify"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/spotify-logo.png" /></a></div>
+				<div class="imageSBS3"><a href="https://pnsne.ws/2020Talks-RSS-Feed"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/rss-feed-logo.png" /></a></div>
+				</div>
+				<div class="rowSBS">
+				<div class="imageSBS2"><a href="https://pnsne.ws/2020Talks-Google" target="_blank"><img style="max-height:70px;max-width:100%" src="/images/google-podcasts-logo.png" /></a></div>
+				<div class="imageSBS2"><a href="https://pnsne.ws/2020Talks"  target="_blank"><img style="max-height:70px;max-width:100%" src="/images/apple-podcasts-logo.png" /></a></div>
+				</div>
+				<table border="0">
+				<tr><td colspan="2">Audio Activation</td></tr>
+				<tr><td style="text-align:center"><img src="/images/siri-logo.png" style="max-height:70px" /></td><td>&quot;Siri, play the 2020Talks podcast&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/google-home-logo.png" style="max-height:70px" /></td><td>&quot;Hey Google, play the 2020Talks podcast&quot;</td></tr>
+				<tr><td style="text-align:center"><img src="/images/amazon-alexa-logo.png" style="max-height:70px" /></td><td>&quot;Alexa, play Two-Thousand-Twenty Talks podcast&quot;<br />or &quot;Alexa, what's my news flash?&quot; once you set it up in the Alexa app</td></tr>
+				</table>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Two Column Top Newscasts -->
+  <div class="container mt-4 pns-bb-1 pb-3">
+    <div class="row">
+      <div class="col-md-6 pns-br-1 mobile-pb-30">
+	  	  <a href="/index.php?/content/newscasts/3272">
+          <img class="float-start pns-pr-12" src="/assets/images/graphic-pns-daily-newscast.png"></a>
+        <div class="w-50 float-start">
+		  <a href="/index.php?/content/newscasts/3272">
+          <h6>PNS Daily Newscast - July 12, 2021</h6></a>
+        </div>
+        <div class="float-end align-items-center">
+          <img class="playsound" src="/assets/images/icon-play.svg" onClick="return audpp('newscastAudio');"><small>Play</small>
+		  <audio id="newscastAudio"  preload="none"  src="https://www.newsservice.org/mp3.php?f=comp-3272.mp3"></audio>
+		  
+		  <button type="button" class="btn pns-btn pns-btn-secondary-tight" data-bs-toggle="modal" data-bs-target="#newscastModal">
+  SUBSCRIBE
+</button>
+        </div>
+        <p class="pt-2 w-75 pns-small-medium">The deadly heatwave in the Northwest is laying bare the link between climate change and worker's rights, and multiple states are dealing with energy issues.</p>
+      </div>
+      
+
+      <div class="col-md-6">
+	  	<a href="/index.php?/content/newscasts/3273">
+        <img class="float-start pns-pr-12" src="/assets/images/graphic-2021-talks.png"></a>
+        <div class="w-50 float-start">
+		  <a href="/index.php?/content/newscasts/3273">
+          <h6>2021Talks - July 12, 2021</h6></a>
+        </div>
+        <div class="float-end align-items-center">
+          <img class="playsound" src="/assets/images/icon-play.svg" onClick="return audpp('talksAudio');"><small>Play</small>
+		  <audio id="talksAudio"  preload="none"  src="https://www.newsservice.org/mp3.php?f=comp-3273.mp3"></audio>
+		  
+          <button type="button" class="btn pns-btn pns-btn-secondary-tight" data-bs-toggle="modal" data-bs-target="#talksModal">
+  SUBSCRIBE
+</button>
+        </div>
+        <p class="pt-2 w-75 pns-small-medium">Two towering reminders of the confederacy come down, Congress looks to finalize an infrastructure bill as it gets back to work, and former president Donald Trump leads the pack in a CPAC presidential poll.</p>
+      
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container mt-1 pt-5">
+    <div class="row align-items-center">
+      <div class="col-md-5 pns-align"><img src="/headshot.php?ID=211" class="height-280 pns-280-circular"></div>
+      <div class="col-md-7">
+      
+          <div class="float-start"><h2>Nadia Ramlagan</h2>
+		  <h5>Producer</h5>
+          </div>
+          <div class="float-end">
+		  <a href="/nc/contact.php?eid=211&t=Nadia+Ramlagan" target="_blank"><img src="assets/images/icon-email-dk.png"></a>
+				<a href="https://twitter.com/nadiaramlagan" target="_blank"><img src="assets/images/icon-twitter-dk.png" class="pns-social-padding"></a>
+
+          </div>
+
+          <div class="row float-start pt-4">
+              <div class="col-md-12">
+                <p>Before joining Public News Service as a producer, Nadia Ramlagan worked for The Center for Emerging Media and The Marc Steiner Show, a daily public affairs program in Baltimore, MD. She's also produced long-form radio documentaries and is currently in the process of working on a film. Based in Kentucky, she covers the Southeast and Appalachian region for Public News Service (Kentucky, West Virginia, North Carolina, and Tennessee), and co-anchors 2021Talks, a Public News Service newscast tracking politics and elections. Nadia studied in Scotland and at Duke University's Center for Documentary Studies. </p>
+
+                    <br />
+<p><strong>Languages Spoken:</strong> English</p>
+<p><strong>Topic Expertise:</strong> Interests include politics, reproductive health, mental health, gun violence
+</p>
+<p><strong>Location:</strong> Lexington, KY</p>
+<p><strong>Demographic Expertise:</strong> rural and immigrant populations </p>
+
+                    <a href="/nc/contact.php?eid=211&t=Nadia+Ramlagan" class="btn pns-btn-secondary" target="_blank">CONTACT</a>
+              </div>
+          </div>
+
+      </div>
+     </div>
+    </div>
+
+  <!-- End Header -->
+
+  <!-- Title -->
+  <div class="container pb-1 mt-5">
+    <div class="row pns-bt-1 pns-bb-1 pt-3 pb-2 mb-5">
+        <div class="col-md-6">
+          <h3><strong>Latest Work</strong></h3>
+        </div>
+    </div>
+<div class="row">
+	
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-12/consumer/ky-regulators-rein-in-utilities-proposed-rate-hikes/a74970-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDk3MCZzaWQ9MQ==" class="w-100 pr-15" alt="LG&E and Kentucky Utilities serve more than 1.3 million customers across more than 90 counties. (Adobe Stock)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-12/consumer/ky-regulators-rein-in-utilities-proposed-rate-hikes/a74970-1">
+                        <h3 class="blue">KY Regulators Rein In Utilities' Proposed Rate Hikes</h3></a>
+                        <p class="card-text mobile-pb-30">FRANKFORT, Ky. -- The Kentucky Public Service Commission has rejected proposed rate hikes by Louisville Gas and Electric Company and Kentucky &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74970-1"><source src="/mp3.php?f=rss-74970-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74970-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-08/budget-policy-and-priorities/conservation-groups-give-thumbs-up-on-nc1-senate-budget/a74931-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDkzMSZzaWQ9MQ==" class="w-100 pr-15" alt="North Carolina's registered voters overwhelmingly support land and water conservation, according to a 2017 statewide poll by the group Land for Tomorrow. (Adobe Stock)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-08/budget-policy-and-priorities/conservation-groups-give-thumbs-up-on-nc1-senate-budget/a74931-1">
+                        <h3 class="blue">Conservation Groups Give Thumbs Up on NC1 Senate Budget</h3></a>
+                        <p class="card-text mobile-pb-30">RALEIGH, N.C. - Conservation groups are praising Senate lawmakers' recent budget proposal, which provides more than $100 million toward the state's &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74931-1"><source src="/mp3.php?f=rss-74931-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74931-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+	
+<!-- Rule -->
+
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+              <hr>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+	
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-07/budget-policy-and-priorities/poll-rural-voter-majority-supports-tax-increases-on-wealthy/a74922-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDkyMiZzaWQ9MQ==" class="w-100 pr-15" alt="In a new poll, 22% of rural voters think raising taxes on those earning over $400,000 a year could hurt the economy, while 51% believe it would help it. (Adobe Stock)<br />">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-07/budget-policy-and-priorities/poll-rural-voter-majority-supports-tax-increases-on-wealthy/a74922-1">
+                        <h3 class="blue">Poll: Rural Voter Majority Supports Tax Increases on Wealthy</h3></a>
+                        <p class="card-text mobile-pb-30">CHARLESTON, W.Va. -- The latest poll by Americans for Tax Fairness found rural voters overwhelmingly support the idea of corporations and the wealthy &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74922-1"><source src="/mp3.php?f=rss-74922-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74922-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-06/environment/tn-to-embark-on-litter-pollution-study/a74909-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDkwOSZzaWQ9MQ==" class="w-100 pr-15" alt="There are an estimated 50 billion pieces of litter on roadways nationwide, according to Keep America Beautiful. (Adobe Stock)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-06/environment/tn-to-embark-on-litter-pollution-study/a74909-1">
+                        <h3 class="blue">TN to Embark on Litter Pollution Study</h3></a>
+                        <p class="card-text mobile-pb-30">NASHVILLE, Tenn. -- Plastic bottles and cans line many of the state's roadways and rivers, and now the state is conducting a large research study to &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74909-1"><source src="/mp3.php?f=rss-74909-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74909-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+	
+<!-- Rule -->
+
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+              <hr>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+	
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-06/environment/is-wv-prepared-5-years-after-devastating-floods/a74907-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDkwNyZzaWQ9MQ==" class="w-100 pr-15" alt="Topography makes the Mountain State one of the most flood-prone regions in the country. (Wikimedia Commons/June 2016 U.S. Army National Guard photo by Sgt. Penni Harris)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-06/environment/is-wv-prepared-5-years-after-devastating-floods/a74907-1">
+                        <h3 class="blue">Is WV Prepared 5 Years after Devastating Floods?</h3></a>
+                        <p class="card-text mobile-pb-30">CHARLESTON, W.Va. -- Deadly flooding five years ago continues to haunt many West Virginia communities, and advocates called on the state to update &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74907-1"><source src="/mp3.php?f=rss-74907-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74907-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-05/health/nc-physicians-voice-support-for-full-practice-aprns/a74898-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDg5OCZzaWQ9MQ==" class="w-100 pr-15" alt="The number of Advanced Practice Registered Nurses who are prepared as primary care providers has spiked in recent years, both in rural and non-rural regions. (Adobe Stock)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-05/health/nc-physicians-voice-support-for-full-practice-aprns/a74898-1">
+                        <h3 class="blue">NC Physicians Voice Support for Full-Practice APRNs</h3></a>
+                        <p class="card-text mobile-pb-30">RALEIGH, N.C. -- Some doctors in North Carolina are voicing their support for legislation to cut red tape for Advanced Practice Registered Nurses (&hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74898-1"><source src="/mp3.php?f=rss-74898-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74898-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+	
+<!-- Rule -->
+
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+              <hr>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+	
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-01/education/pell-recipients-can-get-help-toward-internet-bills/a74848-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDg0OCZzaWQ9MQ==" class="w-100 pr-15" alt="Approximately 4 million students enrolled in higher education are struggling with internet access, according to the New American Foundation. (Adobe Stock)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-01/education/pell-recipients-can-get-help-toward-internet-bills/a74848-1">
+                        <h3 class="blue">Pell Recipients Can Get Help Toward Internet Bills</h3></a>
+                        <p class="card-text mobile-pb-30">NASHVILLE, Tenn. - College students receiving Pell Grants are eligible for a temporary federal program that provides $50 per month, or $75 in Tribal &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74848-1"><source src="/mp3.php?f=rss-74848-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74848-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-07-01/childrens/experts-call-child-tax-credit-a-game-changer-for-ky-families/a74842-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDg0MiZzaWQ9MQ==" class="w-100 pr-15" alt="The expanded child tax credit is expected to send $1.8 billion to Kentucky families. (Adobe Stock)<br />">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-07-01/childrens/experts-call-child-tax-credit-a-game-changer-for-ky-families/a74842-1">
+                        <h3 class="blue">Experts Call Child Tax Credit a Game Changer for KY Families </h3></a>
+                        <p class="card-text mobile-pb-30">FRANKFORT, KY. - Starting July 15, nearly a million Kentucky kids and their families could get extra income support through the federal child tax &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74842-1"><source src="/mp3.php?f=rss-74842-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74842-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+	
+<!-- Rule -->
+
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+              <hr>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+	
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-06-30/health/nc-small-business-owners-feel-crushed-by-healthcare-system/a74838-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDgzOCZzaWQ9MQ==" class="w-100 pr-15" alt="Around 600,000 employees of North Carolina's small businesses have no health insurance, according to the North Carolina Justice Center. (Adobe Stock)<br />">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-06-30/health/nc-small-business-owners-feel-crushed-by-healthcare-system/a74838-1">
+                        <h3 class="blue">NC Small Business Owners Feel "Crushed" by Healthcare System</h3></a>
+                        <p class="card-text mobile-pb-30">DURHAM, N.C. -- Small-business owners across the state say the pandemic has highlighted their struggles with the current healthcare system, and many &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74838-1"><source src="/mp3.php?f=rss-74838-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74838-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+      <div class="col-md-6 pns-pr-30 pns-br-1">
+        <div class="card mb-3" style="max-width: 635px;">
+            <div class="row g-0 row align-items-center">
+              <div class="col-md-3">
+			    <a href="/2021-06-30/water/ongoing-restoration-key-to-improving-cheat-river-water-quality/a74834-1">
+                <img src="https://www.newsservice.org/getimage.php?p=dGh1bWJ3aWR0aD01MjUmc2dpZD03NDgzNCZzaWQ9MQ==" class="w-100 pr-15" alt="West Virginia's Cheat River flows from five major tributaries, known as the "Forks of the Cheat," which originate in the Monongahela National Forest. (Adobe Stock)">
+				</a>
+              </div>
+              <div class="col-md-9">
+                    <div class="w-90 float-start">
+                        <a href="/2021-06-30/water/ongoing-restoration-key-to-improving-cheat-river-water-quality/a74834-1">
+                        <h3 class="blue">Ongoing Restoration Key to Improving Cheat River Water Quality</h3></a>
+                        <p class="card-text mobile-pb-30">MORGANTOWN, W.Va. -- June has been National Rivers Month, and in West Virginia, conservation groups are celebrating the results of decades-long &hellip;</p>
+                    </div>
+                    <div class="float-end">
+						<audio id="au74834-1"><source src="/mp3.php?f=rss-74834-1.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+                        <img class="" src="assets/images/icon-play.svg" onclick="audpp('au74834-1')"></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+	
+<!-- Rule -->
+
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+              <hr>
+          </div>
+      </div>
+  </div>
+  
+<!-- Rule -->
+
+<!--
+<div class="container">
+<div class="row justify-content-center pt-5">
+    <div class="col-md-10 text-center">
+        <a href="#" class="btn pns-btn-secondary">SEE MORE</a>
+    </div>
+</div>
+</div>
+-->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Nadia Ramlagan",
+    "url": "https://www.publicnewsservice.org/producers.php?id=211",
+	"jobTitle": "Producer",
+	
+    "description": "Before joining Public News Service as a producer, Nadia Ramlagan worked for The Center for Emerging Media and The Marc Steiner Show, a daily public affairs program in Baltimore, MD. She's also produced long-form radio documentaries and is currently in the process of working on a film. Based in Kentucky, she covers the Southeast and Appalachian region for Public News Service (Kentucky, West Virginia, North Carolina, and Tennessee), and co-anchors 2021Talks, a Public News Service newscast tracking politics and elections. Nadia studied in Scotland and at Duke University's Center for Documentary Studies. ",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Journalist",
+        "url": "https://www.publicnewsservice.org/staffbio.php?i=211"
+	},
+	"affiliation": [
+        {
+            "@type": "NewsMediaOrganization",
+            "name": "Public News Service",
+            "url": "https://www.publicnewsservice.org/"
+        }
+    ]
+	,
+"knowsAbout":[
+ {
+  "@type": "thing",
+  "name":"Interests include politics"
+ }
+,
+ {
+  "@type": "thing",
+  "name":"reproductive health"
+ }
+,
+ {
+  "@type": "thing",
+  "name":"mental health"
+ }
+,
+ {
+  "@type": "thing",
+  "name":"gun violence"
+ }
+]
+,
+"knowsLanguage":[
+ {
+  "@type": "Language",
+  "name":"English"
+ }
+]
+
+}
+</script>
+
+  <!-- Divider -->
+
+  <div class="container-fluid pns-bottom-border pb-1 pb-5"></div>
+
+
+  <!-- Footer -->
+  <div class="container pt-5">
+    <div class="row">
+        <div class="col-md-3 text-center">
+          <a href="https://www.facebook.com/PublicNewsService" target="_blank"><img class="pns-social-padding align-middle" src="/assets/images/icon-fb.svg"></a>
+          <a href="https://www.instagram.com/publicnewsservice/" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-ig.svg"></a>
+          <a href="https://www.linkedin.com/company/public-news-service" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-in.svg"></a>
+          <a href="https://www.reddit.com/user/publicnewsservice" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-social.svg"></a>
+          <a href="https://www.youtube.com/channel/UCZn6cOvEFEcysl3plFpWDxw" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-yt.svg"></a>
+		  <a href="http://twitter.com/PNS_News" target="_blank"><img class="pns-social-padding" src="/assets/images/icon-twitter-blue.svg"></a>
+
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/assets/images/logo-small.png" class="pb-4" style="width:200px;">
+          <p class="px-5">Phone: 303.448.9105 Toll Free: 888.891.9416 Fax: 208.247.1830
+            Your trusted member and audience-supported news source since 1996
+            Copyright © 2021</p>
+        </div>
+        <div class="col-md-3 mobile-center mobile-w-65">
+          
+          <ul class="float-start pns-pl-0">
+            <li><a href="/about.php" class="pns-date blue">About PNS</a></li>
+            <li><a href="/media/index.php" class="pns-date blue">Media Facts</a></li>
+            <li><a href="/dn1.php" class="pns-date blue">Support Us</a></li>
+            <li><a href="/releases/index.php" class="pns-date blue">Contact Us</a></li>
+          </ul>
+
+          <ul class="float-end">
+            <li><a href="/about/jobs.php" class="pns-date blue">PNS Employment</a></li>
+            <li><a href="/about/mission.php" class="pns-date blue">Mission/History</a></li>
+            <li><a href="/about/bestpractices.php" class="pns-date blue">Best Practices</a></li>
+            <li><a href="/nc/contact.php?id=1&m=Pitch+Our+Journalists" target="_blank" class="pns-date blue">Pitch Our Journalists</a></li>
+			<li><a href="/staff.php" class="pns-date blue">Staff</a></li>
+          </ul>
+
+
+          </p>
+        </div>
+    </div>
+  </div>
+
+	
+ 
+
+
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      $(".pns-nav, .dropdown").hover(
+          function () {
+              $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+              $(this).addClass('open');
+          },
+          function () {
+              $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+              $(this).removeClass('open');
+          });
+    </script>
+
+      
+  </body>
+</html>

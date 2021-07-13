@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Artículo - Análisis</title>
+
+    <link href="prensacom/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="prensacom/images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="prensacom/images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="prensacom/images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="prensacom/images/apple-touch-icon-ipad-retina-152x152.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://multimedia.corprensa.com/la-prensa/assets/lightbox.min.css">
+
+    <link rel="stylesheet" href="https://www.prensa.com/pf/resources/assets/la-prensa.css?d=452">
+    <link rel="stylesheet" href="css/prensa.css?d=2">
+    <script defer src="prensacom/js/main.js?v=1.0.91"></script>
+    <script type="text/javascript" src="https://multimedia.corprensa.com/la-prensa/assets/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'wrapAround': true,
+            'imageFadeDuration': 0,
+            'fadeDuration': 0,
+            'resizeDuration': 0,
+            'disableScrolling': true
+        });
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": ["AnalysisNewsArticle"],
+            "mainEntityOfPage": "https://cdn.corprensa.com/la-prensa/bp/articulo-analisis.shtml",
+            "headline": "CSS apostaría primero por el uso del fideicomiso",
+            "description": "La junta directiva de la Caja de Seguro Social (CSS) analizó ayer, en una reunión virtual, sus estados financieros de 2019, los cuales le darán sustento a la decisión de la entidad de buscar recursos a través de su fideicomiso constituido en el Banco Nacional de Panamá (BNP), para pagar las jubilaciones a partir de julio próximo.",
+            "datePublished": "2021-05-27T00:00:00-00:00",
+            "dateModified": "2021-05-27T00:00:00-00:00",
+            "image": { "@type": "ImageObject", "url": "https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/cfEoqGE3I8knO5YTAOeo6lTG-gQ=/fit-in/1000x1000/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RR7VRZ2SRFHAXFULVBA3QPS7XE.jpg", "width": 1000, "height": 1000 },
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Yolanda Sandoval",
+                    "sameAs": "https://www.prensa.com/autor/yolanda.sandoval/"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Óscar Castaño",
+                    "sameAs": "https://www.prensa.com/autor/oscar.casta%C3%B1o/"
+                }
+            ],
+            "publisher": {
+                "@type": "NewsMediaOrganization",
+                "name": "La Prensa",
+                "logo": "https://multimedia.corprensa.com/la-prensa/assets/logo_laprensa_panama.svg"
+            },
+            "publishingPrinciples": "https://cdn.corprensa.com/la-prensa/bp/por-que-puedes-confiar-en-la-prensa.html?section=etiquetas"	
+        }
+    </script>
+</head>
+
+<body class="TEST-LAYOUT2">
+    <header>
+        <div class="nav-top">
+            <div class="nav-top-left">
+                <ul class="menu-link">
+                    <li><a href="#" id="open-menu" class="icon menu"></a></li>
+                    <div class="main-menu">
+                        <div class="main-menu-search">
+                            <form action="#">
+                                <input type="text" placeholder="Buscar..." name="search">
+                                <button type="submit"><i class="icon search"></i></button>
+                            </form>
+                        </div>
+                        <div class="main-menu-content">
+                            <ul>
+                                <li>Secciones</li>
+                                <li><a href="">Portada</a></li>
+                                <li><a href="">Sociedad</a></li>
+                                <li><a href="">Provincias</a></li>
+                                <li><a href="">Judiciales</a></li>
+                                <li><a href="">Política</a></li>
+                                <li><a href="">Economía</a></li>
+                                <li><a href="">Mundo</a></li>
+                                <li><a href="">Deportes +</a></li>
+                                <li><a href="">Entretenimiento</a></li>
+                                <li><a href="">Salud/Ciencia</a></li>
+                                <li><a href="">Tecnología</a></li>
+                                <li><a href="">Opinión</a></li>
+                                <li><a href="">Podcasts</a></li>
+                                <li><a href="">Video</a></li>
+                                <li><a href="">Fotografía</a></li>
+                                <li><a href="">Blogs</a></li>
+                                <li><a href="">Notas al Lector</a></li>
+                            </ul>
+                            <ul>
+                                <li class="main-menu-content-section">Edición Impresa</li>
+                                <span>
+                                    <li><a href="">Portada</a></li>
+                                    <li><a href="">Panorama</a></li>
+                                    <li><a href="">Hoy por Hoy</a></li>
+                                    <li><a href="">Opinión</a></li>
+                                    <li><a href="">Perspectiva</a></li>
+                                    <li><a href="">Deportes</a></li>
+                                    <li><a href="">Economía</a></li>
+                                    <li><a href="">Vivir +</a></li>
+                                    <li><a href="">Mosaico Digital</a></li>
+                                    <li><a href="">Reseña</a></li>
+                                    <li><a href="">Reseña Empresarial</a></li>
+                                    <li><a href="">Sociales</a></li>
+                                    <li><a href="">Horóscopo</a></li>
+                                </span>
+                            </ul>
+                            <ul>
+                                <li class="main-menu-content-section">Servicios</li>
+                                <span>
+                                    <li><a href="">Reseña Digital</a></li>
+                                    <li><a href="">Catálogos</a></li>
+                                    <li><a href="">Lotería</a></li>
+                                    <li><a href="">Horóscopo</a></li>
+                                    <li><a href="">Kiosco Digital</a></li>
+                                    <li><a href="">RSS</a></li>
+                                    <li><a href="">Temas</a></li>
+                                    <li><a href="">Autores</a></li>
+                                    <li><a href="">Ediciones Anteriores</a></li>
+                                </span>
+                            </ul>
+                            <ul>
+                                <li class="main-menu-content-section">Otros Sitios</li>
+                                <span>
+                                    <li><a href="https://www.asistentefinanciero.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Asistente Financiero</a></li>
+                                    <li><a href="https://www.metropormetro.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Metro por Metro</a></li>
+                                    <li><a href="https://www.tiendapanama.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Tienda Panamá</a></li>
+                                    <li><a href="https://www.tustiquetes.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Tus Tiquetes</a></li>
+                                    <li><a href="https://www.cerokm.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Cero KM</a></li>
+                                    <li><a href="https://corporativo.prensa.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Corprensa</a></li>
+                                    <li><a href="https://www.midiario.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Mi Diario</a></li>
+                                    <li><a href="https://www.martesfinanciero.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Martes Financiero</a></li>
+                                    <li><a href="https://www.ellas.pa/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Ellas</a></li>
+                                    <li><a href="https://club.prensa.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Club de Suscriptores</a></li>
+                                    <li><a href="https://buscafacil.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">Busca Fácil</a></li>
+                                    <li><a href="https://www.alamesa.pa/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral"
+                                            target="_blank">A la Mesa</a></li>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="javascript:void(0)" onclick="openSearch()" class="icon search"></a></li>
+                </ul>
+                <ul class="social-link">
+                    <li><a href="https://twitter.com/prensacom" class="icon twitter" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/prensacom" class="icon facebook" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/prensacom" class="icon instagram" target="_blank"></a></li>
+                </ul>
+                <div class="date">Panamá, 2 de mayo de 2021</div>
+            </div>
+            <div class="nav-top-center">
+                <a href="index.shtml"><img
+                        src="https://multimedia.corprensa.com/la-prensa/assets/logo_laprensa_panama.svg"></a>
+            </div>
+            <div class="nav-top-right">
+                <div id="evolokProfile">
+                    <ul>
+                        <li><small>Bienvenido VICTOR HUGO <span onclick="" title="Cerrar sesión">[x]</span></small> <a
+                                href="">Perfil</a></li>
+                    </ul>
+                </div>
+                <div class="nav-top-mobile-user">
+                    <li><a href="/kiosco" class="txt_14 noborder nopadding"><b>ePaper</b></a></li>
+                </div>
+                <div class="nav-top-print">
+                    <a href="/kiosco">ePaper</a> &nbsp;|&nbsp;
+                    <a href="seccion_print.shtml">Edición impresa</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bot">
+            <ul class="nav-bot-main">
+                <li class="nav-bot-main-more">
+                    <a href="">Locales</a>
+                    <div class="nav-bot-main-submenu">
+                        <ul>
+                            <li><a href="">Sociedad</a></li>
+                            <li><a href="">Judiciales</a></li>
+                            <li><a href="">Provincias</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="seccion_uhora.shtml">Política</a></li>
+                <li><a href="seccion_uhora.shtml">Economía</a></li>
+                <li><a href="seccion_uhora.shtml">Mundo</a></li>
+                <li><a href="seccion_uhora.shtml">Deportes</a></li>
+                <li class="nav-bot-main-more">
+                    <a href="">Entretenimiento</a>
+                    <div class="nav-bot-main-submenu">
+                        <ul>
+                            <li><a href="">Autos</a></li>
+                            <li><a href="">Cultura</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Salud/Ciencia</a></li>
+                <li><a href="">Podcasts</a></li>
+                <li><a href="">Opinión</a></li>
+                <li class="nav-bot-main-more">
+                    <a href="">Multimedia</a>
+                    <div class="nav-bot-main-submenu">
+                        <ul>
+                            <li><a href="">Podcasts</a></li>
+                            <li><a href="">Video</a></li>
+                            <li><a href="">Fotografía</a></li>
+                            <li><a href="">Infografías</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-bot-temas">
+            <ul class="nav-bot-temas-link">
+                <li class="nav-bot-temas-title">Temas de hoy:</li>
+                <li><a href="">Laurentino Cortizo</a></li>
+                <li><a href="">Ricardo Lombana</a></li>
+                <li><a href="">Asamblea Nacional</a></li>
+                <li><a href="">Código Electoral</a></li>
+                <li><a href="">Caja de Seguro Social</a></li>
+                <li><a href="">Ruta 2019</a></li>
+                <li><a href="">Ricardo Lombana</a></li>
+                <li><a href="">Juan Carlos Varela</a></li>
+                <li><a href="">Ricardo Martinelli</a></li>
+                <li><a href="">Copa de Oro</a></li>
+            </ul>
+        </div>
+        <div class="nav-bot-featured">
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Cortizo-lidera-intencion-voto.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Nito Cortizo lidera intención de voto; le sigue Rómulo Roux; Ricardo Lombana, en tercer lugar
+                    </div>
+                </a>
+            </div>
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Peter-Mayhew.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Murió el actor Peter Mayhew, intérprete de 'Chewbacca'
+                    </div>
+                </a>
+            </div>
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Romulo-Roux-pide.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Rómulo Roux en su cierre de campaña: 'Vamos a tener mejores días'
+                    </div>
+                </a>
+            </div>
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Tarantino-Brad-Pitt.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Película de Tarantino competirá en Festival de Cannes
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="page-content" class="internal">
+        <div class="main-wrapper">
+            <div class="main-box">
+                <div class="main-box-block">
+                    <article>
+                        <br>
+                        <!-- ADD NEW ELEMENTS TO ARTICLE COMPONENTS -->
+                        <div class="pre-title">
+                            <!-- IF EXISTS WORK OF TYPE -->
+                            <div class="article-kicker type-of-work">Análisis
+                                <span class="tooltiptext">
+                                    <b>ANÁLISIS: </b>
+                                    Interpretación con base en hechos y datos, evaluando la evolución de un tema o
+                                    proyectando el posible desarrollo futuro del mismo.
+                                </span>
+                            </div>
+                            <!---->
+                            <!-- IF EXISTS WORK OF TYPE AND EXISTS META TITLE -->
+                            <div class="article-kicker pipe">|</div>
+                            <!---->
+                            <!-- IF EXISTS META TITLE -->
+                            <div class="article-kicker">RECURSOS</div>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="article-header">
+                            <h1>CSS apostaría primero por el uso del fideicomiso</h1>
+                            <!-- <div class="article-summary">El segundo tema en analizar en el proceso de transición será el económico, luego de ello es que se anunciarán los nombres de los integrantes del Consejo de Gabinete.</div>         -->
+                        </div>
+                        <div class="article-author">
+                            <a href="/autor/Juan Manuel/">
+                                Yolanda Sandoval / Óscar Castaño
+                            </a>
+                        </div>
+                        <div class="article-date">11 may 2021 - 04:31 PM</div>
+                        <!-- THE TRUST PROJECT BADGE -->
+                        <div class="trust-project-badge">
+                            <p>La Prensa forma parte de</p>
+                            <a href="/" target="_blank" rel="noopener noreferrer nofollow">
+                                <img src="https://static.elpais.com/dist/resources/images/the-trust-project.svg" alt="The Trust Project" loading="lazy" width="60%" />
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="article-tags">TEMAS:&nbsp;<a href="/tema/caja-de-seguro-social/">Caja de Seguro
+                                Social</a><a href="/tema/banco-nacional-de-panama/">Banco Nacional de Panamá</a><a
+                                href="/tema/recursos/">recursos</a><a href="/tema/analisis/">análisis</a></div>
+                        <figure><a data-lightbox="lead-art" data-title="LA PRENSA"
+                                href="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/cfEoqGE3I8knO5YTAOeo6lTG-gQ=/fit-in/1000x1000/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RR7VRZ2SRFHAXFULVBA3QPS7XE.jpg"><img
+                                    loading="lazy" alt="CSS apostaría primero por el uso del  fideicomiso "
+                                    src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/cfEoqGE3I8knO5YTAOeo6lTG-gQ=/fit-in/1000x1000/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RR7VRZ2SRFHAXFULVBA3QPS7XE.jpg">
+                                <figcaption>LA PRENSA</figcaption>
+                            </a></figure>
+                        <div class="article-sharer">
+                            <a href="#">
+                                <span class="icon facebook-clear"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon twitter-clear"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon whatsapp"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon mail"></span>
+                            </a>
+                        </div>
+                        <div class="article-content">
+                            <p>La junta directiva de la <a href="https://www.prensa.com/tema/caja-de-seguro-social/" target="_blank">Caja de
+                                    Seguro Social (CSS)</a> analizó ayer, en una reunión virtual, sus estados financieros de 2019, los cuales le
+                                darán sustento a la decisión de la entidad de buscar recursos a través de su fideicomiso constituido en el <a
+                                    href="https://www.prensa.com/tema/banco-nacional-de-panam/" target="_blank">Banco Nacional de Panamá
+                                    (BNP)</a>, para pagar las jubilaciones a partir de julio próximo.</p>
+                            <div class="article-related">
+                                <h3>+info</h3><span class="article-related-link"><a
+                                        href="/impresa/economia/css-esta-contra-el-reloj-para-obtener-liquidez/">CSS está contra el reloj para
+                                        obtener liquidez</a></span>
+                            </div>
+                            <p>El fideicomiso de la entidad en el BNP asciende a $1,328 millones. Su uso no descarta otros financiamientos. La
+                                próxima semana, la administración de la entidad presentaría una versión formal de sus propuestas a la junta
+                                directiva.</p>
+                            <p>El pago de las jubilaciones depende de los ingresos por la cuota obrero-patronal, que han disminuido por el
+                                <b>coronavirus</b>.
+                            </p>
+                            <div class="article-files">
+                                <h3>Adjuntos</h3>
+                                <p>Respuestas de Emilio Sempris enviadas a nuestra redacción:</p>
+                                <a target="_blank" href="https://cdn.corprensa.com/la-prensa/uploads/2021/05/28/Respuestas de Emilio Sempris.pdf">
+                                    <span class="icon download"></span>
+                                    Respuestas de Emilio Sempris.pdf
+                                </a>
+                            </div>
+                            <br>
+                            <div class="article-files">
+                                <h3>Fuentes</h3>
+                                <a target="_blank" href="/impresa/economia/css-esta-contra-el-reloj-para-obtener-liquidez/">
+                                    <span class="article-related-link">
+                                        Sitio web de la Caja del Seguro Social
+                                    </span>
+                                </a>
+                                <a href="/impresa/economia/css-esta-contra-el-reloj-para-obtener-liquidez/">
+                                    <span class="article-related-link">
+                                        Sitio web del Banco Nacional de Panamá, sección de clientes
+                                    </span>
+                                </a>
+                            </div>
+                            <br>
+                            <div class="article-bio-box">
+                                <div class="article-bio-box-column">
+                                    <div class="article-author-picture">
+                                        <img src="https://s3.amazonaws.com/arc-authors/corprensa/21d2b15a-9b5e-4fa7-94fa-c8c8f133ef2c.jpg">
+                                    </div>
+                                    <div class="article-author">
+                                        <a href="#"><h4>Yolanda Sandoval</h4></a>
+                                        <h5>Editor / redactor<h5>
+                                    </div>
+                                    <div class="article-email">
+                                        <a href="#">
+                                            <span class="icon mail"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-bio-box-column">
+                                    <div class="article-author-picture">
+                                        <img src="https://s3.amazonaws.com/arc-authors/corprensa/4be4c56c-89fa-42ed-9b54-f83e0f971604.jpg">
+                                    </div>
+                                    <div class="article-author">
+                                        <a href="#"><h4>Oscar Castaño</h4></a>
+                                        <h5>Editor / redactor de Martes Financiero<h5>
+                                    </div>
+                                    <div class="article-email">
+                                        <a href="#">
+                                            <span class="icon mail"></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon facebook"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <a id="newsletter"></a>
+                            <div class="article-more">
+                                <h3><span>Más noticias de Panorama</span></h3>
+                                <ul>
+                                    <li><a href="">El lunes agitado del alcalde José Luis Fábrega</a></li>
+                                    <li><a href="">Hoy se inicia la discusión de las reformas a la ‘Constitución’ en la
+                                            AN</a></li>
+                                    <li><a href="">Paralizadas las pesquisas por malos manejos en Pandeportes</a></li>
+                                    <li><a href="">México y Estados Unidos evaluarán flujo migratorio</a></li>
+                                    <li><a href="">Socialista Pedro Sánchez llama a sellar histórico pacto con la
+                                            izquierda española</a></li>
+                                </ul>
+                            </div>
+                            <div class="article-comments">
+                                <h2><span>Comentarios</span></h2>
+                                <br>
+                                <div id="coral_thread"></div>
+                                <br>
+                                <form>
+                                    <ul>
+                                        <li>
+                                            <h3>Comentar</h3>
+                                        </li>
+                                        <li>
+                                            <h4>0 comentarios</h4>
+                                        </li>
+                                    </ul>
+                                    <textarea rows="4" cols="50"></textarea>
+                                    <ul class="article-comments-footer">
+                                        <li><small>* Los comentarios son responsabilidad de cada autor que expresa
+                                                libremente su opinión y no de Corporación La Prensa, S.A.</small></li>
+                                        <li><input type="submit" value="Enviar comentario"></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="main-box-right"></div>
+        </div>
+    </div>
+</body>
+
+</html>

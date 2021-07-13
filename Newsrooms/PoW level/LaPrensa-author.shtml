@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Author Page</title>
+    <link href="prensacom/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="prensacom/images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="prensacom/images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="prensacom/images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="prensacom/images/apple-touch-icon-ipad-retina-152x152.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://www.prensa.com/pf/resources/assets/la-prensa.css?d=452">
+    <link rel="stylesheet" href="css/prensa.css?d=24">
+    <script defer src="prensacom/js/main.js?v=1.0.62"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Mary Triny Zea",
+            "url": "https://www.prensa.com/autor/mary.triny/",
+            "image": "https://s3.amazonaws.com/arc-authors/corprensa/c6c99f5e-0ab3-40e5-830e-7b48cab67756.jpg",
+            "description": "Licenciada en periodismo de la Universidad de Panamá. Especialización en televisión de la Escuela de Cine y Televisión de San Antonio de Los Baños (Cuba). Postgrado en Alta Gerencia y MBA de la Universidad Latina. Becaria del programa de periodismo de investigación de la Universidad de Columbia y la Fundación Gabo. Más de 15 años de experiencia en medios impresos, radiales y televisivos. Miembro del Hub de periodismo de CONNECTAS y del International Consortium of Investigative Journalists.",
+            "identifier": "mary.triny",
+            "jobTitle": "Reportera Unidad de Investigación.",
+            "workLocation": {
+                "@type": "Place",
+                "name": "Ciudad de Panamá, Panamá"
+            },
+            "sameAs": [
+                "https://www.facebook.com/MARY-TRINY-ZEA-2001894053449883",
+                "https://www.twitter.com/mtrinyzea",
+                "https://www.instagram.com/mtrinyzea"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Journalist",
+                "url": "https://www.prensa.com/autor/mary.triny/",
+                "email": "mzea@prensa.com"
+            },
+            "affiliation": [
+            ],
+            "award": [
+            ],
+            "knowsAbout": [
+                {
+                    "@type": "Text",
+                    "description": "Investigaciones periodísticas de medio ambiente"
+                },
+                {
+                    "@type": "Text",
+                    "description": "seguimiento de fondos"
+                },
+                {
+                    "@type": "Text",
+                    "description": "Políticas públicas"
+                },
+                {
+                    "@type": "Text",
+                    "description": "Fiscalización del poder"
+                }
+            ],
+            "knowsLanguage": [
+                {
+                    "@type": "Language",
+                    "name": "spanish",
+                    "sameAs": "https://www.wikidata.org/wiki/Q1321"
+                },
+                {
+                    "@type": "Language",
+                    "name": "english",
+                    "sameAs": "https://www.wikidata.org/wiki/Q1860"
+                }
+            ]
+        }
+        </script>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .author-box {
+            display: table; 
+            padding-top: 20px;
+        }
+        .author-box-row {
+            display: table-row;
+        }
+        .author-box-image {
+            display: table-cell; 
+            vertical-align: top;
+        }
+        .author-box-content {
+            display: table-cell; 
+            padding-left: 30px;
+        }
+        .author-box-text {
+            margin-top: 20px;
+        }
+        .author-box-social li a {
+            color: gray;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-top">
+            <div class="nav-top-left">
+                <ul class="menu-link">
+                    <li><a href="#" id="open-menu" class="icon menu"></a></li>
+                    <div class="main-menu">
+                        <div class="main-menu-search">
+                            <form action="#">
+                                <input type="text" placeholder="Buscar..." name="search">
+                                <button type="submit"><i class="icon search"></i></button>
+                            </form>
+                        </div>
+                        <div class="main-menu-content">
+                            <ul>
+                                <li>Secciones</li>
+                                <li><a href="">Portada</a></li>
+                                <li><a href="">Sociedad</a></li>
+                                <li><a href="">Provincias</a></li>
+                                <li><a href="">Judiciales</a></li>
+                                <li><a href="">Política</a></li>
+                                <li><a href="">Economía</a></li>
+                                <li><a href="">Mundo</a></li>
+                                <li><a href="">Deportes +</a></li>
+                                <li><a href="">Entretenimiento</a></li>
+                                <li><a href="">Salud/Ciencia</a></li>
+                                <li><a href="">Tecnología</a></li>
+                                <li><a href="">Opinión</a></li>
+                                <li><a href="">Podcasts</a></li>
+                                <li><a href="">Video</a></li>
+                                <li><a href="">Fotografía</a></li>
+                                <li><a href="">Blogs</a></li>
+                                <li><a href="">Notas al Lector</a></li>
+                            </ul>
+                            <ul>
+                                <li class="main-menu-content-section">Edición Impresa</li>
+                                <span>
+                                    <li><a href="">Portada</a></li>
+                                    <li><a href="">Panorama</a></li>
+                                    <li><a href="">Hoy por Hoy</a></li>
+                                    <li><a href="">Opinión</a></li>
+                                    <li><a href="">Perspectiva</a></li>
+                                    <li><a href="">Deportes</a></li>
+                                    <li><a href="">Economía</a></li>
+                                    <li><a href="">Vivir +</a></li>
+                                    <li><a href="">Mosaico Digital</a></li>
+                                    <li><a href="">Reseña</a></li>
+                                    <li><a href="">Reseña Empresarial</a></li>
+                                    <li><a href="">Sociales</a></li>
+                                    <li><a href="">Horóscopo</a></li>
+                                </span>
+                            </ul>
+                            <ul>
+                                <li class="main-menu-content-section">Servicios</li>
+                                <span>
+                                    <li><a href="">Reseña Digital</a></li>
+                                    <li><a href="">Catálogos</a></li>
+                                    <li><a href="">Lotería</a></li>
+                                    <li><a href="">Horóscopo</a></li>
+                                    <li><a href="">Kiosco Digital</a></li>
+                                    <li><a href="">RSS</a></li>
+                                    <li><a href="">Temas</a></li>
+                                    <li><a href="">Autores</a></li>
+                                    <li><a href="">Ediciones Anteriores</a></li>
+                                </span>
+                            </ul>
+                            <ul>
+                                <li class="main-menu-content-section">Otros Sitios</li>
+                                <span>
+                                    <li><a href="https://www.asistentefinanciero.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Asistente Financiero</a></li>
+                                    <li><a href="https://www.metropormetro.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Metro por Metro</a></li>
+                                    <li><a href="https://www.tiendapanama.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Tienda Panamá</a></li>
+                                    <li><a href="https://www.tustiquetes.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Tus Tiquetes</a></li>
+                                    <li><a href="https://www.cerokm.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Cero KM</a></li>
+                                    <li><a href="https://corporativo.prensa.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Corprensa</a></li>
+                                    <li><a href="https://www.midiario.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Mi Diario</a></li>
+                                    <li><a href="https://www.martesfinanciero.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Martes Financiero</a></li>
+                                    <li><a href="https://www.ellas.pa/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Ellas</a></li>
+                                    <li><a href="https://club.prensa.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Club de Suscriptores</a></li>
+                                    <li><a href="https://buscafacil.com/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">Busca Fácil</a></li>
+                                    <li><a href="https://www.alamesa.pa/?utm_source=prensacom&utm_medium=burger-menu&utm_campaign=referral" target="_blank">A la Mesa</a></li>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="javascript:void(0)" onclick="openSearch()" class="icon search"></a></li>
+                </ul>
+                <ul class="social-link">
+                    <li><a href="https://twitter.com/prensacom" class="icon twitter" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/prensacom" class="icon facebook" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/prensacom" class="icon instagram" target="_blank"></a></li>
+                </ul>
+                <div class="date">Panamá, 2 de mayo de 2021</div>
+            </div>
+            <div class="nav-top-center">
+                <a href="index.shtml"><img src="https://multimedia.corprensa.com/la-prensa/assets/logo_laprensa_panama.svg"></a>
+            </div>
+            <div class="nav-top-right">
+                <div id="evolokProfile">
+                    <ul>
+                        <li><small>Bienvenido VICTOR HUGO <span onclick="" title="Cerrar sesión">[x]</span></small> <a href="">Perfil</a></li>
+                    </ul>
+                </div>
+                <div class="nav-top-mobile-user">
+                    <li><a href="/kiosco" class="txt_14 noborder nopadding"><b>ePaper</b></a></li>
+                </div>
+                <div class="nav-top-print">
+                    <a href="/kiosco">ePaper</a> &nbsp;|&nbsp; 
+                    <a href="seccion_print.shtml">Edición impresa</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bot">
+            <ul class="nav-bot-main">
+                <li class="nav-bot-main-more">
+                    <a href="">Locales</a>
+                    <div class="nav-bot-main-submenu">
+                        <ul>
+                            <li><a href="">Sociedad</a></li>
+                            <li><a href="">Judiciales</a></li>
+                            <li><a href="">Provincias</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="seccion_uhora.shtml">Política</a></li>
+                <li><a href="seccion_uhora.shtml">Economía</a></li>
+                <li><a href="seccion_uhora.shtml">Mundo</a></li>
+                <li><a href="seccion_uhora.shtml">Deportes</a></li>
+                <li class="nav-bot-main-more">
+                    <a href="">Entretenimiento</a>
+                    <div class="nav-bot-main-submenu">
+                        <ul>
+                            <li><a href="">Autos</a></li>
+                            <li><a href="">Cultura</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Salud/Ciencia</a></li>
+                <li><a href="">Podcasts</a></li>
+                <li><a href="">Opinión</a></li>
+                <li class="nav-bot-main-more">
+                    <a href="">Multimedia</a>
+                    <div class="nav-bot-main-submenu">
+                        <ul>
+                            <li><a href="">Podcasts</a></li>
+                            <li><a href="">Video</a></li>
+                            <li><a href="">Fotografía</a></li>
+                            <li><a href="">Infografías</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-bot-temas">
+            <ul class="nav-bot-temas-link">
+                <li class="nav-bot-temas-title">Temas de hoy:</li>
+                <li><a href="">Laurentino Cortizo</a></li>
+                <li><a href="">Ricardo Lombana</a></li>
+                <li><a href="">Asamblea Nacional</a></li>
+                <li><a href="">Código Electoral</a></li>
+                <li><a href="">Caja de Seguro Social</a></li>
+                <li><a href="">Ruta 2019</a></li>
+                <li><a href="">Ricardo Lombana</a></li>
+                <li><a href="">Juan Carlos Varela</a></li>
+                <li><a href="">Ricardo Martinelli</a></li>
+                <li><a href="">Copa de Oro</a></li>
+            </ul>
+        </div>
+        <div class="nav-bot-featured">
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Cortizo-lidera-intencion-voto.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Nito Cortizo lidera intención de voto; le sigue Rómulo Roux; Ricardo Lombana, en tercer lugar
+                    </div>
+                </a>
+            </div>
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Peter-Mayhew.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Murió el actor Peter Mayhew, intérprete de 'Chewbacca'
+                    </div>
+                </a>
+            </div>
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Romulo-Roux-pide.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Rómulo Roux en su cierre de campaña: 'Vamos a tener mejores días'
+                    </div>
+                </a>
+            </div>
+            <div class="nav-bot-featured-25">
+                <a href="">
+                    <div class="nav-bot-featured-image">
+                        <img src="images/Tarantino-Brad-Pitt.jpg" width="80" height="60">
+                    </div>
+                    <div class="nav-bot-featured-text">
+                        Película de Tarantino competirá en Festival de Cannes
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="page-content" class="internal">
+        <div class="main-wrapper">
+            <div class="main-box">
+                <div class="main-box-block">
+                    <div class="main-box-twocolumns horizontal">
+                        <!-- REMOVE THIS HEADING -->
+                        <!-- <div><h2 class="heading"><span>AUTOR</span>: José González</h2><br></div> -->
+                        <!---->
+                        <!-- ADD NEW AUTHOR BLOCK -->
+                        <div class="author-box">
+                            <div class="author-box-row">
+                                <div class="author-box-image">
+                                    <img src="https://s3.amazonaws.com/arc-authors/corprensa/34d37cdb-7129-4741-8bce-7e3c333fba5a.jpg">
+                                </div>
+                                <div class="author-box-content">
+                                    <h1>Mary Triny Zea</h1>
+                                    <h3>Reportera Unidad de Investigación</h3>
+                                    <div class="author-box-text">
+                                        <span class="story-box-lead">Licenciada en periodismo de la Universidad de Panamá. Especialización en televisión de la Escuela de Cine y Televisión de San Antonio de Los Baños (Cuba). Postgrado en Alta Gerencia y MBA de la Universidad Latina. Becaria del programa de periodismo de investigación de la Universidad de Columbia y la Fundación Gabo. Más de 15 años de experiencia en medios impresos, radiales y televisivos. Miembro del Hub de periodismo de CONNECTAS y del International Consortium of Investigative Journalists.</span>
+                                        <br>
+                                        <span class="story-box-lead"><b>Ubicación: </b>Ciudad de Panamá.</span>
+                                        <br>
+                                        <span class="story-box-lead"><b>Especialidad: </b>Investigaciones periodísticas de medio ambiente, seguimiento de fondos y políticas públicas, fiscalización del poder.</span>
+                                        <br>
+                                        <span class="story-box-lead"><b>Idiomas: </b>Español, Inglés.</span>
+                                        <br>
+                                        <span class="story-box-lead"><b>Intereses: </b>Ciclista montañera y patinadora aficionada. Me gusta la lectura, viajar y explorar el mundo.</span>
+                                    </div>
+                                    <div class="author-box-social">
+                                        <ul class="social-tools inline top">
+                                            <li class="tool email">
+                                                <a class="" href="mailto:mzea@prensa.com">
+                                                    <span class="icon mail"></span>
+                                                </a>
+                                            </li>
+                                            <li class="tool twitter">
+                                                <a class="" href="https://twitter.com/mtrinyzea">
+                                                    <span class="icon twitter"></span>
+                                                </a>
+                                            </li>
+                                            <li class="tool facebook">
+                                                <a class="" href="https://facebook.com/MARY-TRINY-ZEA-2001894053449883">
+                                                    <span class="icon facebook"></span>
+                                                </a>
+                                            </li>
+                                            <li class="tool instagram">
+                                                <a class="" href="https://instagram.com/mtrinyzea">
+                                                    <span class="icon instagram"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <div class="main-box">
+                <div class="main-box-block">
+                    <div class="main-box-twocolumns horizontal">
+                        <div class="story-box">
+                            <figure>
+                                <a href=""><img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/ioq-iEa5rDFkNcWrjKeHpg6-AaQ=/fit-in/300x300/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RI2UZJZ4RNDA7BT7IUE52BN3KA.jpeg" width="480" height="280"></a>
+                                <figcaption>Magistrado Heriberto Araúz (izq.) LA PRENSA/Raúl Valdés</figcaption>
+                            </figure>
+                            <div class="story-box-right">
+                                <span class="story-box-kicker">juicio a Martinelli</span>
+                                <h2><a href="">Perito Rivera Calle denuncia que es víctima de seguimiento y pinchazos</a></h2>
+                                <span class="story-box-author"><a href="">Mary Triny Zea</a></span>
+                                <span class="story-box-timeago">Hace 3 horas</span>
+                                <span class="story-box-lead">Ahora los usuarios del sistema de transporte público en los
+                                    distritos de Panamá y San Miguelito podrán usar durante las 24 horas del día el
+                                    llamado “viaje de emergencia”. Así lo informó la empresa Transporte Masivo de
+                                    Panamá, S. A.-Mi Bus, que recordó que este servicio solo estaba disponible
+                                    anteriormente en el horario nocturno.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="story-box">
+                            <figure>
+                                <a href=""><img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/ioq-iEa5rDFkNcWrjKeHpg6-AaQ=/fit-in/300x300/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RI2UZJZ4RNDA7BT7IUE52BN3KA.jpeg" width="480" height="280"></a>
+                                <figcaption>Magistrado Heriberto Araúz (izq.) LA PRENSA/Raúl Valdés</figcaption>
+                            </figure>
+                            <div class="story-box-right">
+                                <span class="story-box-kicker">juicio a Martinelli</span>
+                                <h2><a href="">Perito Rivera Calle denuncia que es víctima de seguimiento y pinchazos</a></h2>
+                                <span class="story-box-author"><a href="">Mary Triny Zea</a></span>
+                                <span class="story-box-timeago">Hace 3 horas</span>
+                                <span class="story-box-lead">Ahora los usuarios del sistema de transporte público en los
+                                    distritos de Panamá y San Miguelito podrán usar durante las 24 horas del día el
+                                    llamado “viaje de emergencia”. Así lo informó la empresa Transporte Masivo de
+                                    Panamá, S. A.-Mi Bus, que recordó que este servicio solo estaba disponible
+                                    anteriormente en el horario nocturno.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="story-box">
+                            <figure>
+                                <a href=""><img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/ioq-iEa5rDFkNcWrjKeHpg6-AaQ=/fit-in/300x300/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RI2UZJZ4RNDA7BT7IUE52BN3KA.jpeg" width="480" height="280"></a>
+                                <figcaption>Magistrado Heriberto Araúz (izq.) LA PRENSA/Raúl Valdés</figcaption>
+                            </figure>
+                            <div class="story-box-right">
+                                <span class="story-box-kicker">juicio a Martinelli</span>
+                                <h2><a href="">Perito Rivera Calle denuncia que es víctima de seguimiento y pinchazos</a></h2>
+                                <span class="story-box-author"><a href="">Mary Triny Zea</a></span>
+                                <span class="story-box-timeago">Hace 3 horas</span>
+                                <span class="story-box-lead">Ahora los usuarios del sistema de transporte público en los
+                                    distritos de Panamá y San Miguelito podrán usar durante las 24 horas del día el
+                                    llamado “viaje de emergencia”. Así lo informó la empresa Transporte Masivo de
+                                    Panamá, S. A.-Mi Bus, que recordó que este servicio solo estaba disponible
+                                    anteriormente en el horario nocturno.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="story-box">
+                            <figure>
+                                <a href=""><img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/ioq-iEa5rDFkNcWrjKeHpg6-AaQ=/fit-in/300x300/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RI2UZJZ4RNDA7BT7IUE52BN3KA.jpeg" width="480" height="280"></a>
+                                <figcaption>Magistrado Heriberto Araúz (izq.) LA PRENSA/Raúl Valdés</figcaption>
+                            </figure>
+                            <div class="story-box-right">
+                                <span class="story-box-kicker">juicio a Martinelli</span>
+                                <h2><a href="">Perito Rivera Calle denuncia que es víctima de seguimiento y pinchazos</a></h2>
+                                <span class="story-box-author"><a href="">Mary Triny Zea</a></span>
+                                <span class="story-box-timeago">Hace 3 horas</span>
+                                <span class="story-box-lead">Ahora los usuarios del sistema de transporte público en los
+                                    distritos de Panamá y San Miguelito podrán usar durante las 24 horas del día el
+                                    llamado “viaje de emergencia”. Así lo informó la empresa Transporte Masivo de
+                                    Panamá, S. A.-Mi Bus, que recordó que este servicio solo estaba disponible
+                                    anteriormente en el horario nocturno.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="story-box">
+                            <figure>
+                                <a href=""><img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/ioq-iEa5rDFkNcWrjKeHpg6-AaQ=/fit-in/300x300/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RI2UZJZ4RNDA7BT7IUE52BN3KA.jpeg" width="480" height="280"></a>
+                                <figcaption>Magistrado Heriberto Araúz (izq.) LA PRENSA/Raúl Valdés</figcaption>
+                            </figure>
+                            <div class="story-box-right">
+                                <span class="story-box-kicker">juicio a Martinelli</span>
+                                <h2><a href="">Perito Rivera Calle denuncia que es víctima de seguimiento y pinchazos</a></h2>
+                                <span class="story-box-author"><a href="">Mary Triny Zea</a></span>
+                                <span class="story-box-timeago">Hace 3 horas</span>
+                                <span class="story-box-lead">Ahora los usuarios del sistema de transporte público en los
+                                    distritos de Panamá y San Miguelito podrán usar durante las 24 horas del día el
+                                    llamado “viaje de emergencia”. Así lo informó la empresa Transporte Masivo de
+                                    Panamá, S. A.-Mi Bus, que recordó que este servicio solo estaba disponible
+                                    anteriormente en el horario nocturno.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="story-box">
+                            <figure>
+                                <a href=""><img src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/ioq-iEa5rDFkNcWrjKeHpg6-AaQ=/fit-in/300x300/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/RI2UZJZ4RNDA7BT7IUE52BN3KA.jpeg" width="480" height="280"></a>
+                                <figcaption>Magistrado Heriberto Araúz (izq.) LA PRENSA/Raúl Valdés</figcaption>
+                            </figure>
+                            <div class="story-box-right">
+                                <span class="story-box-kicker">juicio a Martinelli</span>
+                                <h2><a href="">Perito Rivera Calle denuncia que es víctima de seguimiento y pinchazos</a></h2>
+                                <span class="story-box-author"><a href="">Mary Triny Zea</a></span>
+                                <span class="story-box-timeago">Hace 3 horas</span>
+                                <span class="story-box-lead">Ahora los usuarios del sistema de transporte público en los
+                                    distritos de Panamá y San Miguelito podrán usar durante las 24 horas del día el
+                                    llamado “viaje de emergencia”. Así lo informó la empresa Transporte Masivo de
+                                    Panamá, S. A.-Mi Bus, que recordó que este servicio solo estaba disponible
+                                    anteriormente en el horario nocturno.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
